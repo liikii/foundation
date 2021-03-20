@@ -78,3 +78,18 @@ Sipser - Introduction to the Theory of Computation
 Sudkamp - Languages and Machines
 Taylor - Models of Computation and Formal Languages
 OTHER 
+
+
+
+可计算的route
+david hilbert 提出   数学系统公理化完整性
+Kurt Gödel 证明无法完整性。 
+alonzo church 和 alan turing 也证明形式系统不完整。 
+
+
+数学的不确定性
+
+
+
+
+
