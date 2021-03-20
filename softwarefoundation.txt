@@ -1,0 +1,80 @@
+https://www.seas.harvard.edu/courses/cs152/2021sp/resources.html
+The Curry-Howard Isomorphism
+Resources
+Text books
+A number of excellent books and on-line resources overlap with the course's content and can provide alternate explanations despite differences in notation and approach. Let the instructor know if you have trouble finding the intersection between these resources and the course content.
+
+"Types and Programming Languages" by Benjamin C. Pierce, MIT Press, 2002.
+Available on reserve at the library.
+"Software Foundations" by Benjamin C. Pierce et al., Volume 1: Logical Foundations and Volume 2: Programming Language Foundations.
+Available as literate Coq files.
+Also available as literate Agda files thanks to Philip Wadler, Wen Kokke and Jeremy Siek.
+"Practical Foundations for Programming Languages" by Robert Harper, Cambridge University Press, 2013.
+Draft available on Harper's website.
+"Concepts in Programming Languages" by John C. Mitchell, Cambridge University Press, 2003.
+Available online through Harvard University Libraries eContent Collection.
+"The Formal Semantics of Programming Languages" by Glynn Winskel, MIT Press, 1993.
+Available on reserve at the library.
+"Programming Languages: Application and Interpretation" by Shriram Krishnamurthi.
+There are two editions, both available on the author's website: http://www.cs.brown.edu/~sk/Publications/Books/ProgLangs/.
+OCaml resources
+Installation: https://ocaml.org/docs/install.html
+Tools: https://github.com/realworldocaml/book/wiki/Installation-Instructions
+This link gives instructions for installing things like Tuareg (a useful emacs mode) and Merlin (advanced IDE features).
+
+Installing Tuareg is pretty simple and will make your OCaml coding experience a lot nicer (though it's of course not necessary). Merlin is probably overkill unless you know what you're doing.
+
+Learning:
+Standard library documentation: http://caml.inria.fr/pub/docs/manual-ocaml/libref/index.html
+The following documentation may be particularly useful as you work on your assignments.
+Sets: http://caml.inria.fr/pub/docs/manual-ocaml/libref/Set.Make.html
+Maps: http://caml.inria.fr/pub/docs/manual-ocaml/libref/Map.Make.html
+Everything you need to know and more: http://caml.inria.fr/pub/docs/manual-ocaml/index.html
+Code examples: http://ocaml.org/learn/tutorials/99problems.html
+See also the CS51 Resources web page for OCaml books, references, and tutorials.
+
+Coq resources
+Download Coq.
+Coq includes an IDE, CoqIDE. Alternatively, with Emacs, you can use Proof General.
+Coq documentation.
+Dafny resources
+Dafny on Github.
+Dafny on rise4fun.
+Dafny in Visual Studio Code.
+Haskell resources
+Download The Haskell Platform.
+List of Haskell tutorials. If you want to get more meta, see How to Learn Haskell.
+haskell.org contains lots of reference information, language specification, etc.
+
+
+
+Gödel's incompleteness theorems are two theorems of mathematical logic that demonstrate the inherent limitations of every formal axiomatic system capable of modelling basic arithmetic. These results, published by Kurt Gödel in 1931, are important both in mathematical logic and in the philosophy of mathematics. The theorems are widely, but not universally, interpreted as showing that Hilbert's program to find a complete and consistent set of axioms for all mathematics is impossible.
+
+
+
+<select name="textbook">
+SELECT textbook </option>
+
+Aho, Sethi, Ullman - Compilers</option>
+Brookshear - Computer Science - An Overview </option>
+Brookshear - Theory of Computation </option>
+Cohen - Intro to Computer Theory </option>
+Davis - Computability, Complexity, and Languages </option>
+Du and Ko - Problem Solving in Automata, Languages and Complexity </option>
+Floyd and Beigel - The Language of Machines</option>
+Gersting - Mathematical Structures for Computer Science</option>
+Goddard - Introducing the Theory of Computation </option>
+Homer - Computability and Complexity Theory </option>
+Johnsonbaugh - Discrete Mathematics </option>
+Kelley - Automata and Formal Languages </option>
+Kinber and Smith - Theory of Computing</option>
+Kozen - Automata and Computability </option>
+Lewis and Papadimitriou - Elements of the Theory of Computation </option>
+Linz - Formal Languages and Automata</option>
+Martin - Introduction to Languages and the Theory of Computation</option>
+Motwani, Ullman and Hopcroft - Intro to Automata Theory, Languages
+and Computation </option>
+Sipser - Introduction to the Theory of Computation
+Sudkamp - Languages and Machines
+Taylor - Models of Computation and Formal Languages
+OTHER 
