@@ -89,7 +89,8 @@ alonzo church 和 alan turing 也证明形式系统不完整。
 
 数学的不确定性
 
+构造一个形式系统， 让形式系统出现自证的悖论
+同构的威力
 
-
-
+galois
 
