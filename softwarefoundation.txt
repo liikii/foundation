@@ -203,4 +203,32 @@ Swift Programming: The Big Nerd Ranch Guide
 A language is called a regular language if some finite automaton recognizes it.
 
 
+regular operations union, concatenation, and star
+
+
+nondeterministic finite automaton
+
+EQUIVALENCE OF NFAS AND DFAS
+1. 因为NFA会出现一个输入产生两个， 三个， 或多个状态的现象。 
+2. 对状态做对自身的笛卡尔积，直到包含了所有状态，  然后重新绘制。 
+
+
+
+ language is regular if and only if some nondeterministic finite automaton recognizes it
+
+
+theorem 1:
+ the class of regular languages is closed under the union operation.
+构造一个NFA， 空指向两个子NFA。 证毕。
+
+theorem 2:
+The class of regular languages is closed under the concatenation operation.
+同上， 构造NFA。 一个NFA 空连接另一个  NFA。
+
+
+the class of regular languages is closed under the star operation.
+
+在accept 状态用空连接 start 状态。 
+
+
 
