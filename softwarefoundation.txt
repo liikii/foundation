@@ -113,7 +113,24 @@ the roots of early group theory in the works of lagrange.
 
 
 
+The symmetric polynomials
+Albert Girard (1590-1633), a flemish mathematician, published in 1629, in Amsterdam, a book called Invention nouvelle en l'algèbre, in which clear relations between roots and coefficients of polynomials were stated for the first time.
 
 
+
+Edward Waring (1734-1793), an English mathematician, searched for the correlations between the degrees of the resolvent polynomials of a polynomial
+
+
+The work of Lagrange
+Joseph Louis Lagrange (1736-1813), a French mathematician, proved that a polynomial equation can be solved by radicals if a particularly related equation called the Lagrange resultant has degree less than the degree of the original equation. The proof involved a concept that later was to become fundamental to the theory of polynomial equations: that of the permutation of the roots. The Lagrange resultant is a polynomial constructed by means of a rational function of all possible permutations of the roots. An important characteristic of the theorem is that it is an existence theorem, as opposed to the previous methods that had all been concerned with the construction of a solving formula. Using this result, Ruffini produced in 1799 an erroneous proof that a polynomial equation od degree greater than 4 was not soluble by radicals. Abel independently found in 1824 a correct proof of the same theorem; thus the question of solving polynomial equation was in part settled. Still there are polynomials of degree greater than 4 that are clearly soluble, like tex2html_wrap_inline304. What remained to be done was to find a method to determine exactly which polynomial is soluble.
+
+
+The work of Vandermonde and Gauss
+Vandermonde proposed in 1770 that the key to solving a general polynomial equation
+displaymath306
+was represented by the roots of the equation tex2html_wrap_inline308. Gauss has the undoubted credit for having laid the first stone in the path that Galois successively followed. He showed that the roots of the polynomial equation tex2html_wrap_inline310 where p is prime are rational functions of the roots of a sequence of equations tex2html_wrap_inline314 where the coefficients of tex2html_wrap_inline316 are rational expressions of the roots of tex2html_wrap_inline318 and the degrees of the polynomials in the sequence are the all the prime numbers in the factorization of p-1.
+
+
+It is not surprising that Galois was not understood even by the greatest mathematicians of the time. His papers make such a large number of unproved (though true) assumptions, that at first they really are incomprehensible. Modern Galois theory can be viewed from two possible angles, which are however closely linked: group theory and field theory. Following the group-theoretic approach, to each polynomial there corresponds a group of permutations of the roots; if the group contains a series of certain particular nested subgroups such that the intersection of the series is the identity element, this means that the identity is the only permutation of the roots that leave all the known rational relations between the roots valid, and hence it is possible to determine them. If the intersection contains other permutations apart from the identity, it means that all the known relations cannot determine the roots because even if we permute them with the permutations in the intersection the relations still hold. Taking the field-theoretic approach, for any polynomial having roots tex2html_wrap_inline322 and coefficients in the field F there exists a field F' such that the polynomial is reducible into linear factors in F'. Obviously any field tex2html_wrap_inline330 is such that the polynomial splits into linear factors. Any such field G is called a splitting field for f(x). It is clear that for any polynomial f(x) over F with roots tex2html_wrap_inline322 the field tex2html_wrap_inline342 is a splitting field for f. Very simply put, if F' is expressible by adjoining a finite number of radicals of the form tex2html_wrap_inline348 to the base field F, then it is possible to express the roots tex2html_wrap_inline322 in terms of the radical operations tex2html_wrap_inline354 and hence there is a radical formula to find the roots in terms of the coefficients. Thus Galois found necessary and sufficient conditions for the roots to be expressed as rational functions of the coefficients, settling the problem definitively.
 
 
