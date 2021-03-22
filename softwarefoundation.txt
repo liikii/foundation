@@ -134,3 +134,65 @@ was represented by the roots of the equation tex2html_wrap_inline308. Gauss has 
 It is not surprising that Galois was not understood even by the greatest mathematicians of the time. His papers make such a large number of unproved (though true) assumptions, that at first they really are incomprehensible. Modern Galois theory can be viewed from two possible angles, which are however closely linked: group theory and field theory. Following the group-theoretic approach, to each polynomial there corresponds a group of permutations of the roots; if the group contains a series of certain particular nested subgroups such that the intersection of the series is the identity element, this means that the identity is the only permutation of the roots that leave all the known rational relations between the roots valid, and hence it is possible to determine them. If the intersection contains other permutations apart from the identity, it means that all the known relations cannot determine the roots because even if we permute them with the permutations in the intersection the relations still hold. Taking the field-theoretic approach, for any polynomial having roots tex2html_wrap_inline322 and coefficients in the field F there exists a field F' such that the polynomial is reducible into linear factors in F'. Obviously any field tex2html_wrap_inline330 is such that the polynomial splits into linear factors. Any such field G is called a splitting field for f(x). It is clear that for any polynomial f(x) over F with roots tex2html_wrap_inline322 the field tex2html_wrap_inline342 is a splitting field for f. Very simply put, if F' is expressible by adjoining a finite number of radicals of the form tex2html_wrap_inline348 to the base field F, then it is possible to express the roots tex2html_wrap_inline322 in terms of the radical operations tex2html_wrap_inline354 and hence there is a radical formula to find the roots in terms of the coefficients. Thus Galois found necessary and sufficient conditions for the roots to be expressed as rational functions of the coefficients, settling the problem definitively.
 
 
+
+
+
+-----some book---
+Inside the Machine: An Illustrated Introduction to Microprocessors and Computer Architecture
+Structure and Interpretation of Computer Programs
+Design Patterns: Elements of Reusable Object-Oriented Software
+Code: The Hidden Language of Computer Hardware and Software
+Cracking the Coding Interview: 189 Programming Questions and Solutions
+Code Complete: A Practical Handbook of Software Construction
+Programming Pearls
+The Pragmatic Programmer: Your Journey to Mastery
+Code Simplicity: The Fundamentals of Software
+Algorithms to Live By: The Computer Science of Human Decisions
+Clean Code: A Handbook of Agile Software Craftsmanship
+Think Like a Programmer: An Introduction to Creative Problem Solving
+Introduction to Algorithms
+Peopleware: Productive Projects and Teams
+Soft Skills: The software developer’s life manual&nbsp;
+Rapid Development: Taming Wild Software Schedules
+Coders at Work: Reflections on the Craft of Programming
+Don’t Make Me Think, Revisited: A Common Sense Approach to Web Usability
+The Passionate Programmer: Creating a Remarkable Career in Software Development
+Working Effectively with Legacy Code
+The Self-Taught Programmer: The Definitive Guide to Programming Professionally
+The Mythical Man-Month: Essays on Software Engineering
+Refactoring: Improving the Design of Existing Code
+HTML and CSS: Design and Build Websites
+Learning Web Design: A Beginner’s Guide to HTML, CSS, JavaScript, and Web Graphics
+Eloquent JavaScript: A Modern Introduction to Programming
+You Don’t Know JS Yet: Get Started
+Effective Java
+Head First Java
+Java Concurrency in Practice
+Modern PHP
+Head First PHP &amp; MySQL: A Brain-Friendly Guide
+Eloquent Ruby
+The Well-Grounded Rubyist
+Python Crash Course: A Hands-On, Project-Based Introduction to Programming
+Head First Python: A Brain-Friendly Guide
+Learn Python 3 the Hard Way: A Very Simple Introduction to the Terrifyingly Beautiful World of Computers and Code
+C# in Depth
+C# 7.0 in a Nutshell: The Definitive Reference
+C Programming Language
+Practical C Programming: Why Does 2+2 = 5986?
+Objective-C Programming: The Big Nerd Ranch Guide
+Effective Objective-C 2.0: 52 Specific Ways to Improve Your IOS and OS X Programs
+C++ Primer
+Programming: Principles and Practice Using C++
+Learning R: A Step-by-Step Function Guide to Data Analysis
+R Cookbook: Proven Recipes for Data Analysis, Statistics, and Graphics
+The Art of R Programming: A Tour of Statistical Software Design
+SQL in 10 Minutes, Sams Teach Yourself
+SQL Queries for Mere Mortals: A Hands-On Guide to Data Manipulation in SQL
+Android Application Development All-in-One For Dummies
+Head First Android Development: A Brain-Friendly Guide
+iOS Programming: The Big Nerd Ranch Guide
+Swift Programming: The Big Nerd Ranch Guide
+
+
+--------
+
