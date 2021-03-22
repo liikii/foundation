@@ -277,6 +277,15 @@ cfg to pda
 stack 实现识别递归
 : 递归的特征
 
+(
+ Theorem: If G is a CFG for a language L, 
+then there exists a PDA for L as well.
+● Idea: Build a PDA that simulates 
+expanding out the CFG from the start 
+symbol to some particular string.
+● Stack holds the part of the string we 
+haven't matched yet.)
+
 THE PUMPING LEMMA FOR CONTEXT-FREE LANGUAGES
 分成5部分。 
 . It states that every context-free language has a special value called the pumping length such that all longer strings in the language can be “pumped.” This time the meaning of pumped is a bit more complex. It means that the string can be divided into five parts so that the second and the fourth parts may be repeated together any number of times and the resulting string still remains in the language.
@@ -291,3 +300,12 @@ The languages that are recognizable by deterministic pushdown automata (DPDAs) a
 This subclass of the context-free languages is relevant to practical applications, such as the design of parsers in compilers for programming languages, because the parsing problem is generally easier for DCFLs than for CFLs. This section gives a short overview of this important and beautiful subject.
 
 
+ In a PDA, if there are multiple 
+nondeterministic choices, you cannot
+treat the machine as being in multiple 
+states at once.
+● Each state might have its own stack 
+associated with it.
+● Instead, there are multiple parallel 
+copies of the machine running at once, 
+each of which has its own stack
