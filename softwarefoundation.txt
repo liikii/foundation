@@ -92,5 +92,28 @@ alonzo church 和 alan turing 也证明形式系统不完整。
 构造一个形式系统， 让形式系统出现自证的悖论
 同构的威力
 
-galois
+galois theory
+
+
+分点突破
+
+
+galois theory的一点点思考：
+根的对称性
+群的对称性
+分裂域 与  galois group 的对称性
+
+大于5次  一点关系没有办法满足。 
+
+
+
+
+lagrange root permutation
+the roots of early group theory in the works of lagrange. 
+
+
+
+
+
+
 
