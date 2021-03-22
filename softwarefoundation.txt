@@ -196,3 +196,11 @@ Swift Programming: The Big Nerd Ranch Guide
 
 --------
 
+
+被识别叫作语言
+
+
+A language is called a regular language if some finite automaton recognizes it.
+
+
+
