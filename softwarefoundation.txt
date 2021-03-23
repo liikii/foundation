@@ -309,3 +309,41 @@ associated with it.
 ● Instead, there are multiple parallel 
 copies of the machine running at once, 
 each of which has its own stack
+
+
+
+图灵机 与 lambda 演算的对等关系。 
+图灵机 类似模拟 递归。 
+turing machine lambda calculus equivalence
+
+机算机核心问题
+David Hilbert’s Entscheidungsproblem
+
+
+The class of DCFLs is closed under complementation.
+PROOF IDEA Swapping the accept and non-accept states of a DFA yields a new DFA that recognizes the complementary language, thereby proving that the class of regular languages is closed under complementation. 
+
+
+加endmarked string也可被识别。 
+A is a DCFL if and only if A⊣ is a DCFL.
+
+DCFG
+A deterministic context-free grammar is a context-free grammar such that every valid string has a forced handle.
+
+
+单带 多带 TM。 
+单带增加空间复杂度。 
+
+o construct DFA DK, we’ll construct an equivalent NFA K and convert K to
+DK1 via the subset construction introduced in Theorem 1.39.
+
+
+对等关系  映射怎么找。 同构
+every DCFG has an equivalent DPDA.
+
+In the 1960s, theoretical research in computer science on regular expressions and finite automata led to the discovery that context-free grammars are equivalent to nondeterministic pushdown automata.[1][2][3] These grammars were thought to capture the syntax of computer programming languages. The first computer programming languages were under development at the time (see History of programming languages) and writing compilers was difficult. But using context-free grammars to help automate the parsing part of the compiler simplified the task. 
+
+
+
+an LR(k) grammar is a context-free grammar such that the handle of every valid string is forced by lookahead k.
+
