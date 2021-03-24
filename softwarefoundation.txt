@@ -556,8 +556,54 @@ rice定理。
 指标集是不可判定的。 
 
 
+DTM决定性图灵机运行时间由输入长度来确定。 
+
+log  幂函数的  反面。 
+In mathematics, the logarithm is the inverse function to exponentiation. 
+e (mathematical constant)
+
+Big O notation is a mathematical notation that describes the limiting behavior of a function when the argument tends towards a particular value or infinity. Big O is a member of a family of notations invented by Paul Bachmann,[1] Edmund Landau,[2] and others, collectively called Bachmann–Landau notation or asymptotic notation.
+
+In computer science, big O notation is used to classify algorithms according to how their run time or space requirements grow as the input size grows
+
+https://en.wikipedia.org/wiki/Big_O_notation
+
+
+输入长度与编码有关
+输入规模  与  问题中的自然参数有关。 与编码无关。 
 
 
 
+“P vs NP” 这个问题有它的理论价值，它是有趣的问题，里面的有些思路有启发意义，值得花些时间来了解。但计算机科学界长久以来都严重夸大它的重要性，把一个很普通的问题捧上了天，吹得神乎其神。
+
+再加上图灵机模型在计算理论界的广泛使用，使得这门学问显得异常艰深。很多人看到图灵机就晕了，在课程上蒙混过关，考试完了就全忘了，根本无法理解里面的实质内容。正是因为很多人的不明觉厉，使得“P vs NP”登上了它在 CS 界的宝座。
 
 
+“无穷”对于现实的问题是没有意义的。
+
+
+微积分的重要性就是摒弃了无限这虚无飘渺的东西。 
+计算复杂性概念
+
+多带单带  单带空间上的限制带来复杂性。 
+多带变单带：时间平方。 
+非确定性与确定性图灵： 指数 。 
+
+
+复杂性分类： 
+P类 polynomial time
+有向图可达性
+	蛮力搜索。 
+	宽度优先搜索。 
+判断互素：
+	蛮力法
+	辗转相除法
+
+识别是不是ｃｆｌ：
+	蛮力法：
+	动态规划：
+
+NP类："nondeterministic polynomial time"
+	哈密顿路径（送快递）：过每个点一次，且恰好一次。 
+	每次问有没有， 有删边。 搜索归为判定问题。 
+	验证机：
