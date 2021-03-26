@@ -1102,3 +1102,126 @@ derandomization.
 6 720 14 87,178,291,200
 7 5040 15 1,307,674,368,000
 8 40320 16 20,922,789,888,000
+
+
+
+What Is Computation?
+• That can be coded in an algorithm.a
+• An algorithm is a detailed step-by-step method for
+solving a problem.
+– The Euclidean algorithm for the greatest common
+divisor is an algorithm.
+– “Let s be the least upper bound of compact set A” is
+not an algorithm.
+– “Let s be a smallest element of a finite-sized array”
+can be solved by an algorithm.
+– How about passing the Turing test?
+
+
+
+• A Turing machine (TM) is a quadruple M = (K, Σ, δ, s).
+• K is a finite set of states.b
+• s ∈ K is the initial state.
+• Σ is a finite set of symbols (disjoint from K).
+Σ includes  (blank) and ✄ (first symbol).c
+
+δ : : K × Σ → (K ∪ {h, “yes”, “no”}) × Σ × {←, →, −} is a transition function.
+–
+← (left),
+→ (right), and
+− (stay) signify cursor movements.
+
+Given current state q ∈ K and current symbol σ ∈ Σ,
+δ(q, σ)=(p, ρ, D).
+– It specifies:
+∗ The next state p;
+∗ The symbol ρ to be written over σ;
+∗ The direction D the cursor will move afterwards
+
+
+• For convenience, δ(q, ✄)=(·, ✄, →) for every q ∈ K.
+– So the cursor never falls off the left end of the string.
+• Think of the program as lines of codes:
+δ(q1, σ1)=(p1, ρ1, D1),
+δ(q2, σ2)=(p2, ρ2, D2),
+.
+.
+.
+δ(qn, σn)=(pn, ρn, Dn).
+
+
+• The specification of a configuration is sufficient for the
+computation to continue as if it had not been stopped.
+– What does your PC save before it sleeps or
+hibernates?
+– Enough for it to resume the work later.
+• Similar to the concept of state in Markov processes.
+
+
+configuration: 用于保存现场。 
+A configuration is a triple (q, w, u):
+– q∈K.
+– w∈Σ∗ is the string to the left of the cursor(inclusive).
+–u∈Σ∗ is the string to the right of the cursor.
+• Note that (w, u) describes both the string and the cursor
+position.
+
+
+“Physical” Interpretations
+• The tape: computer memory and registers.
+– Except that the tape can be lengthened on demand.
+• δ: program.
+– A program has a finite size.
+• K: instruction numbers.
+• s: “main()” in the C programming language.
+• Σ: alphabet, much like the ASCII code.
+
+
+Given current state q ∈ K and current symbol σ ∈ Σ,
+δ(q, σ)=(p, ρ, D).
+– It specifies:
+∗ The next state p;
+∗ The symbol ρ to be written over σ;
+∗ The direction D the cursor will move afterwards
+
+
+• Assume the state is q and the symbol under the cursor σ.
+• The line of code that matches (q, σ) is executed.a
+• Then the process is repeated.
+
+
+The Concept of Configuration
+•
+A configuration a is a complete description of the
+current state of the computation
+
+
+
+• A string is a palindrome if it reads the same forwards and backwards (e.g., 001100).
+
+
+Theorem 1 (Hennie, 1965) palindrome on single-string
+TMs takes Ω^(2) steps in the worst case.
+
+• This happens rarely and is model dependent.
+– Searching, sorting, palindrome, matrix-vector
+multiplication, etc.
+
+Stephen Kleene (1909–1994)
+
+
+The two words in the language I most respect
+are Yes and No.
+— Henry James (1843–1916),
+The Portrait of a Lady (1881)
+
+
+• Let
+M be a TM such that for any string
+x:
+– If x∈L, then M(x) = “yes.”
+– If x∈L, then M(x) = “no.” 
+• We say M decides L.
+
+• If there exists a TM that decides
+L, then L is said to be recursive a or decidable
