@@ -1224,4 +1224,174 @@ x:
 • We say M decides L.
 
 • If there exists a TM that decides
-L, then L is said to be recursive a or decidable
+L, then L is said to be recursive a or decidable.
+
+
+• The set of palindromes over any alphabet is recursive.
+a
+– palindrome cannot be solved by finite state
+automata.
+– In fact, finite-state automata are equivalent to
+read-only, right-moving TMs.
+
+
+
+• The set of C programs that do not contain a while, a
+for, or a goto is recursive.
+a
+• But, the set of C programs that do not contain an
+infinite loop is not recursive (see p. 137).
+
+a There is a program that will halt and it returns “yes” if and only if
+the input C code does not contain any of the keywords. bSo there is no algorithm that will answer correctly in a finite amount
+of time if a C program will run into an infinite loop on some inputs.
+
+能识别但不能判定的：
+• If L is accepted by some TM, then
+L is said to be recursively enumerable or semidecidable.
+
+
+Emil Post (1897–1954)
+
+ The set of C program-input pairs that do not run into
+an infinite loop is recursively enumerable.
+– Just run its binary code in a simulator environment.
+– Then the simulator will terminate if and only if the C
+program will terminate.
+– When the C program terminates, the simulator
+simply exits with a “yes” state.
+• The set of C programs that contain an infinite loop is
+not recursively enumerable.
+a。
+
+
+
+Church’s Thesis or the Church-Turing Thesis
+(concluded)
+• Many other computation models have been proposed.
+– Recursive function,
+a
+λ calculus,
+b boolean circuits,
+c
+formal language,
+d assembly language-like RAM,
+e
+neural networks,
+f and extensions of the Turing
+machine (more strings, two-dimensional strings, etc.).
+• All have been proved to be equivalent.
+
+
+
+Decision problems
+Entscheidungsproblem means “decision problem”. Given
+! a set S whose elements are finite data structures of
+some kind
+(e.g. formulas of first-order arithmetic)
+! a property P of elements of S
+(e.g. property of a formula that it has a proof)
+the associated decision problem is:
+find an algorithm which
+terminates with result 0 or 1 when fed an element s ∈ S
+and yields result 1 when fed s if and only if s has property P.
+
+
+处处停机
+Algorithms, informally
+No precise definition of “algorithm” at the time Hilbert
+posed the Entscheidungsproblem, just examples.
+Common features of the examples:
+! finite description of the procedure in terms of
+elementary operations
+! deterministic (next step uniquely determined if there
+is one)
+! procedure may not terminate on some input data,
+but we can recognize when it does terminate and
+what the result is.
+
+
+Common features of the examples:
+! finite description of the procedure in terms of
+elementary operations
+e.g. multiply two decimal digits by
+looking up their product in a table
+! deterministic (next step uniquely determined if there
+is one)
+! procedure may not terminate on some input data,
+but we can recognize when it does terminate and
+what the result is.
+
+The Halting Problem
+is the decision problem with
+! set S consists of all pairs (A, D), where A is an algorithm and
+D is a datum on which it is designed to operate;
+! property P holds for (A, D) if algorithm A when applied to
+datum D eventually produces a result (that is, eventually
+halts—we write A(D)↓ to indicate this).
+
+多带图灵机
+
+Turing Machines with Multiple Strings
+
+Time seemed to be the most obvious measure of complexity.
+— Stephen Arthur Cook (1939–)
+
+
+
+I keep bumping into that silly quotation
+attributed to me that says
+640K of memory is enough.
+
+
+Michael O. Rabin
+Dana Stewart Scott
+
+
+
+Universal Turing Machinea：：：
+U(M; x) = M(x).
+U is like a modern computer, which executes any valid
+machine code, or a Java virtual machine, which executes
+any valid bytecode.
+
+
+
+
+H Is Not Recursivea
+• Suppose H is recursive.
+• Then there is a TM MH that decides H.
+• Consider the program D(M) that calls MH:
+1: if MH(M; M) = “yes” then
+2:  ; {Writing an infinite loop is easy.}
+3: else
+4: “yes”;
+5: end if
+
+
+Self-Loop Paradoxes
+
+规约即转换
+• Suppose we are asked to prove that
+L is undecidable.
+• Suppose L (such as H) is known to be undecidable.
+• Find a computable transformation R (called reduction a) from L to
+L such that 
+b ∀ x { x ∈ L if and only if R ( x ) ∈ L }.
+• Now we can answer “
+x ∈ L?” for any
+x by answering
+“ R ( x ) ∈ L?” because it has the same answer.
+• L is said to be reduced to
+L.
+
+
+If
+L is recursive, then so is L¯. （L complement）
+
+
+
+RE: The set of all recursively enumerable languages.
+coRE: The set of all languages whose complements are recursively enumerable.
+R: The set of all recursive languages.
+
