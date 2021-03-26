@@ -666,3 +666,369 @@ Type :h and hit Enter for context help.
 
 
 
+Computability theory asks questions such as: do there exist problems unsolvable by any
+effective procedure — unsolvable by any program in any conceivable programming language on any computer?
+
+ computability theory is concerned with the boundary between computability and uncomputability, and addresses questions such as:
+• Can every precisely stated problem be solved by some effective procedure?
+• What is the class of problems that can be solved by effective procedures and its
+basic properties?
+• What is the relationship between various problems that cannot be solved by effective procedu
+
+
+There are many other notions of effective procedure than Turing machines, e.g.,
+• Recursive functions as defined by Kleene [98]
+• The lambda calculus approach to function definitions due to Church [22, 23].
+• Random access machines [163]
+• Markov algorithms [115]
+
+
+the Church-Turing thesis is sometimes expressed in the following form:
+1. All reasonable formalizations of the intuitive notion of effective computability are
+equivalent;
+
+. Turing machine computability is a reasonable formalization of effective computability.
+
+effective procedure= algorithm
+
+
+处处停机  可计算
+
+On data representation 编码  能编回来能展现回来。 
+
+ Given a set D, and a subset S ⊆ D. S is effectively decidable iff there
+is an effective procedure which, when given an object x ∈ D, will eventually answer “yes”
+if x ∈ S, and will eventually answer “no” if x 6∈ S.
+
+ Given a set D, and a subset S ⊆ D. S is effectively enumerable iff
+there is an effective procedure which, when given an object x ∈ D, will eventually answer
+“yes” if x ∈ S, and will answer “no” or never terminate if x 6∈ S.
+
+
+图灵的证明过程和哥德尔对不完备性定理的证明过程有很大的相似性，都需要对符号系统进行数字化的编码，同时，都要通过对角线方法来获得一个命题：我是不可判定的。
+
+对角线方法
+假设实数集可数。则实数能与自然数一一映射。
+0 0.282728424871……1 
+1.442282215825……2 
+0.010101010101……3 
+2.428245294258……4 
+1.276343024642……5 1.234567891011…………可是我们可以创造一实数，整数部分与0不同，第一位与1的不同，第二位与2的不同……(如1.52744……等)，于是这个实数与以上列出来的都不相等，矛盾。所以实数集是不可数的。
+
+
+Recall that computability theory is concerned with questions such as whether a problem is solvable at all, assuming one is given unlimited amounts of space and time. In
+contrast, complexity theory is concerned with questions such as whether a problem can
+be solved within certain limited computing resources, typically space or time.
+
+
+to address such questions, one must have a precise definition of space and time costs.
+Granted that, complexity theory asks questions such as:
+• Which problems can be solved within a certain limit of time or space, and which
+cannot?
+• Are there resource limits within which a known combinatorial problem definitely
+cannot be solved?
+• Are there problems which inherently need more resources than others?
+• What characteristics of problems cause the need for certain amounts of resources?
+• What is the class of problems solvable within certain resource limits, and what are
+the basic properties of this class?
+• Given a problem, what is the complexity of its best algorithm?
+• Do best algorithms always exist?
+• Does adding more resources allow one to solve more problems
+
+
+
+. There are a few problems whose exact complexity can be identified, but very few
+
+Logspace ⊆ nlogspace ⊆ ptime ⊆ nptime ⊆ pspace = npspace ⊂ rec ⊂ re
+
+
+At the conference Hilbert presented 23 unsolved mathematical problems. One of these,
+the Entscheidungsproblem (decision problem), was described as follows:10
+The Entscheidungsproblem is solved if one knows a procedure which will permit
+one to decide, using a finite number of operations, on the validity, respectively the
+satisfiability of a given logical expression.
+
+
+
+In 1931 G¨odel showed his celebrated Incompleteness Theorem [54] stating, roughly,
+that for any consistent, sufficiently strong formalization of number theory, there are
+true propositions which cannot be proved in that formalization. To the experts this
+result made it seem highly unlikely that the Entscheidungsproblem could have a positive
+solution
+
+ λ-expressions and Turing machines,
+
+形式系统等价
+ proved by Kleene, Turing, and others. In fact, one can
+write compilers that turn a program in one formalism into a program in one of the
+other formalisms that computes the same function, supporting what we have previously
+called the Church-Turing thesis.
+
+起了个复杂的名字
+
+The first systematic investigation of time and space hierachies is due to Hartmanis,
+Lewis, and Stearns [65, 64, 109] in the 1960’s, who coined the term “computational
+complexity” for what we call complexity theory in this book
+
+构造形式系统对等
+proving the equivalence of WHILE with a variety of other computation models.
+
+
+
+The WHILE Language
+	Expressions 3 E, F ::= X (for X ∈ Vars)
+		| d (for atom d)
+		| cons E F   ###  This operation is called cons (short for “construct”.)
+		| hd E       ### head 
+		| tl E       ### tail
+		| =? E F
+	Commands 3 C, D ::= X := E
+		| C; D
+		| while E do C
+	Programs 3 P ::= read X; C; write Y
+
+reverse:
+
+read X;
+Y := nil;
+while X do
+	Y := cons (hd X) Y;
+	X := tl X;
+write Y
+
+
+For reverse, if X is initially bound to input
+	(d0.(d1.(···.(dn−1.(dn.nil))···)))
+then Y is bound to
+	(dn.(dn−1.(···.(d1.(d0.nil))···)))
+
+
+
+The expression =? E F evaluates to true, if E and F evaluate to the same value, and to
+false otherwise. Thus =? (nil.nil) (nil.nil) evaluates to true, and =? (nil.nil)
+nil evaluates to false.
+
+
+
+
+Definition 2.1.2 The function | •| : ID → IN defined by:
+|d| =(1 if d ∈ A
+|d1|+|d2| if d = (d1.d2)
+denotes the size of a data value d ∈ ID
+
+
+, e.g., (nil.nil) for a, (nil.(nil.nil)) for b, and ((nil.nil).nil) for c.
+
+
+用while 模拟 if else
+Z := E; (* if E then C *)
+while Z do { Z := false; C };
+
+Z := E; (* if E then C1 else C2 *)
+W := true;
+while Z do { Z := false; W := false; C1 };
+while W do { W := false; C2 };
+
+
+
+ Lists
+As one can see from the example in subsection 2.1.3, elements of ID sometimes have
+deeply nested parentheses that are hard to read; one has to resort to counting to parse
+an element like ((a.(b.nil)).((d.(e.nil)).nil)).
+Often the nesting has a certain regular structure, because we often express a list of
+elements d0, d1,. . . , dn−1, dn as the tree (d0.(d1.(···.(dn−1.(dn.nil)) ···))). For
+instance (a.(b.nil)) represents the list consisting of elements a, b. Therefore it would
+be particularly convenient to have a short notation for this form. Hence the idea is to
+use the notation (d0 ···dn) for the tree (d0.(d1.(···.(dn−1.(dn.nil)) ···))). Then the
+tree (a.(b.nil)) can be written (a b) in short notation and, as another example, the
+tree ((a.(b.nil)).((d.(e.nil)).nil) can be written ((a b) (d e)).
+This is introduced in the following definition
+
+
+
+ The function | •| : ID → IN defined by:
+|d| =
+(1 if d ∈ A
+|d1|+|d2| if d = (d1
+.d2)
+denotes the size of a data value d ∈ ID. 
+
+
+Define n = niln, where
+nil0 = nil = ()
+niln+1 = (nil.niln
+) = (nil ... nil
+| {z }
+n+1 times
+)
+and let N = {n|n ∈ IN}. The elements of N are called numerals.
+
+WHILE has only one atom, so how can we compute with numbers? One idea is to
+represent the number n by a list of length n.
+
+
+
+
+read X; (* succ *)              read X; (* pred *)
+    Y := cons nil X;                Y:=tl X;
+write Y                         write Y
+
+
+
+read XY; (* add X Y *)
+	X := hd XY;
+	Y := tl XY;
+	while X do
+		Y := cons nil Y;
+		X := tl X;
+write Y
+
+语法糖
+Syntactic sugar: some useful macro notations
+
+ cons* E1 ··· En
+
+
+
+A compiler is a program transformer which takes a program and translates it into an
+equivalent program, possibly in another language
+
+
+
+An interpreter takes a program and its input data, and returns the result of applying the program to that input.
+Language L is equivalent to language M, written L ≡ M, if language L and language M
+can simulate each other. 
+
+
+
+• : WHILE−programs → WHILE−data
+
+
+Mapping WHILE programs to their data representations.
+
+read Vi; C; write Vj = ((vari)C(varj))
+C;D = (;CD)
+while E do C = (whileEC)
+Vi:=E = (:= (vari)E)
+Vi = (vari)
+d = (quoted)
+cons E F = (consEF)
+hd E = (hdE)
+tl E = (tlE)
+=? E F = (=? EF)
+
+
+Suppose we are given three programming languages:
+• A source language S,
+• A target language T, and
+• An implementation language L.
+
+
+In order to be meaningful a diagram must be “well-formed,” that is satisfy some
+natural constraints:
+1. All languages appearing bottom-most in the diagram must be executable (either
+because they are machine languages, or because implementations are known to
+exist even though not shown in the diagram).
+2. Let us define language L to match language M, written L v M, to mean that any
+L-program is also an M-program, and has the same semantics. A special case: L v
+L, that is, any language matches itself.
+3. The second constraint is that any subdiagram of either of the following two forms:
+
+
+
+Self-interpretation: Universal Programs for WHILE and I
+
+
+A partial function f : ID → ID⊥ is WHILE computable iff there is a
+WHILE program p such that f = [[p]], i.e. for all d,e ∈ ID:
+1. If f (d) = ⊥ then [[p]](d) = ⊥.
+2. If f (d) = e ∈ ID then [[p]](d) = e.
+
+
+For a language L
+if there is some Turing Machine that accepts every string in L
+and rejects every string not in L, then L is a decidable
+language
+if there is some Turing machine that accepts every string in L
+and either rejects or loops on every string not in L, then L is
+Semi-decidable or computably enumerable
+
+
+
+L = {0n1n: n ≥ 0} is not regular.
+limitation of FA related to fact that they can only “remember” a bounded amount of information。
+
+
+
+Automaton scans an input from left to right - at each step it may push a symbol onto the stack, or pop the stack. It cannot read other elements of the stack.
+
+Automaton scans an input from left to right - at each step it may push a symbol onto the stack, or pop the stack. It cannot read other elements of the stack.
+
+
+
+Every CFL is generated by a CFG in Chomsky Normal Form
+
+Proof: Transform any CFG into equivalent CFG in CNF. 4 steps:
+add a new start symbol, which can produce prior start
+remove “-productions” A → 
+eliminate “unit productions” A → B
+convert remaining rules into proper form
+
+
+abcdefg convert to a(b(c(d(e(fg)))))
+
+
+学习各形式系统都有那些限制，新系统解决了那些限制 。 
+limitation of NPDA related to fact that their memory is stack-based (last in, first out)
+
+
+everything we can compute on a physical
+computer can be computed on a Turing
+machine.
+
+
+
+The real numbers R are NOT countable (they are
+“uncountable”).
+How do you prove such a statement?
+assume countable (so there exists function f
+from N onto R)
+derive contradiction (“construct” an element
+not mapped to by f )
+technique is called diagonalization (Cantor)
+
+
+Theorem
+HALT is not decidable (undecidable).
+Proof will involve the following
+Suppose there’s some TM H that decides HALT. Using this we will get a contradiction. You’ll need to believe that TMs can simulate other TMs, also can be composed with each other.
+
+
+
+Language Decided
+We say a TM decide a language L if it accepts all strings in L and rejects all strings not in L. (Here, the TM should not accept any string not in L, but when we say a TM accept a word w, it may accept any other word also)
+
+Language Recognized
+We say a TM recognizes language L if it accepts all strings in L. It may or may not reject any string not in L- i.e., it might go into an infinite loop in case of non-acceptance. (It will never accept a string not in L)
+
+
+rice定理等价停机问题
+In this note I will show a theorem which states that a very large family of
+problems are all undecidable. Our result, known as Rice’s theorem after Henry
+Rice who proved the result in 1953 [2], states that if S is a non-trivial property
+of Turing-recognizable languages, then the problem
+Given a TM M, does L(M) have the property S?
+is undecidable.
+What's a trivial property?
+
+A "trivial" property is one that holds either for all languages or for none.
+牛逼 
+
+David Richerby
+top 0.10% overall
+Apparently, this user prefers to keep an air of mystery about them
+https://cs.stackexchange.com/users/9550/david-richerby
+
+好书
+structure and interpretation of computer programs pdf
+
