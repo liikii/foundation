@@ -1395,3 +1395,63 @@ RE: The set of all recursively enumerable languages.
 coRE: The set of all languages whose complements are recursively enumerable.
 R: The set of all recursive languages.
 
+Note that coRE is not RE(complement).
+
+trivial property:::::
+– Answer to a trivial property is always “yes”or always“no.”
+
+
+
+Undecidability in Logic and Mathematics
+• First-order logic is undecidable (answer to Hilbert’s
+(1928) Entscheidungsproblem).
+a
+• Natural numbers with addition and multiplication is
+undecidable.
+b
+• Rational numbers with addition and multiplication is
+undecidable.
+c
+
+
+
+Elementary theory of groups is undecidable.
+
+
+Julia Hall Bowman Robinson (1919–1985)
+
+Alfred Tarski (1901–1983)
+香农定律：
+如果把网络带宽比喻为车道宽度，那么网速就好比汽车在车道上行驶的速度。汽车在车道上行驶得快或者不快，要受限于车道宽度的大小，车道上正有多少辆汽车在行驶等诸多干扰性因素。
+
+图中标明了香农三定理的位置，第一定理和第三定理对应的是压缩理论，而第二定理也就是鼎鼎有名的香农容量，对应的是传输理论。香农第一定理——无失真信源编码定理香农第一定理在编码领域的地位，无异于倚天屠龙记中的九阳神功。它给出了在无损情况下，数据压缩的临界值。不要小瞧这简简单单的一句话，正因为给出了理论上的下界，所以才会产生各式各样的编码办法。在无损压缩的情况下，压缩任何东西所需要的比特数都大于香农第一定理所给出的值。可以说，任何压缩方法都是在这个圈子里兜兜转转，是跳不出来的。接下来，我详细说一下香农第一定理的数学化表述：
+
+The Relation between Nondeterministic and Deterministic Space Is Only Quadratic
+
+Reductions and Completeness
+
+
+Degrees of Difficulty
+• When is a problem more difficult than another?
+• B reduces to A if:
+– There is a transformation R which for every problem
+instance x of B yields a problem instance R(x) of A.a
+– The answer to “R(x) ∈ A?” is the same as the answer to “x ∈ B?”
+– R is easy to compute.
+• We say problem A is at least as hard asb problem B if B reduces to A.
+
+
+ This makes intuitive sense: If A is able to solve your
+problem B after only a little bit of work of
+R, then A
+must be at least as hard.
+– If A is easy to solve, it combined with
+R (which is also easy) would make B easy to solve, too.
+a
+– So if B is hard to solve, A must be hard (if not harder), too!
+
+
+• Our definition says in this case B is a special case of A.
+b
+• Hence A is harder.
+
