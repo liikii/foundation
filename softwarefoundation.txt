@@ -1032,3 +1032,73 @@ https://cs.stackexchange.com/users/9550/david-richerby
 好书
 structure and interpretation of computer programs pdf
 
+
+
+ These models of computation can’t solve every problem.
+
+
+what does this do?
+((lambda (x) (x x))
+(lambda (x) (x x)))
+
+
+
+(define (troll)
+(if (halt? troll)
+; if halts? says we halt, infinite-loop
+((lambda (x) (x x)) (lambda (x) (x x)))
+; if halts? says we don't, return a value
+#f))
+(halt? troll)
+
+
+
+Run it with a copy of itself.
+(define (fact inner-fact n)
+(if (= n 0)
+1
+(* n
+(inner-fact inner-fact (- n 1)))))
+
+
+
+I have never done anything “useful.”
+— Godfrey Harold Hardy (1877–1947),
+A Mathematician’s Apology (1940)
+
+
+What This Course Is All About
+Computation: What is computation?
+Computability: What can be computed?
+• There are problems that cannot be computed.
+• In fact, most problems cannot be computed.
+
+
+Recommended reading
+* Hopcroft, J.E., Motwani, R. & Ullman, J.D. (2001). Introduction to automata theory, languages, and computation. Addison-Wesley (2nd ed.).
+* Hindley, J.R. & Seldin, J.P. (2008). Lambda-calculus and combinators, an introduction. Cambridge University Press (2nd ed.).
+Cutland, N.J. (1980). Computability: an introduction to recursive function theory. Cambridge University Press.
+Davis, M.D., Sigal, R. & Weyuker, E.J. (1994). Computability, complexity and languages. Academic Press (2nd ed.).
+Sudkamp, T.A. (2005). Languages and machines. Addison-Wesley (3rd ed.).
+
+
+
+What This Course Is All About (concluded)
+Applications: Intractability results can be very useful.
+• Cryptography, digital currency, and security.
+• Approximations.
+• Pseudorandom number generation and
+derandomization.
+• Conjectures about nature.
+
+
+
+指数增长
+1 1 9 362,880
+2 2 10 3,628,800
+3 6 11 39,916,800
+4 24 12 479,001,600
+5 120 13 6,227,020,800
+6 720 14 87,178,291,200
+7 5040 15 1,307,674,368,000
+8 40320 16 20,922,789,888,000
