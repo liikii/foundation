@@ -1455,3 +1455,83 @@ a
 b
 • Hence A is harder.
 
+hamiltonian path
+
+hamiltonian path
+
+
+
+The required properties of a satisfactory formal system are that it be
+
+complete -- it must be possible either to prove or to disprove any proposition that can be expressed in the system.
+consistent -- it must not be possible to both prove and disprove a proposition in the system.
+
+
+
+Kurt Gödel explored the very notions of completeness and consistency. He invented a numbering scheme (Gödel numbers) that allowed him to express proofs as numbers (much as we might consider a computer program to be a very large binary number). He was able to prove the following result:
+
+If it is possible to prove, within a formal system, that the system is consistent, then the formal system is not, in fact, consistent.
+
+Or, equivalently,
+
+If a formal system is consistent, then it is impossible to prove (within the system) that it is consistent.
+
+
+
+
+We prefer to give up completeness rather than consistency, because in a consistent system any proposition can be proven.
+
+
+Gödel left open the possibility that we could somehow distinguish between the provable propositions and the unprovable ones. Ideally, we would like to have a mechanical (algorithmic) theorem-proving procedure. Alan Turing invented Turing machines in an attempt to solve this problem. With the Halting Problem, he showed that we cannot, in all cases, distinguish between soluable and insoluable problems.
+
+
+Other mathematicians, working with very different models of computation, ended up with very similar results. One of these was Alonzo Church, who invented recursive function theory.
+
+
+ recursive function theory
+
+
+
+ The textbook describes these functions as being over the natural numbers I={0,1,2,3,...}. A better way to look at recursive functions, though, is as pure symbol systems. Numbers are not used in the system; rather, we use the system to construct both numbers and arithmetical functions on numbers. In other words, it's a different numbering system, in the same way that Roman numerals are different. The correspondence goes like this:
+
+z(x)=0, s(z(x))=1, s(s(z(x)))=2, s(s(s(z(x))))=3, ...
+
+
+
+
+The zero function: z(x)=z(y) for all x,yis a member ofI. (This is our "zero"; it is written as a function so we don't have to introduce constants into the system.)
+The successor function: s(x). Informally, this means "x+1". Formally, it doesn't "return a value", it just sits there: the result of s(x) is s(x).
+For convenience, we make the following "abbreviations":
+0 is shorthand for z(x).
+1 is shorthand for s(z(x)).
+2 is shorthand for s(s(z(x))).
+3 is shorthand for s(s(s(z(x))).
+...and so on.
+The projector functions:
+p1(x) = x.
+p1(x, y) = x.
+p2(x, y) = y.
+
+
+
+
+Composition and Recursion
+
+The recursion must be guaranteed to terminate. To ensure this, the function must carry along an extra parameter that is "decremented" each time the function is called (s(x) is replaced by x), and halts the recursion when it reaches "zero" (z(x)). That is,
+f(..., z(x)) = ...
+
+f(..., s(x)) = ... f(..., x), ...
+
+The recursive function must appear only once in the definiens (right hand side of the definition). This restriction prevents various forms of "fancy" recursion.
+
+
+
+
+Primitive Recursion
+The second building operation is called primitive recursion. To those not used to it, it can be far from intuitive; to those who have practiced with it, it is fundamental and elegant.
+
+Function h is defined through functions f and g by primitive recursion when
+
+h(x,0) = f(x)
+h(x,s(y)) = g(x,h(x,y))
+
