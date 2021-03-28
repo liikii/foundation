@@ -1535,3 +1535,166 @@ Function h is defined through functions f and g by primitive recursion when
 h(x,0) = f(x)
 h(x,s(y)) = g(x,h(x,y))
 
+
+
+The key new feature here is the use of a previously defined function, add, in the definition of a new function. We skip the step of playing around with the pi functions to pick out the right parts, and go right to the simplified form.
+
+multiply(x, s(z(x))) = x
+multiply(x, s(y)) = add(x, multiply(x, y))
+
+
+
+阿克曼函数
+1920年代后期，数学家大卫·希尔伯特的学生Gabriel Sudan和威廉·阿克曼，当时正研究计算的基础。Sudan发明了一个递归却非原始递归的Sudan函数。1928年，阿克曼又独立想出了另一个递归却非原始递归的函数。[1]
+
+
+I've always used the two terms interchangeably, but your textbook makes a distinction, so here it is.
+
+Turing's thesis. Anything that is computable can be computed by a Turing machine. There does not and cannot exist a machine that can compute things a Turing machine cannot compute.
+
+Church's thesis. All the models of computation yet developed, and all those that may be developed in the future, are equivalent in power. We will not ever find a more powerful model.
+
+
+Complexity Theory
+Complexity theory concerns itself with two kinds of measures: time and space.
+
+
+Time complexity is a measure of how long a computation takes to execute. For a Turing machine, this could be measured as the number of moves required to perform a computation. For a digital computer, it could be measured as the number of machine cycles required for the computation.
+
+Space complexity is a measure of how much storage is required for a computation. For a Turing machine, the obvious measure is the number of tape squared used; for a digital computer, the number of bytes used.
+
+
+For any given input size, different inputs typically require different amounts of space and time. Hence we can discuss for either the average case or for the worst case. Usually we are interested in worst-case complexity because
+
+It may difficult or impossible to define an "average" case. For many problems, the notion of "average case" doesn't even make sense.
+ 
+It is usually much easier to compute worst-case complexity.
+ 
+
+
+Polynomial-Time Algorithms
+A polynomial-time algorithm is an algorithm whose execution time is either given by a polynomial on the size of the input, or can be bounded by such a polynomial. Problems that can be solved by a polynomial-time algorithm are called tractable problems.
+
+For example, most algorithms on arrays can use the array size, n, as the input size. To find the largest element in an array requires a single pass through the array, so the algorithm for doing this is O(n), or linear time.
+
+Sorting algorithms usually require either O(n log n) or O(n^2) time. Bubble sort takes linear time in the best case, but O(n2) time in the average and worst cases. Heapsort takes O(n log n) time in all cases. Quicksort takes O(n log n) time on average, but O(n2) time in the worst case.
+
+
+Probably all the programming tasks you are familiar with have polynomial-time solutions. This is not because all practical problems have polynomial-time solutions. Rather, it is because your courses and your day-to-day work have avoided problems for which there is no known practical solution.
+
+
+
+Integer Bin Packing
+Suppose we are given a set of n positive integers. Our task is to arrange these integers into two piles, or "bins", so that the sum of the integers in one pile is equal to the sum of the integers in the other pile.
+
+For example, given the integers
+
+(19, 23, 32, 42, 50, 62, 77, 88, 89, 105, 114, 123, 176)
+
+These numbers sum to 1000. Can they be divided into two bins, bin A and bin B, such that the sum of the integers in each bin is 500?
+
+
+
+
+Boolean Satisfiability
+Suppose you have n Boolean variables, named A, B, C, ..., and you have an expression in the propositional calculus (that is, you can use and, or, and not to form the expression.) Is there an assignment of truth values to the variables (e.g. A=true, B=true, C=false, ....) that will make the expression true?
+
+
+
+Additional NP Problems
+The following problems all have a polynomial-time solution on a nondeterministic machine, but an exponential-time solution on a deterministic machine. There are literally hundreds of additional examples.
+
+The travelling salesman problem
+A salesman, starting in Harrisburg, wants to visit every capital city in the 48 continental United States, returning to Harrisburg as his last stop. In what order should he visit the capital cities so as to minimize the total distance travelled?
+
+The Hamiltonian circuit problem
+Every capital city has direct air flights to at least some other capital cities. Our intrepid salesman wants to visit all 48 capitals, and return to his starting point, taking only direct air flights. Can he find a path that lets him do this?
+
+Equivalence of regular expressions
+Do two distinct regular expressions represent the same language?
+
+Intersection of finite automata
+Given a set of finite automata M1, M2, M3, ..., Mn, all over the same alphabet A, is there some string in A* that is accepted by all of these automata?
+
+Linear programming
+You have on hand X amount of butter, Y amount of flour, Z eggs, etc. You have cookie recipies that use varying amounts of these ingredients. Different kinds of cookies bring different prices. What mix of cookies should you make in order to maximize profits?
+
+This type of problem is sufficiently important that entire college courses are devoted to it, usually in the College of Business.
+
+
+
+
+图灵机对纸笔进行数学运算的过程。 打字机。 
+
+
+https://wiki.python.org/moin/TimeComplexity
+
+十进制变2进制  一直除
+
+
+表达式转前缀表达
+
+
+表达式转换  
+
+In mathematics and computer science, a class of objects or methods exhibits recursive behavior when it can be defined by two properties:
+
+A simple base case (or cases) — a terminating scenario that does not use recursion to produce an answer
+A recursive step — a set of rules that reduces all successive cases toward the base case.
+For example, the following is a recursive definition of a person's ancestor. One's ancestor is either:
+
+One's parent (base case), or
+One's parent's ancestor (recursive step).
+
+
+
+
+递归和stack一个东西， 不同表现。 
+调用栈。 
+
+
+递归和树是否等价。 
+
+
+
+虚拟货币运作之本质即是将每笔交易记载于区块中，形成一条链性结构，然而这样的「直线特性」也就成了最佳的溯源工具。因此与其说虚拟货币具有匿名性，不如说它只具有伪匿名性（pseudo-anonymity）。也就是虽然表面上具有匿名性，但实际上透过层层破解及科技溯源仍可找到实际使用者位置。
+
+
+树
+   画树干
+   左转画树干reset position
+   右转画树干reset pisition 
+   reset pisition
+
+
+
+
+sierpinski谢尔宾斯基三角形
+
+
+汉诺塔
+
+把塔  从三个柱子的最左边一个柱子， 移到最右边一个柱子上。 要求大盘不能在小盘上。 
+是个递归，把下一个和上一个移出来， 组成一个组，成上一个， 一直进行下去，到次最大， 然后把次最大的组成一个组， 
+1号  2号  3号
+把顶上的移到2号， 移最大到3， 
+把顶上移到1号， 移最大到3， 
+把顶上移到2号 移最大到3号， 
+
+
+
+
+兑最少货币。 
+贪心策略
+
+
+elbonina.
+找零兑换问题
+
+
+
+最短路径 是动态规划
+
+
+分阶段， 每一阶段的值， 下一阶段到上一阶段的值，一直递归下去，找到最优。  
+
