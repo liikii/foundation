@@ -1754,3 +1754,43 @@ s1={A}  s2 = {B1, B2} s3={C1, C2, C3, C4} s4={D1, D2}
 中国邮路问题  管梅谷重要结论
 
 
+图点和点连线。 不带箭头为边edge， 带箭头叫弧arc。 
+无向图， 有向图
+有向图去掉箭头为有向图的基础图
+G={V, E}, G={V, A}
+e(edge) = [u,v], 一条两点决定。 关联边。 
+点相邻。 两个端点重合称为环。 
+两点多个连接， 多重边。 
+无环， 无多重边的图， 简单图。 
+无环， 有多重边的图， 多重图。 
+
+次， 奇点， 偶点， 孤立点， 悬挂点， 悬挂边。 
+
+边续统假设不成立
+Mathematicians Measure Infinities, Find They're Equal
+
+The problem was first identified over a century ago. At the time, mathematicians knew that “the real numbers are bigger than the natural numbers, but not how much bigger. Is it the next biggest size, or is there a size in between?” said Maryanthe Malliaris of the University of Chicago, co-author of the new work along with Saharon Shelah of the Hebrew University of Jerusalem and Rutgers University.
+
+
+In their new work, Malliaris and Shelah resolve a related 70-year-old question about whether one infinity (call it p) is smaller than another infinity (call it t). They proved the two are in fact equal, much to the surprise of mathematicians.
+
+
+
+悬挂点   
+图论来源线性规划    
+如何分配资源
+如何有效利用资源 
+图论是运筹学的一部分。 
+
+次为1的点叫做悬挂点
+与悬挂点相关的边叫作悬挂边
+
+次数为0的点叫做孤立点。 
+
+
+所有顶点的次数是边数的2倍。 
+因为次数之和是偶数， 所以， 奇点的个数为偶数。 
+
+
+边各不相同为链。 
+封闭的链称为圈。
