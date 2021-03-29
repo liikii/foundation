@@ -1866,3 +1866,27 @@ spanning tree
 
 有向图最短路
 和dijkstra相似， 但不能逆标号
+
+各点之间最短路（中心问题）乡政府设点问题 重心问题  消防站问题
+最短路矩阵
+
+
+用于解决最短路径问题的算法被称做“最短路径算法”，有时被简称作“路径算法”。最常用的路径算法有：
+
+Dijkstra算法
+A*算法
+Bellman-Ford算法
+SPFA算法（Bellman-Ford算法的改进版本）
+Floyd-Warshall算法
+Johnson算法
+Bi-Direction BFS算法
+
+Abdul Bari 讲解floyd warshall
+4.2 All Pairs Shortest Path (Floyd-Warshall) - Dynamic Programming
+
+All Pairs Shortest Path (Floyd-Warshall) - Dynamic Programming
+多点最短路径动态规划
+A^(k)[i, j] = min{A^(k-1)[i,j], A^(k-1)[i,k]+A^(k-1)[k,j]}
+一遍遍优化矩阵。 递推完所有可能。 
+
+
