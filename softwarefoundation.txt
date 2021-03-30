@@ -1947,4 +1947,19 @@ determinant of a transform.
 
 对单位空间拉伸挤压的程度。
 the determinant 判别式。 
+
 In mathematics, the determinant is a scalar value that is a function of the entries of a square matrix.
+dy/dx  dy在dx上的变化率
+
+
+欧拉恒等式， 把指数和三解联系一起。 
+
+PengTitus
+
+
+那么问题来了，是否对于所有的 b，方程 Ax=b 都有解？
+从列图像上看，问题转化为“列向量的线性组合是否覆盖整个三维空间？”
+
+
+行空间  列空间
+
