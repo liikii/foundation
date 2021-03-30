@@ -1,3 +1,7 @@
+the purpose of computation is insight, not numbers. 
+richard hamming
+计算的目的不在于数字本身， 而在于洞察其背后的意义。 
+
 https://www.seas.harvard.edu/courses/cs152/2021sp/resources.html
 The Curry-Howard Isomorphism
 Resources
@@ -1930,3 +1934,17 @@ it is my experience that proofs involving matrix can be shortened by 50% if one 
 用矩阵描述线性变换。 
 
 
+连续变换
+composition of transform.
+f(g(x))
+
+good explanation > symbolic proof.
+
+
+determinant of a transform.
+
+变换对空间拉伸挤压的程度。 determinant.
+
+对单位空间拉伸挤压的程度。
+the determinant 判别式。 
+In mathematics, the determinant is a scalar value that is a function of the entries of a square matrix.
