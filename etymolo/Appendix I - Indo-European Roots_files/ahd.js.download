@@ -1,0 +1,14 @@
+function share2facebook() {
+    var url = 'http://www.facebook.com/sharer.php?';
+    //alert("doc title=" + document.title);
+    url = url + 'u=' + document.location + '&t=' + document.title;
+    document.location = url;
+    return true;
+}
+
+
+function share2twitter() {
+    var url = "http://twitthis.com/twit?url=" + document.location;
+    document.location=url;
+    return true;
+}
