@@ -1963,3 +1963,74 @@ PengTitus
 
 行空间  列空间
 
+行列式  区域面积的缩放比例。 
+
+
+三维空间是体积的缩放
+
+平行六面体 parallelepeped
+
+
+
+逆矩阵相等于逆变换。 
+
+
+
+变换的rank 线性空间维度。 
+秩变换后空间的维度。 
+
+span of columns 
+列张成的空间。  column space. 
+full rank.
+
+零空间的概念有助于我们理解所有可能的解的集合是什么样的。 
+
+
+Physical meaning of the null space of a matrix：：：：
+Let's suppose that the matrix A represents a physical system. As an example, let's assume our system is a rocket, and A is a matrix representing the directions we can go based on our thrusters. So what do the null space and the column space represent?
+
+Well let's suppose we have a direction that we're interested in. Is it in our column space? If so, then we can move in that direction. The column space is the set of directions that we can achieve based on our thrusters. Let's suppose that we have three thrusters equally spaced around our rocket. If they're all perfectly functional then we can move in any direction. In this case our column space is the entire range. But what happens when a thruster breaks? Now we've only got two thrusters. Our linear system will have changed (the matrix A will be different), and our column space will be reduced.
+
+What's the null space? The null space are the set of thruster intructions that completely waste fuel. They're the set of instructions where our thrusters will thrust, but the direction will not be changed at all.
+
+Another example: Perhaps A can represent a rate of return on investments. The range are all the rates of return that are achievable. The null space are all the investments that can be made that wouldn't change the rate of return at all.
+
+Another example: room illumination. The range of A represents the area of the room that can be illuminated. The null space of A represents the power we can apply to lamps that don't change the illumination in the room at all.
+-------------------------------------------
+-------------------------------------------
+-------------------------------------------
+
+
+
+在这个小测验里， 我让你们求一个2X3矩阵的行列式，让我感到非常可笑的是， 你们当中竟然有人尝试去做。 
+
+
+
+
+非方阵  Nonsquare matrix 
+
+
+非方阵注意列空间维数与输入空间相等
+
+
+3X2矩阵3行2竖矩阵， 他是把二维映射到三维。 
+
+2X3矩阵， 是把3维映射到2维。 
+等距分布的点。 r相等。 
+
+
+矩阵乘积和线性方程组的意义。 
+
+
+点积 dot products.
+点积与分向相关， 力的方向
+等距分布的点 降维变换后还是等距的
+
+
+对称 
+叉积  通过两个三维生成一个新的三维。 
+叉积指向负方向。 
+
+英文学习方法， 你要说出来。 
+多说多听
+
