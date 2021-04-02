@@ -2061,6 +2061,104 @@ eigenvectors and eigenvalues
 车辆流， 乘客流， 物资流， 资金流。 信息流。 
 
 可行流
+ford fulkerson方法。 
+最小隔 最大流
+增广链是关键。 
+
+找出所有的增广链。 
+Ford-Fulkerson Algorithm 
+The following is simple idea of Ford-Fulkerson algorithm:
+1) Start with initial flow as 0.
+2) While there is a augmenting path from source to sink. 
+           Add this path-flow to flow.
+3) Return flow.
 
 
 
+
+flow = 0
+for each edge (u, v) in G:
+    flow(u, v) = 0
+while there is a path, p, from s -> t in residual network G_f:
+    residual_capacity(p) = min(residual_capacity(u, v) : for (u, v) in p)
+    flow = flow + residual_capacity(p)
+    for each edge (u, v) in p:
+        if (u, v) is a forward edge:
+            flow(u, v) = flow(u, v) + residual_capacity(p)
+        else:
+            flow(u, v) = flow(u, v) - residual_capacity(p)
+return flow
+
+Augmenting paths
+An augmenting path is a path (u1, u2, ..., uk) in the residual network, where u1 = s, uk = t, and cf (ui, ui + 1) > 0. A network is at maximum flow if and only if there is no augmenting path in the residual network Gf.
+youtube youtube
+Abdul Bari
+航空公司的最大流量
+也是用增广链方法
+
+
+
+最小费用流问题
+
+最小费用， 先在费用流找最短路， 然后在此路线相对的容量流， 找最大流， 不够再找另一条最小费用流， 然后在此路线相对的容量流， 找最大流， 
+Minimum-cost flow problem (最小成本最大流問題)
+Minimum cost flow problem
+MCF问题
+解法：最短路和最大流算法相结合。 
+最短路只是起辅助作用。 增广链才是主要。 
+
+还是动态规划的思想，分阶段优化，一遍遍优化。 
+找出最短路， 找出对应增广链。 
+然后那个流量满了应该不能做最短路了， 
+最短路辅助图： 饱和弧只加反向弧， 零流弧只加正向弧， 其它弧是双向弧）
+（饱和弧只加反向弧， 零流弧只加正向弧， 其它弧是双向弧）
+为什么饱和弧只加反向（收费）弧：因为饱和了， 只能减流量， 不能加流量了。 
+为什么零流弧只加正向弧： 零流弧， 没有流量， 没有可减的， 只能加流量。 
+为什么其它弧是双向弧：因为流量也可增加也可减少， 所以得把两边的费用整好。 
+费用最短路，只是为了辅助增广链。 
+
+
+
+algothemn lecture.
+#	Lecture Notes	Chapter(s)	In-class Demos
+1	Introduction	1-5	 
+2	Elementary sorts	6	Sorting applets
+3	Mergesort, Quicksort	7, 8	Partitioning   Quicksort applets  
+Merging   Mergesort applets
+4	Priority queues	9	  Sort summary
+5	Symbol tables	12	Growing Tree Tool
+6	Balanced trees	13	Growing Tree Tool
+7	Hashing	14	 
+8	Radix sorts	10	3-way partitioning   C code
+9	Trie searching	15	C code
+10	String searching	19*	KMP demo   C code
+11	Midterm
+12	Pattern matching	20*, 21*	Deque simulation of NFSA
+13	Data compression	22*	Huffman demo   LZW demo
+14	Geometric algorithms	24*, 25*	Convex hull applet   Applications
+15	Geometric search	26*, 27*	Voronoi applet
+16	Undirected graphs	17, 18	DFS   BFS   Euler   Maze   C code
+17	Minimum spanning tree	20	Graph applet   Applications
+18	Directed graphs	19	DFS   Topological sort   C code
+19	Shortest paths	21	Dijkstra demo
+20	Max flow, min cut	22	Augmenting path demo   C code
+21	Minimum cost flow	22	 
+22	Linear programming	article	 
+23	Reductions	-	 
+24	All questions answered	-	 
+
+
+
+
+
+中南大学运筹学
+中南大学运筹学
+夏伟怀
+符卓中南大学 - 教授
+
+中南大学运筹学
+中南大学运筹学
+夏伟怀
+符卓中南大学 - 教授
+
+决策者如何从多个决策上选出效益最大的（或损失最小的）决策。 
