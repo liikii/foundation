@@ -2241,3 +2241,312 @@ MM1模型
 
 
 
+顺序查找：for 循环
+二分查找法，每次可能组的中间。 binarysearch 分而治之
+binerysearch 适合递归算法。 
+冒泡排序：不断两两对比交换， 大的往后放。 找出最大。 找出次大。 
+
+选择排序： selection sort.　不每次交换位置， 只是通过对比找出最大的坐标。 最后再交换。 
+插入排序：接牌一样。 手上的总是排好序。 最好每一次接的都比手上的大。 
+shell sort 谢尔排序 
+不需要大量的辅助空间，和归并排序一样容易实现。希尔排序是基于插入排序的一种算法， 在此算法基础之上增加了一个新的特性，提高了效率。希尔排序的时间的时间复杂度为O( )，希尔排序时间复杂度的下界是n*log2n。希尔排序没有快速排序算法快 O(n(logn))，因此中等大小规模表现良好，对规模非常大的数据排序不是最优选择。但是比O( )复杂度的算法快得多。并且希尔排序非常容易实现，算法代码短而简单。 此外，希尔算法在最坏的情况下和平均情况下执行效率相差不是很多，与此同时快速排序在最坏的情况下执行的效率会非常差。专家们提倡，几乎任何排序工作在开始时都可以用希尔排序，若在实际使用中证明它不够快，再改成快速排序这样更高级的排序算法. 本质上讲，希尔排序算法是直接插入排序算法的一种改进，减少了其复制的次数，速度要快很多。 原因是，当n值很大时数据项每一趟排序需要移动的个数很少，但数据项的距离很长。当n值减小时每一趟需要移动的数据增多，此时已经接近于它们排序后的最终位置。 正是这两种情况的结合才使希尔排序效率比插入排序高很多。Shell算法的性能与所选取的分组长度序列有很大关系。只对特定的待排序记录序列，可以准确地估算关键词的比较次数和对象移动次数。想要弄清关键词比较次数和记录移动次数与增量选择之间的关系，并给出完整的数学分析，今仍然是数学难题。
+
+
+先分成大组， 进行插入排序， 
+然后再分成小组， 
+主要是想减少后边的交换。 
+
+
+有点动态规划的意思 。 
+
+
+Conceptually, a merge sort works as follows:
+
+Divide the unsorted list into n sublists, each containing one element (a list of one element is considered sorted).
+Repeatedly merge sublists to produce new sorted sublists until there is only one sublist remaining. This will be the sorted list.
+
+
+
+merge sort: 相比于快速排序和堆排序，归并算法的一个显著优点在于其稳定性，主要缺点在于需要线性的额外空间。
+
+快速排序 
+ function quicksort(q)
+ {
+     var list less, pivotList, greater
+     if length(q) ≤ 1 
+         return q
+     else 
+     {
+         select a pivot value pivot from q
+         for each x in q except the pivot element
+         {
+             if x < pivot then add x to less
+             if x ≥ pivot then add x to greater
+         }
+         add pivot to pivotList
+         return concatenate(quicksort(less), pivotList, quicksort(greater))
+         }
+ }
+
+
+上面简单版本的缺点是，它需要{\displaystyle \Omega (n)}{\displaystyle \Omega (n)}的额外存储空间，也就跟归并排序一样不好。额外需要的存储器空间配置，在实际上的实现，也会极度影响速度和缓存的性能。有一个比较复杂使用原地（in-place）分割算法的版本，且在好的基准选择上，平均可以达到{\displaystyle O(\log n)}{\displaystyle O(\log n)}空间的使用复杂度。
+
+ function partition(a, left, right, pivotIndex)
+ {
+     pivotValue = a[pivotIndex]
+     swap(a[pivotIndex], a[right]) // 把pivot移到結尾
+     storeIndex = left
+     for i from left to right-1
+     {
+         if a[i] <= pivotValue
+          {
+             swap(a[storeIndex], a[i])
+             storeIndex = storeIndex + 1
+          }
+     }
+     swap(a[right], a[storeIndex]) // 把pivot移到它最後的地方
+     return storeIndex
+ }
+
+
+ bublesort insertsort mergesort quicksort
+ 排序总体是为了减少重复的比较。 和移动。 
+ mergesort神似Insertsort. 
+ mergesort可以在概率上减少对比和移动。 但mergesort增加了空间要求。 
+ quicksort比mergesort在概率上减少对比。 移动还没思考清楚。 
+
+
+ 思考每个算法都有什么缺陷 思考新算法是为了解决什么问题。 
+ 通过类比  比较   学习。 
+
+
+
+ hashlib 
+ sha256
+线性探测  linear probing
+
+线性探测法的一个缺点是有聚集性。 
+散列冲突
+
+
+
+
+o /bin Contains ready-to-run programs (also known as an executables), including most of the basic Unix 
+commands such as ls and cp. Most of the programs in /bin are in binary format, having been created by a 
+C compiler, but some are shell scripts in modern systems.
+o /dev Contains device files. You’ll learn more about these in Chapter 3.
+o /etc This core system configuration directory (pronounced EHT-see) contains the user password, boot, 
+device, networking, and other setup files. Many items in /etc are specific to the machine’s hardware. For 
+example, the /etc/X11 directory contains graphics card and window system configurations.
+o /home Holds personal directories for regular users. Most Unix installations conform to this standard.
+o /lib An abbreviation for library, this directory holds library files containing code that executables can use. 
+There are two types of libraries: static and shared. The /lib directory should contain only shared libraries, 
+but other lib directories, such as /usr/lib, contain both varieties as well as other auxiliary files. (We’ll 
+discuss shared libraries in more detail in Chapter 15.)
+o /proc Provides system statistics through a browsable directory-and-file interface. Much of the /proc
+subdirectory structure on Linux is unique, but many other Unix variants have similar features. The /proc
+directory contains information about currently running processes as well as some kernel parameters.
+o /sys This directory is similar to /proc in that it provides a device and system interface. You’ll read more 
+about /sys in Chapter 3.
+o /sbin The place for system executables. Programs in /sbin directories relate to system management, so 
+regular users usually do not have /sbin components in their command paths. Many of the utilities found 
+here will not work if you’re not running them as root.
+
+
+o /tmp A storage area for smaller, temporary files that you don’t care much about. Any user may read to and 
+write from /tmp, but the user may not have permission to access another user’s files there. Many programs 
+use this directory as a workspace. If something is extremely important, don’t put it in /tmp because most 
+distributions clear /tmp when the machine boots and some even remove its old files periodically. Also, don’t 
+let /tmp fill up with garbage because its space is usually shared with something critical (like the rest of /, for 
+example).
+o /usr Although pronounced “user,” this subdirectory has no user files. Instead, it contains a large directory 
+hierarchy, including the bulk of the Linux system. Many of the directory names in /usr are the same as those 
+in the root directory (like /usr/bin and /usr/lib), and they hold the same type of files. (The reason that the 
+root directory does not contain the complete system is primarily historic—in the past, it was to keep space 
+requirements low for the root.)
+o /var The variable subdirectory, where programs record runtime information. System logging, user tracking, 
+caches, and other files that system programs create and manage are here. (You’ll notice a /var/tmp directory 
+here, but the system doesn’t wipe it on boot.)
+
+
+
+2.19.1 Other Root Subdirectories
+There are a few other interesting subdirectories in the root directory:
+o /boot Contains kernel boot loader files. These files pertain only to the very first stage of the Linux startup 
+procedure; you won’t find information about how Linux starts up its services in this directory. See 
+Chapter 5 for more about this.
+o /media A base attachment point for removable media such as flash drives that is found in many 
+distributions.
+o /opt This may contain additional third-party software. Many systems don’t use /opt.
+2.19.2 The /usr Directory
+The /usr directory may look relatively clean at first glance, but a quick look at /usr/bin and /usr/lib reveals 
+that there’s a lot here; /usr is where most of the user-space programs and data reside. In addition to /usr/bin, 
+/usr/sbin, and /usr/lib, /usr contains the following:
+o /include Holds header files used by the C compiler.
+o /info Contains GNU info manuals (see 2.13 Getting Online Help).
+o /local Is where administrators can install their own software. Its structure should look like that of / and /usr.
+o /man Contains manual pages.
+o /share Contains files that should work on other kinds of Unix machines with no loss of functionality. In the 
+past, networks of machines would share this directory, but a true /share directory is becoming rare because 
+there are no space issues on modern disks. Maintaining a /share directory is often just a pain. In any case, 
+/man, /info, and some other subdirectories are often found here.
+
+
+
+
+
+2.20.1 sudo
+Most larger distributions use a package called sudo to allow administrators to run commands as root when 
+they are logged in as themselves. For example, in Chapter 7, you’ll learn about using vipw to edit the 
+/etc/passwd file. You could do it like this:
+$ sudo vipw
+When you run this command, sudo logs this action with the syslog service under the local2 facility. You’ll 
+also learn more about system logs in Chapter 7.
+2.20.2 /etc/sudoers
+Of course, the system doesn’t let just any user run commands as the superuser; you must configure the 
+privileged users in your /etc/sudoers file. The sudo package has many options (that you’ll probably never 
+use), which makes the syntax in /etc/sudoers somewhat complicated. For example, this file gives user1 and 
+user2 the power to run any command as root without having to enter a password:
+User_Alias ADMINS = user1, user2
+ADMINS ALL = NOPASSWD: ALL
+root ALL=(ALL) ALL
+The first line defines an ADMINS user alias with the two users, and the second line grants the privileges. The 
+ALL = NOPASSWD: ALL part means that the users in the ADMINS alias can use sudo to execute commands 
+as root. The second ALL means “any command.” The first ALL means “any host.” (If you have more than one 
+machine, you can set different kinds of access for each machine or group of machines, but we won’t cover 
+that feature.)
+The root ALL=(ALL) ALL simply means that the superuser may also use sudo to run any command on 
+any host. The extra (ALL) means that the superuser may also run commands as any other user. You can 
+extend this privilege to the ADMINS users by adding (ALL) to the /etc/sudoers line, as shown at ➊:
+ADMINS ALL = (ALL)➊ NOPASSWD: ALL
+NOTE
+Use the visudo command to edit /etc/sudoers. This command checks for file syntax errors after 
+you save the file.
+www.it-ebooks.infoThat’s it for sudo for now. If you need to use its more advanced features, see the sudoers(5) and sudo(8) 
+manual pages. (The actual mechanics of user switching are covered in Chapter 7.)
+
+
+
+
+
+s does any command with redirected output, this sends some stuff from the standard output to a file. However, 
+the file is /dev/null, a device, and the kernel decides what to do with any data written to this device. In the case 
+of /dev/null, the kernel simply ignores the input and throws away the data.
+To identify a device and view its permissions, use ls -l:
+Example 3-1. Device files
+$ ls -l
+brw-rw---- 1 root disk 8, 1 Sep 6 08:37 sda1
+crw-rw-rw- 1 root root 1, 3 Sep 6 08:37 null
+prw-r--r-- 1 root root 0 Mar 3 19:17 fdata
+srw-rw-rw- 1 root root 0 Dec 18 07:43 log
+Note the first character of each line (the first character of the file’s mode) in Example 3-1. If this character is 
+b, c, p, or s, the file is a device. These letters stand for block, character, pipe, and socket, respectively, as 
+described in more detail below.
+
+
+
+
+
+ dd and Devices
+The program dd is extremely useful when working with block and character devices. This program’s sole 
+function is to read from an input file or stream and write to an output file or stream, possibly doing some 
+encoding conversion on the way.
+dd copies data in blocks of a fixed size. Here’s how to use dd with a character device and some common 
+options:
+$ dd if=/dev/zero of=new_file bs=1024 count=1
+As you can see, the dd option format differs from the option formats of most other Unix commands; it’s based 
+on an old IBM Job Control Language (JCL) style. Rather than use the dash (-) character to signal an option, 
+you name an option and set its value to something with the equals (=) sign. The preceding example copies a 
+single 1024-byte block from /dev/zero (a continuous stream of zero bytes) to new_file.
+These are the important dd options:
+o if=file The input file. The default is the standard input.
+o of=file The output file. The default is the standard output.
+o bs=size The block size. dd reads and writes this many bytes of data at a time. To abbreviate large chunks 
+of data, you can use b and k to signify 512 and 1024 bytes, respectively. Therefore, the example above 
+could read bs=1k instead of bs=1024.
+
+
+# chvt 1
+
+
+udev
+
+The rules files are in the /lib/udev/rules.d and /etc/udev/rules.d directories. T
+
+
+udevadm monitor --kernel --subsystem-match=scsi
+For more on udevadm, see the udevadm(8) manual page.
+There’s much more to udev. For example, the D-Bus system for interprocess communication has a daemon 
+called udisks-daemon that listens to the outgoing udevd events in order to automatically attach disks and 
+to further notify other desktop software that a new di
+
+
+There are many kinds of partition tables. The traditional table is the one found inside the Master Boot Record 
+(MBR). A newer standard starting to gain traction is the Globally Unique Identifier Partition Table (GPT).
+Here is an overview of the many Linux partitioning tools available:
+o parted A text-based tool that supports both MBR and GPT.
+o gparted A graphical version of parted.
+o fdisk The traditional text-based Linux disk partitioning tool. fdisk does not support GPT.
+o gdisk A version of fdisk that supports GPT but not MBR.
+Because it supports both MBR and GPT, we’ll use parted in this book. However, many people prefer the 
+fdisk interface, and there’s nothing wrong with that.
+
+
+
+
+fsck /dev/sdb1
+www.it-ebooks.infoWARNING
+You should never use fsck on a mounted filesystem because the kernel may alter the disk data 
+as you run the check, causing runtime mismatches that can crash your system and corrupt files. 
+There is only one exception: If you mount the root partition read-only in single-user mode, you may 
+use fsck on it.
+
+
+cat /proc/cmdline
+BOOT_IMAGE=/boot/vmlinuz-3.2.0-67-generic-pae root=UUID=70ccd6e7-6ae6-
+44f6-
+ 812c-51aab8036d29 ro quiet splash vt.handoff=7
+The parameters are either simple one-word flags, such as ro and quiet, or key=value pairs, such as 
+vt.handoff=7. Many of the parameters are unimportant, such as the splash flag for displaying a splash 
+screen, but one that is critical is the root parameter. This is the location of the root filesystem; without it, the 
+kernel cannot find init and therefore cannot perform the user space start.
+The root filesystem can be specified as a device file, such as in this example:
+root=/dev/sda1
+However, on most modern desktop systems, a UUID is more common (see 4.2.4 Filesystem UUID):
+root=UUID=70ccd6e7-6ae6-44f6-812c-51aab8036d29
+The ro parameter is normal; it instructs the kernel to mount the root filesys
+
+
+
+
+ UEFI Boot
+PC manufacturers and software companies realized that the traditional PC BIOS is severely limited, so they 
+decided to develop a replacement called Extensible Firmware Interface (EFI). EFI took a while to catch on 
+for most PCs, but now it’s fairly common. The current standard is Unified EFI (UEFI), which includes features 
+such as a built-in shell and the ability to read partition tables and navigate filesystems. The GPT partitioning 
+scheme is part of the UEFI standard.
+
+
+User space starts in roughly this order:
+1. init
+2. Essential low-level services such as udevd and syslogd
+3. Network configuration
+4. Mid- and high-level services (cron, printing, and so on)
+5. Login prompts, GUIs, and other high-level applications
+
+
+There are three major implementations of init in Linux distributions:
+o System V init. A traditional sequenced init (Sys V, usually pronounced “sys-five”). Red Hat Enterprise 
+Linux and several other distributions use this version.
+o systemd. The emerging standard for init. Many distributions have moved to systemd, and most that have 
+not yet done so are planning to move to it.
+o Upstart. The init on Ubuntu installations. However, as of this writing, Ubuntu has also planned to migrate 
+to systemd.
+
+
+A multiuser system must provide basic support for user security in terms of identification and authentication. 
+The identification portion of security answers the question of who users are. The authentication piece asks 
+users to prove that they are who they say they are. Finally, authorization is used to define and limit what users 
+are allowed to do.
+
+
