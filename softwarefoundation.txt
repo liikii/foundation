@@ -2812,3 +2812,268 @@ Programmed. The instructions INTO, INT 3, INT n, and BOUND can trigger exception
 This chapter explains the features that the 80386 offers for controlling and respondin
 
 
+
+
+program as tree.
+--------
+#lang plai-typed
+(define-type ArithC
+[numC (n : number)]
+[plusC (l : ArithC) (r : ArithC)]
+[multC (l : ArithC) (r : ArithC)])
+
+
+(define (parse [s : s-expression]) : ArithC
+(cond
+[(s-exp-number? s) (numC (s-exp->number s))]
+[(s-exp-list? s)
+(let ([sl (s-exp->list s)])
+(case (s-exp->symbol (first sl))
+[(+) (plusC (parse (second sl)) (parse (third sl)))]
+[(*) (multC (parse (second sl)) (parse (third sl)))]
+[else (error 'parse "invalid list input")]))]
+[else (error 'parse "invalid input")]))
+
+(parse '(+ 1 3))
+
+
+--------
+
+
+We might want to display a program in an attractive way
+(“pretty-print”), convert into code in some other format (“compilation”), ask whether
+it obeys certain properties (“verification”), and so on. For now, we’re going to focus
+on asking what value it corresponds to (“evaluation”—the reduction of programs to
+values).
+
+
+your first interpreter
+-----------------------------------------------------------
+#lang plai-typed
+(define-type ArithC
+[numC (n : number)]
+[plusC (l : ArithC) (r : ArithC)]
+[multC (l : ArithC) (r : ArithC)])
+
+
+(define (parse [s : s-expression]) : ArithC
+(cond
+[(s-exp-number? s) (numC (s-exp->number s))]
+[(s-exp-list? s)
+(let ([sl (s-exp->list s)])
+(case (s-exp->symbol (first sl))
+[(+) (plusC (parse (second sl)) (parse (third sl)))]
+[(*) (multC (parse (second sl)) (parse (third sl)))]
+[else (error 'parse "invalid list input")]))]
+[else (error 'parse "invalid input")]))
+
+(parse '(+ 1 3))
+
+(define (interp [a : ArithC]) : number
+(type-case ArithC a
+[numC (n) n]
+[plusC (l r) (+ (interp l) (interp r))]
+[multC (l r) (* (interp l) (interp r))]))
+
+
+(define a (parse '(+ 1 3)))
+(interp a)
+
+-----------------------------------------------------------
+
+
+. Semantics is the mapping of syntax (e.g.,
++) to meaning (e.g., some or all of the above)
+
+
+
+
+#lang plai-typed
+
+(require (typed-in racket/base (raise-user-error : (string -> void))))
+
+(define-type FieldP
+  [fieldP (name : string) (value : ExprP)])
+
+(define-type LHS
+  [BracketLHS (obj : ExprP) (field : ExprP)]
+  [DotLHS (obj : ExprP) (field : symbol)]
+  [IdLHS (id : symbol)])
+
+;; ExprPs are ParselTongue's toplevel:
+(define-type ExprP
+  [ObjectP (fields : (listof FieldP))]
+  [DotP (obj : ExprP) (field : symbol)]
+  [BracketP (obj : ExprP) (field : ExprP)]
+  [DotMethodP (obj : ExprP) (field : symbol) (args : (listof ExprP))]
+  [BrackMethodP (obj : ExprP) (field : ExprP) (args : (listof ExprP))]
+
+  [FuncP (args : (listof symbol)) (body : ExprP)]
+  [AppP (func : ExprP) (args : (listof ExprP))]
+  [DefvarP (id : symbol) (bind : ExprP) (body : ExprP)]
+  [DeffunP (name : symbol) (ids : (listof symbol)) (funbody : ExprP) (body : ExprP)]
+  [IdP (name : symbol)]
+
+  [WhileP (test : ExprP) (body : ExprP)]
+  [ForP (init : ExprP) (test : ExprP) (update : ExprP) (body : ExprP)]
+
+  [AssignP (lhs : LHS) (value : ExprP)]
+
+  [SeqP (es : (listof ExprP))]
+  [IfP (cond : ExprP) (then : ExprP) (else : ExprP)]
+
+  [NumP (n : number)]
+  [StrP (s : string)]
+  [TrueP]
+  [FalseP]
+
+; An op is one of '+ '- '== 'print
+  [PrimP (op : symbol) (args : (listof ExprP))]
+; A PrimAssign op is one of '+ '-
+  [PrimAssignP (op : symbol) (lhs : LHS) (value : ExprP)]
+
+  [PreIncP (lhs : symbol)]
+  [PostIncP (lhs : symbol)]
+  [PreDecP (lhs : symbol)]
+  [PostDecP (lhs : symbol)])
+
+(define-type FieldC
+  [fieldC (name : string) (value : ExprC)])
+
+(define-type ExprC
+
+  [ObjectC (fields : (listof FieldC))]
+  [GetFieldC (obj : ExprC) (field : ExprC)]
+  [SetFieldC (obj : ExprC) (field : ExprC) (value : ExprC)]
+
+  [FuncC (args : (listof symbol)) (body : ExprC)]
+  [AppC (func : ExprC) (args : (listof ExprC))]
+  [LetC (id : symbol) (bind : ExprC) (body : ExprC)]
+  [IdC (id : symbol)]
+  [Set!C (id : symbol) (value : ExprC)]
+
+  [IfC (cond : ExprC) (then : ExprC) (else : ExprC)]
+  [SeqC (e1 : ExprC) (e2 : ExprC)]
+
+  [NumC (n : number)]
+  [StrC (s : string)]
+  [TrueC]
+  [FalseC]
+
+  [ErrorC (expr : ExprC)]
+
+; The core operations are 'string+ 'num+ 'num- '== '< '> 'print 'tagof
+  [Prim1C (op : symbol) (arg : ExprC)]
+  [Prim2C (op : symbol) (arg1 : ExprC) (arg2 : ExprC)])
+
+(define-type-alias Env (listof Binding))
+(define-type Binding
+  [bind (name : symbol) (value : Location)])
+
+(define-type-alias Location number)
+
+(define-type FieldV
+  [fieldV (name : string) (value : ValueC)])
+
+(define-type ValueC
+  [ObjectV (fields : (listof FieldV))]
+  [ClosureV (args : (listof symbol)) (body : ExprC) (env : Env)]
+  [NumV (n : number)]
+  [StrV (s : string)]
+  [TrueV]
+  [FalseV])
+
+(define (pretty-value (v : ValueC)) : string
+  (type-case ValueC v
+    [ObjectV (fs) "object"]
+    [ClosureV (a b e) "function"]
+    [NumV (n) (to-string n)]
+    [StrV (s) s]
+    [TrueV () "true"]
+    [FalseV () "false"]))
+
+(define (interp-error str)
+  (begin
+    (raise-user-error str)
+    (error 'interp str)))
+
+
+
+
+
+
+#lang plai-typed
+
+(define-type FieldP
+  [fieldP (name : string) (value : ExprP)])
+
+(define-type LHS
+  [BracketLHS (obj : ExprP) (field : ExprP)]
+  [DotLHS (obj : ExprP) (field : symbol)]
+  [IdLHS (id : symbol)])
+
+;; ExprPs are ParselTongue's toplevel:
+(define-type ExprP
+  [ObjectP (fields : (listof FieldP))]
+  [DotP (obj : ExprP) (field : symbol)]
+  [BracketP (obj : ExprP) (field : ExprP)]
+  [DotMethodP (obj : ExprP) (field : symbol) (args : (listof ExprP))]
+  [BrackMethodP (obj : ExprP) (field : ExprP) (args : (listof ExprP))]
+
+  [FuncP (args : (listof symbol)) (body : ExprP)]
+  [AppP (func : ExprP) (args : (listof ExprP))]
+  [DefvarP (id : symbol) (bind : ExprP) (body : ExprP)]
+  [DeffunP (name : symbol) (ids : (listof symbol)) (funbody : ExprP) (body : ExprP)]
+  [IdP (name : symbol)]
+
+  [WhileP (test : ExprP) (body : ExprP)]
+  [ForP (init : ExprP) (test : ExprP) (update : ExprP) (body : ExprP)]
+
+  [AssignP (lhs : LHS) (value : ExprP)]
+
+  [SeqP (es : (listof ExprP))]
+  [IfP (cond : ExprP) (then : ExprP) (else : ExprP)]
+
+  [NumP (n : number)]
+  [StrP (s : string)]
+  [TrueP]
+  [FalseP]
+
+; An op is one of '+ '- '== 'print '< '>
+  [PrimP (op : symbol) (args : (listof ExprP))]
+; A PrimAssign op is one of '+ '-
+  [PrimAssignP (op : symbol) (lhs : LHS) (value : ExprP)]
+
+  [PreIncP (lhs : symbol)]
+  [PostIncP (lhs : symbol)]
+  [PreDecP (lhs : symbol)]
+  [PostDecP (lhs : symbol)])
+
+(define-type FieldC
+  [fieldC (name : string) (value : ExprC)])
+
+(define-type ExprC
+
+  [ObjectC (fields : (listof FieldC))]
+  [GetFieldC (obj : ExprC) (field : ExprC)]
+  [SetFieldC (obj : ExprC) (field : ExprC) (value : ExprC)]
+
+  [FuncC (args : (listof symbol)) (body : ExprC)]
+  [AppC (func : ExprC) (args : (listof ExprC))]
+  [LetC (id : symbol) (bind : ExprC) (body : ExprC)]
+  [IdC (id : symbol)]
+  [Set!C (id : symbol) (value : ExprC)]
+
+  [IfC (cond : ExprC) (then : ExprC) (else : ExprC)]
+  [SeqC (e1 : ExprC) (e2 : ExprC)]
+
+  [NumC (n : number)]
+  [StrC (s : string)]
+  [TrueC]
+  [FalseC]
+
+  [ErrorC (expr : ExprC)]
+
+; The core operations are 'string+ 'num+ 'num- '== '< '> 'print 'tagof
+  [Prim1C (op : symbol) (arg : ExprC)]
+  [Prim2C (op : symbol) (arg1 : ExprC) (arg2 : ExprC)])
