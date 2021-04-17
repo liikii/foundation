@@ -2550,3 +2550,265 @@ users to prove that they are who they say they are. Finally, authorization is us
 are allowed to do.
 
 
+
+
+
+Control:
+Most systems have at least 4 control bus connections (active low).
+MRDC (Memory ReaD Control), MWRC , IORC (I/O Read Control), IOWC
+
+
+Original bus of the IBM PC.
+Includes the following signals (not a complete list)
+the processor clock
+power and ground
+20 address lines
+8 data lines
+memory read, memory write, IO read, IO write lines (set by processor)
+
+
+Control and Status Registers
+Each I/O device is connected to the I/O bus through a controller. A simple controller will have at least 3 addresses (ports) on the bus, each corresponding to a register in the controller
+a data register (either readable or writable, depending on whether it is an input or output device)
+a control register (writable, for controlling device operation)
+a status register (readable, for determining device status -- in particular, whether it is ready to receive or provide data)
+More complex devices (e.g., disks) will have multiple control and status registers
+
+
+The Memory Manager portion of the OS:
+Tracks memory usage.
+Allocates/Deallocates memory.
+Implements virtual memory.
+
+
+Simple Memory Management：
+Advantage: it's simple to implement.
+However, it utilizes memory poorly. Also, in time sharing systems, queueing up jobs in this manner leads to unacceptable response time for user processes.
+
+
+分段  分页
+Two concepts:
+Segmentation: Allows the OS to "share" code and enforce meaningful constraints on the memory used by a process, e.g. no execution of data.
+Paging: Allows the OS to efficiently manage physical memory, and makes it easier to implement virtual memory.
+
+
+
+Size :
+The Pentium uses 32-bit virtual addresses.
+With a 4K page size, a 32-bit address space has 2 32 /2 12 = 2 20 or 1,048,576 virtual page numbers !
+If each page table entry occupies 4 bytes, that's 4MB of memory, just to store the page table.
+ 
+
+
+Page Table Design Alternatives
+Single page table stored in an array of fast hardware registers.
+OS loads registers from memory when a process is started.
+Advantage: No memory references are needed for the page table.
+Disadvantage: Context switches require the entire page table to be loaded.
+If it is large, this will be expensive.
+ 
+
+Page table kept entirely in main memory.
+Single register points to the start of the page table.
+Advantage: Context switches only require updating the register pointer.
+Disadvantage: One or more memory references are needed to read page table entries for each instruction.
+ 
+
+Modern computers keep "frequently used" page table entries on chip in a cache (similar to first alternative above) and the others in main memory (similar to the second alternative).
+
+
+
+
+Memory Paging:
+The page directory is 4K bytes.
+Each page table is 4K bytes, and there are 1024 of them.
+If all 4GB of memory is paged, the overhead is 4MB!
+
+
+
+The current scheme requires three accesses to memory:
+One to the directory , one to the appropriate page table and (finally) one to the desired data or code item. Ouch!
+A Translation Look-aside Buffer ( TLB ) is used to cache page directory and page table entries to reduce the number of memory references.
+Plus the data cache is used to hold recently accessed memory blocks.
+System performance would be extremely bad without these features.
+Much more on this in OS (CMSC 421).
+
+
+8086/88 Pinout
+Pin functions:
+AD15-AD0
+Multiplexed address(ALE=1)/data bus(ALE=0).
+A19/S6-A16/S3 (multiplexed)
+High order 4 bits of the 20-bit address OR status bits S6-S3.
+M/IO
+Indicates if address is a Memory or IO address.
+RD
+When 0, data bus is driven by memory or an I/O device.
+WR
+Microprocessor is driving data bus to memory or an I/O device. When 0, data bus contains valid data.
+ALE (Address latch enable)
+When 1, address data bus contains a memory or I/O address.
+DT/R (Data Transmit/Receive)
+Data bus is transmitting/receiving data.
+DEN (Data bus Enable)
+Activates external data bus buffers.
+
+
+8086/88 Pinout
+Pin functions:
+S7, S6, S5, S4, S3, S2, S1, S0
+S7: Logic 1, S6: Logic 0.
+S5: Indicates condition of IF flag bits.
+S4-S3: Indicate which segment is accessed during current bus cycle:
+
+S2, S1, S0 : Indicate function of current bus cycle (decoded by 8288).
+
+
+
+The taxonomy of the descriptors is
+
+Descriptors
+    Non system descriptors
+
+        Code segment descriptor
+        Data segment descriptor
+        Stack segment descriptor (Alias of the previous)
+
+    System descriptors
+
+        System segment descriptors
+
+            LDT segment descriptor
+            TSS segment descriptor
+
+        Gate descriptors
+            Call gate descriptor
+            Interrupt gate descriptor
+            Trap gate descriptor
+            Task gate descriptor
+
+
+
+
+xor eax, eax     ;eax is zero
+xor esp, esp     ;esp is zero
+xor ebx, ebx     ;ebx is zero
+
+mov ecx, DWORD [eax]      ;Use DS selector (implicit)
+mov ecx, DWORD [esp]      ;Use SS selector (implicit)
+mov ecx, DWORD [fs:ebx]   ;Use FS selector (explicit)
+All these instructions read the logical address 0 but the CPU uses the descriptor to compute a new address, called linear address and perform security checks.
+So those three instructions may end up reading totally different addresses.
+
+
+
+DPL: descriptor privilege level
+
+
+Each selector also specifies the privilege which should be used when carrying out an operation.
+The cs selector is special because it cannot be longer changed (it has been a while actually) with a mov but only with a branch instruction (jmp, ret, call, ...).
+Its purpose is not only to be used when fetching code, it also holds the code privilege level.
+This privilege level is used by the CPU to check if a resource can be accessed (with the requested privilege), checks are not always trivial.
+
+As you will see, every descriptor has a DPL field to set its privilege level.
+So they are a form of protection.
+
+Non system descriptors
+Non system descriptors are used to define regions of memory intended to store code or data along with their attributes.
+
+
+As you can see, the purpose of this kind of descriptors is to designate an area of memory and attach some attributes to it.
+In particular the base address, the limit (size), the privilege needed to access it (the DPL field, checks are actually more involved than this), the size of the code (code only), if read/write is allowed and so on.
+
+Long mode (64 bits) changed how the attributes are interpreted, beware of that.
+
+
+System descriptors
+System descriptors are used by the OS to control user mode programs.
+
+System segment descriptors
+These descriptors define the memory area used for storing the LDT and another structure called Task State Segment (a mechanism Intel provided for easing task switching).
+There can be more than one of these structures on the system, the selected ones are indicated by the ldtr (LDT register) and tsr (TS register) registers.
+
+
+Gate descriptors
+These are used to transfer control to other (more or less privileged) code.
+
+Call gates
+
+
+
+Gate descriptors
+These are used to transfer control to other (more or less privileged) code.
+
+Call gates
+
+Call gate
+
+If you look at the picture you can see that a call gate is essentially a meta descriptor, it specifies a selector and an offset into the area designated by that descriptor along with privileges.
+It is used to pass control to privileged routines.
+
+call fs:0badbabeh
+Assuming fs holds a gate's index, the CPU won't use the immediate address 0badbabeh at all, it will instead use the information on the gate itself.
+
+Interrupt and Trap gates
+
+These are used with interrupts, the difference between the two is that the former clear the if flag, the latter doesn't.
+
+They are very similar to call gates.
+
+Interrupt and Trap gates
+
+These descriptors are actually placed into another table, the Interrupt Descriptor Table usually.
+This other table is not indexed with selectors but with interrupt numbers.
+If I recall correctly they can also be placed in the GDT/LDT and used like other gates.
+
+A Task gate can be used to perform a task switch.
+
+Task gates
+
+Task gates
+
+These are like the call gates but transfer control to a new task (task switching).
+
+Some resources are not simple memory area, they can be gates
+
+
+7.5 Task Switching
+The 80386 switches execution to another task in any of four cases:
+The current task executes a JMP or CALL that refers to a TSS descriptor.
+The current task executes a JMP or CALL that refers to a task gate.
+An interrupt or exception vectors to a task gate in the IDT.
+The current task executes an IRET when the NT flag is set.
+
+
+Returns program control from an exception or interrupt handler to a program or procedure that was interrupted by an exception, an external interrupt, or a software-generated interrupt. These instructions are also used to perform a return from a nested task. (A nested task is created when a CALL instruction is used to initiate a task switch or when an interrupt or exception causes a task switch to an interrupt or exception handler.) See the section titled “Task Linking” in Chapter 7 of the Intel® 64 and IA-32 Architectures Software Developer’s Manual, Volume 3A.
+
+
+
+
+A task switching operation involves these steps:
+
+Checking that the current task is allowed to switch to the designated task. Data-access privilege rules apply in the case of JMP or CALL instructions. The DPL of the TSS descriptor or task gate must be numerically greater (e.g., lower privilege level) than or equal to the maximum of CPL and the RPL of the gate selector. Exceptions, interrupts, and IRET are permitted to switch tasks regardless of the DPL of the target task gate or TSS descriptor.
+Checking that the TSS descriptor of the new task is marked present and has a valid limit. Any errors up to this point occur in the context of the outgoing task. Errors are restartable and can be handled in a way that is transparent to applications procedures.
+Saving the state of the current task. The processor finds the base address of the current TSS cached in the task register. It copies the registers into the current TSS (EAX, ECX, EDX, EBX, ESP, EBP, ESI, EDI, ES, CS, SS, DS, FS, GS, and the flag register). The EIP field of the TSS points to the instruction after the one that caused the task switch.
+Loading the task register with the selector of the incoming task's TSS descriptor, marking the incoming task's TSS descriptor as busy, and setting the TS (task switched) bit of the MSW. The selector is either the operand of a control transfer instruction or is taken from a task gate.
+Loading the incoming task's state from its TSS and resuming execution. The registers loaded are the LDT register; the flag register; the general registers EIP, EAX, ECX, EDX, EBX, ESP, EBP, ESI, EDI; the segment registers ES, CS, SS, DS, FS, and GS; and PDBR. Any errors detected in this step occur in the context of the incoming task. To an exception handler, it appears that the first instruction of the new task has not yet executed.
+
+
+
+
+Chapter 9 Exceptions and Interrupts
+Interrupts and exceptions are special kinds of control transfer; they work somewhat like unprogrammed CALLs. They alter the normal program flow to handle external events or to report errors or exceptional conditions. The difference between interrupts and exceptions is that interrupts are used to handle asynchronous events external to the processor, but exceptions handle conditions detected by the processor itself in the course of executing instructions.
+
+There are two sources for external interrupts and two sources for exceptions:
+
+Interrupts
+Maskable interrupts, which are signalled via the INTR pin.
+Nonmaskable interrupts, which are signalled via the NMI (Non-Maskable Interrupt) pin.
+Exceptions
+Processor detected. These are further classified as faults, traps, and aborts.
+Programmed. The instructions INTO, INT 3, INT n, and BOUND can trigger exceptions. These instructions are often called "software interrupts", but the processor handles them as exceptions.
+This chapter explains the features that the 80386 offers for controlling and respondin
+
+
