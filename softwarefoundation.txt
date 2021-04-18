@@ -3077,3 +3077,110 @@ your first interpreter
 ; The core operations are 'string+ 'num+ 'num- '== '< '> 'print 'tagof
   [Prim1C (op : symbol) (arg : ExprC)]
   [Prim2C (op : symbol) (arg1 : ExprC) (arg2 : ExprC)])
+
+
+
+-------------------------------------
+
+
+#lang plai-typed
+
+(define-type FunDefC
+  [fdC (name : symbol) (arg : symbol) (body : ExprC)])
+
+(define-type ExprC
+  [numC (n : number)]
+  [plusC (l : ExprC) (r : ExprC)]
+  [multC (l : ExprC) (r : ExprC)]
+  [idC (s : symbol)]
+  [appC (f : symbol) (a : ExprC)])
+
+；把所有的符号处理掉
+(define (subst [what : ExprC] [for : symbol] [in : ExprC]) : ExprC
+  (type-case ExprC in
+    [numC (n) in]
+    [plusC (l r) (plusC (subst what for l) (subst what for r))]
+    [multC (l r) (multC (subst what for l) (subst what for r))]
+    [idC (s) (cond [(symbol=? s for) what][else in])]
+    [appC (f a) (appC f (subst what for a))]))
+
+
+(define (interp [e : ExprC] [fds : (listof FunDefC)]) : number
+  (type-case ExprC e
+    [numC (n) n]
+    [plusC (l r) (+ (interp l fds) (interp r fds))]
+    [multC (l r) (+ (interp l fds) (interp r fds))]
+    [idC (_) (error 'interp "shouldnt get here")]
+    
+    [appC (f a) (local ([define fd (get-fundef f fds)])
+                   (interp (subst a
+                    (fdC-arg fd)
+                    (fdC-body fd)) fds))]
+    )
+  )
+
+
+;通过符号找定义
+(define (get-fundef [n : symbol] [fds : (listof FunDefC)]) : FunDefC
+  (cond 
+    [(empty? fds) (error 'get-fundef "reference to undefined function")]
+    [(cons? fds) (cond
+                   [(equal? n (fdC-name (first fds))) (first fds)]
+                   [else (get-fundef n (rest fds))])]))   ; 循环找
+
+; tests
+(define dbl (fdC 'double 'x (plusC (idC 'x) (idC 'x))))
+;(test (interp (appC 'double (numC 7)) (list dbl)) 14)
+;(list dbl)
+(list dbl)
+"-----------------"
+(get-fundef 'double (list dbl))
+
+
+> (list dbl)
+- (listof FunDefC)
+(list (fdC 'double 'x (plusC (idC 'x) (idC 'x))))
+> (get-fundef 'double (list dbl))
+- FunDefC
+(fdC 'double 'x (plusC (idC 'x) (idC 'x)))
+> (define fd (get-fundef 'double (list dbl)))
+> fd
+- FunDefC
+(fdC 'double 'x (plusC (idC 'x) (idC 'x)))
+> (fdC-arg fd)
+- symbol
+'x
+> (fdC-name fd)
+- symbol
+'double
+> 
+
+> (subst (numC 8) (fdC-arg fd) (fdC-body fd))
+- ExprC
+(plusC (numC 8) (numC 8))
+> 
+
+
+scope
+6.4.1 How Bad Is It?
+You might look at our running example and wonder whether we’re creating a tempest in a teapot. In return, you should consider two situations:
+To understand the binding structure of your program, you may need to look at the whole program. No matter how much you’ve decomposed your program into small, understandable fragments, it doesn’t matter if you have a free identifier anywhere.
+
+Understanding the binding structure is not only a function of the size of the program but also of the complexity of its control flow. Imagine an interactive program with numerous callbacks; you’d have to track through every one of them, too, to know which binding governs an identifier.
+
+
+
+Programming languages should be designed not by piling feature on top of feature, but by removing the weaknesses and restrictions that make additional features appear necessary.
+
+
+
+
+ Because we’re representing substitutions using an environment, a function value therefore needs to be bundled with an environment. This resulting data structure is called a closure.
+
+
+
+
+ While we’re at it, observe that the appC case above uses funV-arg and funV-body, but not funV-name. Come to think of it, why did a function need a name? so that we could find it. But if we’re using the interpreter to find the function for us, then there’s nothing to find and fetch. Thus the name is merely descriptive, and might as well be a comment. In other words, a function no more needs a name than any other immediate constant: we don’t name every use of 3, for instance, so why should we name every use of a function? A function is inherently anonymous, and we should separate its definition from its naming.
+
+
+ 
