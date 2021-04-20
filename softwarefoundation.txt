@@ -3183,4 +3183,74 @@ Programming languages should be designed not by piling feature on top of feature
  While we’re at it, observe that the appC case above uses funV-arg and funV-body, but not funV-name. Come to think of it, why did a function need a name? so that we could find it. But if we’re using the interpreter to find the function for us, then there’s nothing to find and fetch. Thus the name is merely descriptive, and might as well be a comment. In other words, a function no more needs a name than any other immediate constant: we don’t name every use of 3, for instance, so why should we name every use of a function? A function is inherently anonymous, and we should separate its definition from its naming.
 
 
+  In Racket, boxes support just three operations:
+box : ('a -> (boxof 'a))
+unbox : ((boxof 'a) -> 'a)
+set-box! : ((boxof 'a) 'a -> void)
+Thus, box takes a value and wraps it in a mutable container. unbox extracts the current value inside the container. Finally, set-box! changes the value in the container, and in a typed language, the new value is expected to be type-consistent with what was there before. You can thus think of a box as equivalent to a Java container class with parameterized type, which has a single member field with a getter and setter: box is the constructor, unbox is the getter, and set-box! is the setter. (Because there is only one field, its name is irrelevant.)
+class Box<T> {
+    private T the_value;
+    Box(T v) {
+        this.the_value = v;
+    }
+    T get() {
+        return the_value;
+    }
+    void set(T v) {
+        the_value = v;
+    }
+}
+
+
+
+(let ([b0 (box 0)]
+      [b1 (box 1)])
+  (let ([l (list b0 b1)])
+    (begin
+      (set-box! (first l) 1)
+      (set-box! (second l) 2)
+      l)))
+This evaluates to a list of boxes, the first containing 1 and the second 2.
+Your output may look like ’(#&1 #&2). The #& notation is Racket’s abbreviated syntactic prefix for “box”.
+ Observe that the first argument to the first set-box! instruction was (first l), i.e., an expression that evaluated to a box, rather than just a literal box or an identifier. This is precisely analogous to languages like Java, where one can (taking some type liberties) write
+public static void main (String[] args) {
+    Box<Integer> b0 = new Box<Integer>(0);
+    Box<Integer> b1 = new Box<Integer>(1);
  
+    ArrayList<Box<Integer>> l = new ArrayList<Box<Integer>>();
+    l.add(b0);
+    l.add(b1);
+ 
+    l.get(0).set(1);
+    l.get(1).set(2);
+}
+Observ
+
+
+
+
+-------------------------------------------------------------------------
+closure 与  运行环境更新
+
+If the interpreter is being given precisely the same expression, how can it possibly avoid producing precisely the same answer? The most obvious way is if the interpreter’s other parameter, the environment, were somehow different. As of now the exact same environment is sent to both both branches of the sequence and both arms of the addition, so our interpreter—which produces the same output every time on a given input—cannot possibly produce the answers we want.
+
+Here is what we know so far:
+We must somehow make sure the interpreter is fed different arguments on calls that are expected to potentially produce different results.
+
+We must return from the interpreter some record of the mutations made when evaluating its argument expression.
+
+Because the expression is what it is, the first point suggests that we might try to use the environment to reflect the differences between invocations. In turn, the second point suggests that each invocation of the interpreter should also return the environment, so it can be passed to the next invocation. So the interpreter should presumably be modified to return both the value and an updated environment. That is, the interpreter consumes an expression and environment; it evaluates in that environment, updating it as it proceeds; when the expression is done evaluating, the interpreter returns the answer (as it did before), along with an updated environment, which in turn is sent to the next invocation of the interpreter. And the treatment of setboxC would somehow impact the environment to reflect the mutation.
+
+
+-------------------------------------------------------------------------
+
+不知为何引入store
+
+We’ll also equip ourselves with a function to look up values in the store, just as we already have one for the environment (which now returns locations instead):
+fun lookup(s :: String, nv :: Env) -> Number: ...
+fun fetch(n :: Number, st :: Store) -> Value: ...
+Exercise
+
+Fill in the bodies of lookup and fetch.
+
+
