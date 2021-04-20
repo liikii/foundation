@@ -24,7 +24,14 @@ admiring
 admixtures
 ads
 aduits
-adults
+adult
+Suffixed o-grade form *kor-wo‑, "growing," adolescent. kore, kouros; Dioscuri, hypocorism, from Greek kouros, koros, boy, son, and korē, girl.
+
+‌‌ker-2
+To grow. Oldest form *k̑er‑, becoming *ker‑ in centum languages.
+Derivatives include cereal, Creole, concrete, and recruit.
+
+
 adventure
 aero
 aeroplane
@@ -180,167 +187,403 @@ reckless, from Old English rēcelēas, careless (-lēas, lacking; see leu-), fro
 Suffixed zero-grade form *r̥g-yo‑. raita, from Sanskrit ṛjyati, he stretches out.
 [Pokorny 1. reg̑‑ 854.]
 
-also
-altogether
-always
+also： all, so1
+altogether： gather.
+
+‌‌ghedh-
+To unite, join, fit.
+Lengthened o-grade form *ghōdh‑. good, from Old English gōd, good, from Germanic *gōdaz, "fitting, suitable.".
+together, from Old English tōgædere, together (tō, to; see de-), from Germanic *gadurī, "in a body.".
+gather, from Old English gad(e)rian, to gather, from Germanic *gadurōn, "to come or bring together.".
+
+
+always:  all way,  at every time,  Dutch weg and German Weg, from a base meaning ‘move, carry’.
+
+‌‌wegh-
+To go, transport in a vehicle. Oldest form *weg̑h‑, becoming *wegh‑ in centum languages.
+Derivatives include weight, away, wagon, earwig, devious, trivial, and vex.
+weigh1, from Old English wegan, to carry, balance in a scale, from Germanic *wegan.
+wee1, from Old English wǣg(e), weight, unit of weight, from Germanic lengthened-grade form *wēgō.
+Suffixed form *wegh-ti‑. weight, from Old English wiht, gewiht, weight, from Germanic *wihti‑.
+way; always, away, from Old English weg, way;
+Norwegian, from Old Norse vegr, way;
+thalweg, from Old High German weg, way. a-c all from Germanic *wegaz, course of travel, way.
+Suffixed o-grade form *wogh-no‑.
+wain, from Old English wæ(g)n, wagon;
+wagon, from Middle Dutch wagen, wagon. Both a and b from Germanic *wagnaz.
+Suffixed o-grade form *wogh-lo‑.
+walleyed, from Old Norse vagl, chicken roost, perch, beam, eye disease, from Germanic *waglaz;
+ochlocracy, ochlophobia, from Greek okhlos, populace, mob (< "moving mass").
+Distantly related to this root are:
+graywacke, from Old High German waggo, wacko, boulder rolling on a riverbed, from Germanic *wag‑, "to move about";
+wag1, from Middle English waggen, to wag, possibly from Germanic *wag‑.
+earwig, from Old English wicga, insect (< "thing that moves quickly");
+wiggle, from Middle Dutch and Middle Low German wiggelen, to move back and forth, wag. Both (i) and (ii) from Germanic *wig‑.
+Basic form *wegh‑. vector, vehement, vehicle; advection, convection, evection, invective, inveigh, from Latin vehere (past participle vectus), to carry.
+Suffixed basic form *wegh-yā‑. foy, via, viatical, voyage; convey, convoy, deviate, devious, envoy1, envoy2, invoice, obviate, obvious, ogee, ogive, pervious, previous, trivial, trivium, viaduct, from Latin via, way, road.
+Suffixed form *wegh-s‑. vex, from Latin vexāre, to agitate (< "to set in motion").
+Probably suffixed form *wegh-so‑. convex, from Latin convexus, "carried or drawn together (to a point)," convex (com‑, together; see kom).
+[Pokorny u̯eg̑h‑ 1118.]
+
+
 am
-amark
-amazing
-ambulance
+from Latin ante meridiem .
+
+be
+/biː/
+Learn to pronounce
+verb
+3rd person present: am
+
+amazing：
+ambulance：
+ Latin ambulant- ‘walking’ (see ambulant).
+ alley1, alley-oop, ambulance, ambulate, andante; funambulist, perambulate, preamble, from Latin amb‑, around, about, in ambulāre, to go about, walk (*alāre, to go
+
+
+
 america
 america.ye-ha
-ames
-amongst
+
+amongst：
+Old English ongemang (from on ‘in’ + gemang ‘assemblage, mingling’). 
+among, mongrel, from Old English gemang, mixture, crowd (ge‑, together; see kom). Both a and b from Germanic nasalized form *mangjan, to knead together.
+
+Also mak-.
+To knead, fashion, fit. Oldest forms *mag̑‑, *mak̑‑, becoming *mag‑, *mak‑ in centum languages.
+Derivatives include make, mason, mingle, magma, and mass.
+make, from Old English macian, to make;
+mason, from Old French masson, mason;
+maquillage, from Middle Dutch maken, to make. (i)-(iii) all from Germanic verb *makōn, to fashion, fit.
+match1, from Old English gemæcca, mate, spouse, from Germanic compound noun *ga-mak-(j)ōn‑, "one who is fitted with (another)" (*ga‑, with, together; see kom). Both a and b from Germanic *mak‑.
+mingle, from Old English mengan, to mix;
+among, mongrel, from Old English gemang, mixture, crowd (ge‑, together; see kom). Both a and b from Germanic nasalized form *mangjan, to knead together.
+Suffixed form *mak-yo‑. magma, from Greek magma, unguent, from massein (aorist stem mag‑), to knead.
+Suffixed lengthened-grade form *māg-ya‑. mass; amass, from Greek māza, maza, a (kneaded) lump, barley cake.
+Suffixed lengthened-grade form *māk-ero‑. macerate, from Latin mācerāre, to tenderize, to soften (food) by steeping.
+
+
+
+
+
 an
 anchor
-anchor¡¯s
-and
-and¡­
-and¡­¡­
-andjapan
-anew
-animai
-animal
-animals
-ankle
-anniversary
+and：from Latin gerundive ending -andus .
+
+
+anew：Latin novus, and Greek neos ‘new’.
+
+animal:from anima ‘breath’
+
+‌‌anə-
+To breathe. Oldest form *h2enh1‑, colored to *h2anh1‑.Suffixed form *h2anh1-mo‑.
+anima, animadvert, animal, animate, animato, animism, animosity, animus; equanimity, longanimity, magnanimous, pusillanimous, unanimous, from Latin animus, reason, mind, spirit, and anima, soul, spirit, life, breath;
+anemo-, anemone, from Greek anemos, wind
+
+
+ankle：
+from an Indo-European root shared by angle
+, from Latin angulus ‘corner’.
+genu-1
+Knee; also angle. Oldest form *g̑enu‑, becoming *genu‑ in centum languages.
+Variant form *gneu‑.
+knee, from Old English cnēo, knee, from Germanic *knewam;
+kneel, from Old English cnēowlian, to kneel, from Germanic *knewljan.
+Basic form *genu‑. geniculate, genuflect, from Latin genū, knee.
+O-grade form *gonu. polygonum, pycnogonid, from Greek gonu, knee.
+Suffixed variant form *gōnw-yə‑. -gon; amblygonite, diagonal, goniometer, orthogonal, from Greek gōniā, angle, corner.
+[Pokorny 1. g̑enu‑ 380.]
+
+
+
+
+anniversary：
+ Latin anniversarius ‘returning yearly’, from annus ‘year’ + versus ‘turning’.
+
+‌‌at-
+To go; with Germanic and Latin derivatives meaning a year (conceived as "the period gone through, the revolving year"). Suffixed form *at-no‑.
+annals, annual, annuity; anniversary, biennium, decennium, millennium, perennial, quadrennium, quinceañera, quindecennial, quinquennium, septennial, sexennial, superannuated, triennium, vicennial, from Latin annus, year.
+
+
+
+
 annoying
-another
-anothercold
-anotherday
-anothersurprise
+： Latin in odio in the phrase mihi in odio est ‘it is hateful to me’.
+
+‌‌od-
+To hate.
+annoy, ennui, noisome, odium, from Latin ōdī, I hate, and odium, hatred.
+[Pokorny 2. od‑ 773.]
+
+
+another：Old English ōther, of Germanic origin; related to Dutch and German ander, from an Indo-European root meaning ‘different’.
+
+‌‌al-1
+Beyond. Oldest form probably *h2el‑, colored to *h2al‑.
+Derivatives include alarm, ultimate, else, alien, alibi, and parallel.
+O-grade form *ol‑ (earlier *h2ol‑), "beyond."
+Compound forms *ol-se‑, *ol-so‑ (*so‑, pronominal stem; see so-). alarm, alert, alfresco, alligator, El Niño, hoopla, lagniappe, langue d'oïl, lariat, voilà, from Latin ille (feminine illa, neuter illud), "yonder," that, from Archaic Latin ollus;
+suffixed forms *ol-s, *ol-tero‑. outré, ulterior, ultimate, ultra-, utterance2, from Latin uls, *ulter, ultrā, beyond.
+Suffixed form *al-tero‑, "other of two."
+alter, altercate, alterity, alternate, altruism; subaltern, from Latin alter, other, other of two;
+adulterate, adulterine, adultery, from Latin adulterāre, to commit adultery with, pollute, probably from the phrase ad alterum, "(approaching) another (unlawfully)" (ad, to; see ad-);
+variant suffixed form *an-tero‑, "other (of two)." other, from Old English ōther, from Germanic *antharaz.
+Suffixed form *al-eno‑. Aranyaka, from Sanskrit araṇa‑, foreign.
+Extended form *alyo‑, "other of more than two."
+else; eldritch, from Old English el‑, elles, else, otherwise, from Germanic *aljaz (with adverbial suffix);
+alias, alien; alibi, aliquot, hidalgo, from Latin alius, other of more than two;
+allo-; allegory, allelomorph, allelopathy, morphallaxis, parallax, parallel, trophallaxis, from Greek allos, other.
+[Pokorny 1. al‑ 24, 2.an 37.]
+
 answer
-answeryes
-antic
-antics
-anticy
-anti-gravity
-an-tique
+
+‌‌swer-
+To speak, talk. O-grade form *swor‑.
+swear, from Old English swerian, to swear, proclaim, from Germanic *swarjan;
+answer, from Old English andswaru, answer, from Germanic *and-swarō, "a swearing against," "rebuttal" (*andi‑, against; see ant-).
+
+
+
+antic：
+ Italian antico ‘antique’, used to mean ‘grotesque’.
+
+‌‌ant-
+Front, forehead. Oldest form *h2ent‑, colored to *h2ant‑
+Derivatives include along, end, advance, and antique.
+
+anti-gravity：
+gwerə-1
+Heavy. Oldest form *gwerh2‑.
+Derivatives include grave2, grief, aggravate, baritone, guru, brute, and blitzkrieg.
+Zero-grade form *gwr̥ə‑.
+Suffixed form *gwr̥ə-wi‑. grave2, gravid, gravimeter, gravitate, gravity, grief, grieve; aggravate, aggrieve, from Latin gravis, heavy, weighty.
+Suffixed form *gwr̥ə-u‑.
+barite, barium, baryon, baryta; baritone, barycenter, barysphere, charivari, from Greek barus, heavy;
+guru, from Sanskrit guru‑, heavy, venerable.
+Suffixed form *gwr̥ə-es‑. bar2, baro-; centrobaric, isallobar, isobar, from Greek baros, weight.
+Possibly *gwrī̆‑ in Greek compound *u(d)-bri‑ (see ud-).
+Suffixed extended form *gwrū-to‑. brut, brute, from Latin brūtus, heavy, unwieldy, dull, stupid, brutish.
+Suffixed extended form *gwrī-g‑.
+brio, from Spanish brio or Provençal briu, vigor, from Celtic *brīg-o‑, strength;
+brig, brigade, brigand, brigantine, from Old Italian briga, strife, from Celtic *brīg-ā‑, strife;
+blitzkrieg, sitzkrieg, from Old High German krēg, chrēg, stubbornness, from Germanic *krīg‑.
+Suffixed full-grade form *gwerə-nā‑, millstone. quern, from Old English cweorn, quern.
+[Pokorny 2. gu̯er‑ 476.]
+
+
+
 antique
+
 ants
-any
-anybody
+any：Old English ǣnig (see one, -y1)
+
 anymore
 anyone
-anyoneremember
+
 anything
 anytime
 anyway
 anywhere
-aooohhhhhhhhhhhhgh
 apar
-apatosaurus
-apologize
-appears
-appetite
-appie
-appies
+apatosaurus：
+modern Latin, from Greek apatē ‘deceit’ + sauros ‘lizard’.
+from Greek pathos, suffering, passion, emotion, feelings.
+
+apologize：　
+Latin from Greek apologos ‘story’
+
+appear：
+ad- ‘towards’ + parere ‘come into view’.
+suffixed form *par-yo‑. -para, parity2, -parous, parturient, postpartum, repertory, viper, from Latin parere, parīre, to get, beget, give birth;
+
+appetite：
+appetitus ‘desire for’, from appetere ‘seek after’, from ad- ‘to’ + petere ‘seek’.
+
+‌‌pet-
+To rush, fly. Also petə- . Oldest form *peth1‑. Variant *pteh1‑, becoming *ptē‑.
+Derivatives include feather, compete, perpetual, ptomaine, symptom, and hippopotamus.
+Suffixed form *pet-rā‑. feather, from Old English fether, feather, from Germanic *fethrō, feather.
+-petal, petition, petulant; appetite, compete, impetigo, impetuous, impetus, perpetual, repeat, from Latin petere, to go toward, seek.
+
 apple
-apples
-aquarium
-ar
+
+aquarium：
+ from Latin, neuter of aquarius ‘of water’, on the pattern of vivarium .
+akw-ā-
+Water.
+ait; island, from Old English īg, īeg, island, from Germanic *aujō, "thing on the water," from *agwjō.
+aqua, aquarelle, aquarium, aquatic, aqui-, ewer, gouache; agua fresca, aguardiente, aquamarine, aquatint, aquavit, aqueduct, sewer1, from Latin aqua, water.
+
+
 are
-are¡­
-area
-are-how
-aren
-aren't
-aren¡¯t
-areyou
+area：
+mid 16th century (in the sense ‘space allocated for a specific purpose’): from Latin, literally ‘vacant piece of level ground’.
+
+
 argh
-arguing
+arguing：
+arguere ‘make clear, prove, accuse’.
+arg-
+To shine; white; the shining or white metal, silver. Oldest form *h2(e)rg̑‑, colored to *h2(a)rg̑‑, becoming *arg̑‑ in satem languages and *arg‑ in centum languages.
+Suffixed form *arg-ent‑. argent, argentine, from Latin argentum, silver.
+Suffixed form *arg-i-l(l)‑. argil, from Greek argillos, white clay.
+Suffixed form *arg-u-ro‑. litharge, pyrargyrite, from Greek arguros, silver.
+Suffixed form *arg-u-no‑. Arjuna, from Sanskrit arjunaḥ, bright, white, silvery.
+Suffixed form *arg-i-n‑. arginine, from Greek arginoeis, brilliant, bright-shining.
+Suffixed form *arg-u‑, brilliant, clear. argue, from Latin denominative arguere, to make clear, demonstrate (< *argu-yo‑).
+Suffixed zero-grade form *ər̥g-ro‑, becoming *arg-ro‑. agrimony, possibly from Greek argos, white (< *argros).
+Suffixed zero-grade form *ər̥g-ro‑, becoming *arg-ro‑. agrimony, possibly from Greek argos, white (< *argros).
+[Pokorny ar(e)-g̑‑ 64.]
+
+
+
 armbands
 arms
 around
-aroundthe
-arrgh
-arrive
-arrived
-arrives
-arriving
+Latin rotundus ‘rotund’.
+ret-
+To run, roll.
+Prefixed Celtic form *to-wo-ret‑, "a running up to" (to‑, to; wo, under, up, up from under; see upo). Tory, from Old Irish tóir, pursuit.
+Suffixed o-grade form *rot-ā‑. rodeo, roll, rota, rotary, rotate, rotund, rotunda, roulette, round1, rowel; barouche, control, prune2, rocambole, rotavirus, rotaxane, rotiform, rotogravure, from Latin rota, wheel.
+Suffixed (participial) form *ret-ondo‑. rotund, rotunda, round1, from Latin rotundus, round, probably from *retundus, "rolling.".
+[Pokorny ret(h)‑ 866.]
+
+
+
+arrive：
+Latin ad- ‘to’ + ripa ‘shore’.
+
 arrow
-arrows
-¡°arrr~¡±
 arrr
 arrrgh
 arrrr¡­
-artist
+artist：
+ Latin ars, art- .
+‌‌ar-
+Also arə-.
+To fit together. Oldest form *h2erh1‑, colored to *h2arh1‑, with variant *h2reh1‑, becoming *rē‑.
+Derivatives include army, harmony, inert, aristocracy, adorn, hatred, rite, arithmetic, and rhyme.
+Basic form *arə.
+Suffixed form ar(ə)-mo‑.
+arm1, from Old English earm, arm, from Germanic *armaz;
+ambry, arm2, armada, armadillo, armature, armoire, army; alarm, disarm, gendarme, from Latin arma, tools, arms;
+armillary sphere, from Latin armus, upper arm.
+Suffixed form *ar(ə)-smo‑. harmony, from Greek harmos, joint, shoulder.
+Suffixed form *ar(ə)-ti‑.
+art1, artisan, artist; inert, inertia, from Latin ars (stem art‑), art, skill, craft;
+further suffixed form *ar(ə)-ti-o‑. artiodactyl, from Greek artios, fitting, even.
+Suffixed form *ar(ə)-tu‑. article, from Latin artus, joint.
+Suffixed form *ar(ə)-to‑. coarctate, from Latin artus, tight.
+Suffixed form *ar(ə)-dhro‑. arthro-; anarthrous, diarthrosis, dysarthria, enarthrosis, synarthrosis, from Greek arthron, joint.
+Suffixed (superlative) form *ar(ə)-isto‑. aristocracy, from Greek aristos, best.
+Possibly suffixed lengthened o-grade form (or separate root) *ōrə-dh‑.
+ordain, order, ordinal, ordinance, ordinary, ordinate, ordo; coordination, inordinate, subordinate, from Latin ōrdō, order (originally a row of threads in a loom).
+exordium, primordial, from Latin ōrdīrī, to begin to weave.
+ornament, ornate; adorn, suborn, from Latin ōrnāre, to adorn.
+Variant *rē‑ (< earlier *h2reh1‑).
+rate1, ratio, ration, reason; arraign, from Latin rērī, to consider, confirm, ratify.
+Suffixed form *rē-dh‑.
+read, rede; dread, from Old English rǣdan, to advise;
+hatred, kindred, from Old English rǣden, -rǣden, condition. Both (i) and (ii) from Germanic *rēdan.
+rathskeller, from Old High German rāt, counsel;
+riddle2, from Old English rǣdels(e), opinion, riddle. Both (i) and (ii) from Germanic *rēdaz.
+Zero-grade form *rə‑. Germanic *radam, number, in dialectal North and West Germanic compound *hund(a)-rada‑ (see dekm̥).
+Variant root form *h2reh1i‑, with zero-grades *h2rh1i‑ and (metathesized) *h2rih1‑, the latter contracted to *rī‑.
+Suffixed metathesized zero-grade form *rī-tu‑. rite, from Latin rītus, rite, custom, usage.
+Suffixed unmetathesized zero-grade form *ərəi-dhmo‑. arithmetic, logarithm, from Greek arithmos, number, amount.
+rhyme, from a Germanic source akin to Old High German rīm, number, series.
+[Pokorny 1. ar‑ 55.]
+
+
 as
-asfrance
+
 aside
-asieep
-ask
-asked
-asking
 asleep
-at
-ate
-athlete
-athletes
-atin
-atoy
-atplaygroup
-attend
+ask
+‌‌ais-
+To wish, desire.
+Oldest form *h2eis‑, colored to *h2ais‑. Suffixed form *ais-sk‑. ask, from Old English āscian, ācsian, to ask, seek, from Germanic *aiskōn.
+[Pokorny 1. ais‑ 16.]
+
+at Latin ad ‘to’.
+athlete:Greek athlētēs, from athlein ‘compete for a prize’, from athlon ‘prize’.
+
+
+attend: 
+‌‌ten-
+To stretch.
+Derivatives include tendon, pretend, hypotenuse, tenement, tenor, entertain, lieutenant, and tone.
 attention
-attic
-atv
-au
-audience
-aunt
+attic：Latin Atticus ‘relating to Athens or Attica’. 阁楼
+
+audience：
+‌‌au-
+To perceive. Compound forms *au-dh‑, *awis-dh‑, "to place perception" (*dh‑, to place; see dhē-).
+
+aunt： from Old French ante, from Latin amita .
+
 auntie
 aunties
-aunty
+aunty:阿姨；老大娘；姑妈
 automatic
-autopilot
-autopilots
-autumn
-avac
-available
-avoids
-awake
-award
+autopilot：lengthened-grade form *pēd-o‑.
+pilot, from Greek pēdon, rudder, steering oar;
+
+autumn: directly from Latin autumnus .
+
+available: Latin valere ‘be strong, be of value’.
+‌‌wal-
+To be strong.
+
+avoids：　from vuide ‘empty’ (see void).
+
+‌‌euə-
+To leave, abandon, give out, whence nominal derivatives meaning abandoned, lacking, empty. Oldest form *h1euh2‑, zero-grade *h1uh2‑, with variant form *h1weh2‑, colored to *h1wah2‑, becoming *wā‑.
+Suffixed form *wə-no‑.
+wane; wanton, from Old English wanian, to lessen (from Germanic *wanēn), and wan‑, without;
+want, from Old Norse vanta, to lack, from North Germanic *wanatōn.
+Suffixed form *wā-no‑. vain, vanity, vaunt; evanesce, vanish, from Latin vānus, empty.
+Extended form *wak‑. vacant, vacate, vacation, vacuity, vacuum, void; avoid, devoid, evacuate, from Latin vacāre (variant vocāre), to be empty.
+Extended and suffixed form *wās-to‑. waste; devastate, from Latin vāstus, empty, waste.
+[Pokorny 1. eu‑ 345.]
+
+
+awake：　wacian ‘remain awake, hold a vigil’
+weg-
+To be strong, be lively. Oldest form *weg̑‑, becoming *weg‑ in centum languages.
+
+
+award：guarder ‘watch (over)’
 away
-away¡­
-awow.dormez
-a-ya
--aye
-aye
+
+aye：o Latin aevum ‘age’ and Greek aie(i ) ‘ever’, aiōn ‘aeon’.
 aye-aye
-b
-baa
-baaa
-baaaa
-baaaaa
-baba
-babies
-baby
-baby's
+
+baby： probably imitative of an infant's first attempts at speech.
+
 baby-sit
 babysitting
-back
-back¡­
-backfor
-backing
-backwards
+back­
+backwards：
+‌‌wer-3
+To perceive, watch out for.
+
 bad
-badly
 bag
-bags
-baii
-baiioon
-baiioons
-baiis
+
 bake
-baked
-balance
+balance: form *tala-nt‑. talent, from Greek talanton, balance, weight
 ball
-ball;
-ballet
-balloon
-balloons
+ballet：Latin ballare ‘to dance’ (see ball2
+
+‌‌gwelə-
+Also gwel-.
+To throw, reach, with further meaning to pierce. Oldest form *gwelh1‑, with metathesized variant *gwleh1‑, becoming *gwlē‑.
+Derivatives include devil, emblem, metabolism, parliament, problem, symbol, ballet, and kill.1
+
+balloon  Italian ballone ‘large ball’.
 banana
-bananas
-bands
+bands:elated to bind. banner
 bang
 banging
 bangs
