@@ -585,51 +585,53 @@ balloon  Italian ballone ‘large ball’.
 banana
 bands:elated to bind. banner
 bang
-banging
-bangs
 banjo
-bank
-bar
-barbecue
-barbecues
-barbra
-barrel
-bas
+bank: bench. 板
+bar笆
+barbecue：  perhaps from Arawak barbacoa ‘wooden frame on posts’.
+
+barrel Latin barriclus ‘small cask’.
+bher-1
+To carry; also to bear children.
+Derivatives include birth, fertile, suffer, furtive, and metaphor.
+barrow1, from Old English bearwe, basket, wheelbarrow, from Germanic *barwōn‑.
+
 basket
-basketball
-baskets
-bass
-bat
-bath
+
+bass Latin basis ‘base, pedestal’,
+bat  beat
+bath  related to Dutch bad and German Bad .
 bathroom
 bathtime
-baton
-batons
-batter
-batteries
+baton接力棒；（乐队）指挥棒；
+
+batter  beat
+battery
 baubles
 be
-beach
+beach: Old English bæce, bece ‘brook’
 beach-bag
-beak
-beakers
+beak:Latin beccus
+beakers一杯
 beam
 bean
-beans
-beanstalk
+
+beanstalk豆茎
 bear
 beard
-bearing
-bearsaid
 beat
 beaten
-beautifui
-beautifuiiy
+beautifuiiy Diminutive *dw-en-elo‑. beau, beauty, belle; beldam, belladonna, belvedere, embellish, from Latin bellus, handsome, pretty, fine.
 beautiful
-beautifully
-beauty
+
 because
 become
+gwā-
+Also gwem-.
+To go, come. Oldest form *gweh2‑, colored to *gwah2‑, becoming *gwā‑.
+Derivatives include welcome, adventure, souvenir, acrobat, and diabetes.
+come, from Old English cuman, to come;
+
 bed
 bedroom
 bedrooms
@@ -640,11 +642,14 @@ been
 beenhere
 beep
 beeping
-bee's
-bees
-beetroots
+
+beetroots 甜菜；甜菜根
 before
-beg
+beg:related to bid2.　
+‌‌bheidh-
+To trust, confide, persuade.
+Derivatives include bide, fiancé, and infidel.
+
 began
 begin
 begins
@@ -652,136 +657,90 @@ begun
 behave
 behaved
 behind
-beii
-beiieve
 being
 beingbossy
-beiong
-beionged
 believe
+leubh-
+To care, desire; love.
+Derivatives include livelong, belief, and libido.
+
 belinda
 bell
-bells
 belong
 belts
-bend
+bend　e bind, bandanna, and bundle.
 bending
-beret
-berries
+beret　　 Latin birrus ‘hooded cape’.  Compare with biretta.
 bess
 best
-bet
+bet　 bite, bitter, and fission.
 betsy
 better
-bettertold
+
 between
 bicycie
-bicycle
-bicycles
-bien
 big
-bigger
 biggerthan
 biggest
 bigsand
 bike
-bikes
 bill
-bills
 bin
 bing
-¡°bing-bong
-bing-bong
-bingerly
-bingley
-bingly
-binky
-binky.woo
-binman
-binoculars
-biow
-biowing
-bird
+
+binman垃圾工；清洁工；清洁工人
+binoculars双筒望远镜　　 oculus ‘eye’,eye, daisy, window, inoculate, and autopsy.　ｏｋ
+bird　　brid ‘chick, fledgling’,
 birdfeeder
-birdie
-birdies
-bird's
-birds
+birdie　儿,口〉小鸟；羽毛球；
+
 birdseed
 birdy
-birseed
 birthday
-birthdays
-biscuits
+biscuits　　bis ‘twice’ + coctus, coquere ‘to cook’ 
 bit
-bitloose
-bits
-bitten
-bit.very
-biue
-blaba
-blackberries
+
 blackberry
-blah
-blah,blah
-blah¡­blah¡­blah¡­
-blank
-blast
+blah  imitative.
+
+blank　　e blue, bleach, blind, blond, blanket, black, flagrant, and flame.
+blast　　ｂｌｏｗ　blaze3, flatus, and flavor.
 blink
-blinking
-blob
+blob blotch, blubber1, and plop.
 block
-blocks
 blow
-blowing
 blown
 blue
 blueberry
-bluei
-blue's
-board
-boards
-boat
-boating
-boat's
-boat¡¯s
-boats
-boatyard
-bodhran
+
+board　 Old French bort ‘edge, ship's side’ and Old Norse borth ‘board, table’.　　板
+
+boat　 bite, bitter, and fission.
+
+boatyard　　gard ‘twig, rod’ 　 gorod ‘town’. Compare with garden and orchard.
 body
-boiled
-bones
+boil　　bulla ‘bubble’.
+bone
 bong
-bongerly
 bongly
-bongo
-¡°bonjour¡±
-bonjour
-bonjourest
-bonnet
+bongo　　邦戈鼓
+bonjour　　‘good day’.
+bonnet　　 Latin abonnis ‘headgear’
 boo
 book
-books
-booksheif
-¡°boom
+bookshelf
+
 boom
-boom!¡±
-booooo
 boot
-boots
-bored
+bored  bore3, from Old Norse bāra, wave, billow, from Germanic *bēr‑.
 boring
 borrow
-borrowed
-borrowing
 boss
-bossy
-bossyone
+bossy  baas ‘master’.
 both
-bother
-bottle
-bottles
-bottom
+bother   bodhraim ‘deafen, annoy’. 
+bottle   Latin buttis ‘cask, wineskin’
+bottom  deep, depth,
 botus
 boueux
 bought
