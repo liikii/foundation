@@ -1374,9 +1374,7 @@ eye
 eyes
 eyesight
 f
-face
-faces
-facestore
+face facies ‘form, appearance, face’.
 fact
 faii
 faiien
