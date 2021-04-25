@@ -3791,46 +3791,42 @@ using
 usual
 usually
 va
-vacuum
+vacuum Latin vacuus ‘empty’.
 vacuuming
 vacuums
 valuable
-vampire
-van
+vampire  uber ‘witch’.
+van  shortening of caravan.abbreviation of vanguard. variant of fan
 vanessa
 vanilla
-van¡¯s
-vase
+vase Latin vas ‘vessel’.
 vases
 ve
-vegetable
+vegetable  from vegere ‘be active’.
 vegetables
-vehicle
+vehicle Latin vehiculum, from vehere ‘carry’.
 vehicles
 venus
-verb
+verb word
 very
-vet
+vet abbreviation of veterinary or veterinarian. veterinae ‘cattle’.
 vet's
-vet¡¯s
-video
+video  Latin videre ‘to see’, on the pattern of audio .
 view
-village
-vioiin
-visit
+village Latin villa ‘country house
+violin viola
+visit visare ‘to view’, from videre ‘to see’.
 visiter
 visiting
 visitor
 visitors
 visits
-voice
-volcano
-vroom
-vroom¡­
-vroom¡­...vroom¡­¡­
+voice Latin vox, voc- 
+vulcan 罗神】火与锻冶之神
+volcano a mountain or hill, typically conical, having a crater or vent through which lava, rock fragments, hot vapour, and gas are or have been erupted from the earth's crust
+vroom （车辆高速行驶时发出的）呜的一声
 wa
 waa
-waa¡­
 waaa
 waaaa
 waaaaa
@@ -3838,51 +3834,48 @@ waaaaaaa
 waaaaaaaaa
 waaaaaaaaaaaa
 waaaaaaaaaaaaaa
-waaaaaaaaaaaaaaaaah
-wading
-waggle
+waaaaaaaaaaaaaaaaa
+wading Latin vadere ‘go’.
+waggle move or cause to move with short quick movements from side to side or up and down
 wah
 wahhh
 wahhhh
-waii
-waik
-wait
+wait wake ‘observe carefully’,
 waiting
 waits
 wake
 wakes
-wakey
 waking
-walentine
-walk
+walk  wealcan ‘roll, toss’, also ‘wander’,  vol- 
 walked
 walking
 walks
-wall
-wand
-want
+wall  Latin vallum ‘rampart’, from vallus ‘stake’.
+wand wend and wind2.a long, thin stick or rod.
+want vanta ‘be lacking’
 wanted
 wants
-war
-ward
-warm
+war  worse.
+ward warde (noun), warder (verb) ‘guard’.
+warm  Latin formus ‘warm’ and Greek thermos ‘hot’.
 warmed
 warmer
 warming
-warnings
+warnings ware2.
 was
-was¡­
-wasalmost
-wash
+was almost
+wash water. wed- water, wet,  water, hydrant, redundant, otter, and vodka.
 washed
 washes
 washing
 wasn't
-wasn¡¯t
-wasp
+wasp weave a social winged insect which has a narrow waist and a sting and is typically yellow with black stripes. It constructs a paper nest from wood pulp and raises the larvae on a diet of insects
 wasps
-waste
-watch
+waste eue- To leave, abandon, give out, whence nominal derivatives meaning abandoned, lacking, empty. Oldest form *h1euh2‑, zero-grade *h1uh2‑, with variant form *h1weh2‑, colored to *h1wah2‑, becoming *wā‑.  wane, wanton, want, *wā-no‑. vain, vanity, vaunt; evanesce, vanish, from Latin vānus, empty.
+Extended form *wak‑. vacant, vacate, vacation, vacuity, vacuum, void; avoid, devoid, evacuate, from Latin vacāre (variant vocāre), to be empty.
+Extended and suffixed form *wās-to‑. waste; devastate, from Latin vāstus, empty, waste.
+[Pokorny 1. eu‑ 345.]
+watch weg- to be strong, be lively,  watch, vigilante, reveille, and velocity.
 watches
 watching
 water
