@@ -3746,45 +3746,29 @@ two
 type  tupos ‘impression, figure, type’, from tuptein ‘to strike’.
 tyrannosaurus 暴龙
 tyre  attire  from a tire ‘in order’
-ugh
-ugly
+ugly  uggligr ‘to be dreaded’, from ugga ‘to dread’.
 uh
-uh¡­
-uh¡­can
-uhh
 uh-ha
-uh¡­if
 uh-oh
-uh¡­to
-uh¡­yes
 um
-umbrella
-um...i'm
-um¡­i¡¯m
-umm...i'ii
+umbrella  ombra ‘shade’, from Latin umbra (see umbra).
 ummm
 ummmm
-um...someone
-um¡­they
 unbelievable
-uncie
-uncle
+uncle  Latin avunculus ‘maternal uncle’, diminutive of avus ‘grandfather’.
 uncles
 under
 underground
-underneath
+underneath nether.
 understand
 underwater
-uniess
-united
-unless
+united Latin unus,
+unless Greek loisthos ‘last’.
 unlocks
 unpacking
 untidy
-untie
-untii
+untie 解开…的结；打开
 until
-¡°up
 up
 uphill
 uphills
@@ -3793,14 +3777,14 @@ ups
 upset
 upside
 upstairs
-uranusÌìÍõÐÇ
-urgently
+uranus
+urgently Latin urgent- ‘pressing, driving’, from the verb urgere (see urge).
 urggghhhh
 us
 use
 used
 useful
-usegranddad
+use granddad
 useless
 uses
 using
