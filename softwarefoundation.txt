@@ -3254,3 +3254,12 @@ Exercise
 Fill in the bodies of lookup and fetch.
 
 
+bellman ford algorithm 算法， 用边一遍遍优化所有可达点。 
+
+路由协议的重点
+As I mentioned in the previous chapter, one of the defining characteristics of any 
+routing protocol is the algorithm it uses for determining routes
+
+
+As I mentioned in the previous chapter, one of the defining characteristics of any 
+routing protocol is the algorithm it uses for determining routes
