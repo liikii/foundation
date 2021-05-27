@@ -3263,3 +3263,9 @@ routing protocol is the algorithm it uses for determining routes
 
 As I mentioned in the previous chapter, one of the defining characteristics of any 
 routing protocol is the algorithm it uses for determining routes
+
+
+
+ IPv6 has unicast and multicast addresses like IPv4. There is, however, no 
+distinct concept of a broadcast address in IPv6. A new type of address, the anycast address, has 
+been added to allow a message to be sent to any one member of a group of devices.
