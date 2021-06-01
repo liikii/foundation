@@ -1,0 +1,1158 @@
+cs161
+Further Directions
+● New Algorithmic Techniques
+● What are other approaches to
+problem-solving?
+● New Application Domains
+● To what areas of study should we apply
+algorithmic techniques?
+
+
+00: Algorithmic Analysis
+  Slides (Condensed)
+01: Fundamental Graph Algorithms I
+  Slides (Condensed)
+02: Fundamental Graph Algorithms II
+  Slides (Condensed)
+03: Fundamental Graph Algorithms III
+  Slides (Condensed)
+04: Fundamental Graph Algorithms IV
+  Slides (Condensed)
+05: Divide-and-Conquer Algorithms I
+  Slides (Condensed)
+06: Divide-and-Conquer Algorithms II
+  Slides (Condensed)
+07: Divide-and-Conquer Algorithms III
+  Slides (Condensed)
+08: Divide-and-Conquer Algorithms IV
+  Slides (Condensed)
+09: Randomized Algorithms I
+  Slides (Condensed)
+10: Randomized Algorithms II
+  Slides (Condensed)
+11: Randomized Algorithms III
+  Slides (Condensed)
+12: Randomized Algorithms IV
+  Slides (Condensed)
+13: Greedy Algorithms I
+  Slides (Condensed)
+14: Greedy Algorithms II
+  Slides (Condensed)
+15: Greedy Algorithms III
+  Slides (Condensed)
+16: Dynamic Programming I
+  Slides (Condensed)
+17: Dynamic Programming II
+  Slides (Condensed)
+18: Dynamic Programming III
+  Slides (Condensed)
+19: Intractable Problems I
+  Slides (Condensed)
+20: Intractable Problems II
+  Slides (Condensed)
+21: Intractable Problems III
+  Slides (Condensed)
+22: Where to Go from Here
+  Slides
+
+
+
+
+-----
+Approximation Algorithms
+● How do you approximate intractable
+problems?
+● What techniques are necessary for
+designing and analyzing approximation
+algorithms?
+● Take CS261!
+
+
+CS261: Optimization and Algorithmic Paradigms
+[general info]  [lecture notes] [coursework]
+general information
+
+Instructor: Luca Trevisan, Gates 474, Tel. 650 723-8879, email trevisan at stanford dot edu
+
+Teaching Assistant: Qiqi Yan, Gates 460, email contact at qiqiyan dot com
+
+Classes are Tuesday-Thursday, 2:15-2:30pm, location Green Earth Sciences 131
+
+Office hours:
+
+Qiqi: Mondays 3-5pm and Tuesdays 4-6pm, Gates 460. Qiqi's office hours of Jan 24-25 are moved to Wed Jan 26 2-4pm
+Luca: Wednesdays 11:30-12:30, Gates 474. Luca's office hours of Wed Jan 26 are moved to Thurs Jan 27, 10-11am
+About the course
+Assignments: weekly homeworks, a midterm and a final exam.
+
+References
+The main reference will be a set of lecture notes. Notes will be posted after each lecture.
+Almost all the material of the course is covered in the following notes by Serge Plotkin
+
+Serge Plotkin
+CS261 Lecture Notes
+January 2010
+In addition, the following textbook will be a very helpful reference:
+Vijay Vazirani
+Approximation Algorithms
+Springer, 2004 (Hardcover) and 2010 (Paperback).
+Lectures
+01/04 Lecture 1. Summary of the course. Approximation algorithms for Vertex Cover and Metric Steiner Tree.
+Notes: [PDF] [HTML]
+01/06 Lecture 2. Approximation of General Steiner Tree.
+Notes: [PDF] [HTML]
+01/11 Lecture 3. Versions of the Traveling Salesman Problem. Eulerians loops.
+Notes: [PDF] [HTML]
+01/13 Lecture 4. 1.5-approximate algorithm for metric TSP. The Set Cover problem.
+Notes: [PDF] [HTML]
+01/18 Lecture 5. Introduction to Linear Programming.
+Notes: [PDF] [HTML]
+01/20 Lecture 6. Linear programming duality.
+Notes: [PDF] [HTML]
+01/25 Lecture 7. Linear programming relaxation of vertex cover.
+Notes: [PDF] [HTML]
+01/27 Lecture 8. Linear programming relaxation of set cover.
+Notes: [PDF] [HTML]
+02/01 Lecture 9. The Maximum Flow - Minimum Cut Theorem.
+Notes: [PDF] [HTML]
+02/03 Lecture 10. Maximum Flow algorithms: choosing the fattest augmenting path
+Notes: [PDF] [HTML]
+02/08 Lecture 11. Edmonds-Karp and Push-Relabel algorithms
+Notes: [PDF] [HTML]
+02/15 Lecture 12. Analysis of the push-relabel algorithm.
+Notes: [PDF] [HTML]
+02/17 Lecture 13. Algorithms for the global min-cut problem
+Notes: [PDF] [HTML]
+02/22 Lecture 14. Algorithms for maximum matching and vertex cover in bipartite graphs
+Notes: [PDF] [HTML]
+02/24 Lecture 15. The linear programming formulation of maximum cut and its dual
+Notes: [PDF] [HTML]
+03/01 Lecture 16. Multicommodity flows and the sparsest cut problem.
+Notes: [PDF] [HTML]
+03/03 Lecture 17. Introduction to online algorithms
+Notes: [PDF] [HTML]
+03/08 Lecture 18. Using expert advice
+Notes: [PDF] [HTML]
+03/10 Lecture 19. Review
+The following is a tentative schedule:
+Summary of the course. How to design approximation algorithms: the Vertex Cover and Set Cover examples (2 lectures).
+Approximating the Steiner Tree and the Metric TSP problems
+Linear Programming, Duality (2 lectures)
+Rounding linear programs: Vertex Cover and Set Cover (2 lectures)
+Network Flows: algorithms and combinatorics (3 lectures)
+Multi-commodity flow and sparsest cut (2 lectures)
+Maximum Matching in Bipartite Graphs (2 lectures)
+More on Linear Programming Duality (2 lectures)
+Online algorithms: Ski problem, secretary problem, paging, bin packing, using expert advice (4 lectures)
+
+
+------
+
+
+Parallel Algorithms
+● How do you solve standard algorithmic
+problems (searching, sorting, graph
+searches, etc.) quickly on parallel machines?
+● How do you design data structures that
+support concurrent modification?
+● How do you farm out work across multiple
+computers and aggregate the results?
+● Take CS149!
+
+
+Stanford CS149, Fall 2020
+PARALLEL COMPUTING
+From smart phones, to multi-core CPUs and GPUs, to the world's largest supercomputers and web sites, parallel processing is ubiquitous in modern computing. The goal of this course is to provide a deep understanding of the fundamental principles and engineering trade-offs involved in designing modern parallel computing systems as well as to teach parallel programming techniques necessary to effectively utilize these machines. Because writing good parallel programs requires an understanding of key machine performance characteristics, this course will cover both parallel hardware and software design.
+
+Basic Info
+Tues/Thurs 2:30-3:50pm
+Virtual Course Only
+Instructors: Kayvon Fatahalian and Kunle Olukotun
+See the course info page for more info on policies and logistics.
+Fall 2020 Schedule
+Sep 15	
+Why Parallelism? Why Efficiency?
+Motivations for parallel chip decisions, challenges of parallelizing code
+Sep 17	
+A Modern Multi-Core Processor
+Forms of parallelism: multicore, SIMD, threading + understanding latency and bandwidth
+Sep 22	
+Parallel Programming Abstractions
+Ways of thinking about parallel programs, and their corresponding hardware implementations, ISPC programming
+Sep 24	
+Parallel Programming Basics
+Thought process of parallelizing a program in data parallel and shared address space models
+Sep 29	
+Performance Optimization I: Work Distribution and Scheduling
+Achieving good work distribution while minimizing overhead, scheduling Cilk programs with work stealing
+Oct 01	
+Performance Optimization II: Locality, Communication, and Contention
+Message passing, async vs. blocking sends/receives, pipelining, increasing arithmetic intensity, avoiding contention
+Oct 06	
+GPU architecture and CUDA Programming
+CUDA programming abstractions, and how they are implemented on modern GPUs
+Oct 08	
+Data-Parallel Thinking
+Data parallel thinking: map, reduce, scan, prefix sum, groupByKey
+Oct 13	
+Distributed Computing using Spark
+Producer-consumer locality, RDD abstraction, Spark implementation and scheduling
+Oct 15	
+Cache Coherence
+Definition of memory coherence, invalidation-based coherence using MSI and MESI, false sharing
+Oct 20	
+Memory Consistency + Implementation Synchronization
+Consistency vs. coherence, relaxed consistency models and their motivation, acquire/release semantics, implementing locks and atomic operations
+Oct 22	
+Fine-Grained Synchronization and Lock-Free Programming
+Fine-grained snychronization via locks, basics of lock-free programming: single-reader/writer queues, lock-free stacks, the ABA problem, hazard pointers
+Oct 27	
+Midterm Exam
+good luck to everyone
+Oct 29	
+Transactional Memory
+Motivation for transactions, design space of transactional memory implementations, lazy-optimistic HTM
+Nov 03	
+Heterogeneous Parallelism and Hardware Specialization
+Energy-efficient computing, motivation for heterogeneous processing, fixed-function processing, FPGAs, mobile SoCs
+Nov 05	
+Domain-Specific Programming Systems
+Motivation for DSLs, case study on Halide image processing DSL
+Nov 10	
+Parallel Graph Processing Frameworks + How DRAM Works
+GraphLab, Ligra, and GraphChi, streaming graph processing, graph compression
+Nov 12	
+Programming for Hardware Specialization
+Performance programming for FPGAs and CGRAs
+Nov 17	
+Efficiently Evaluating DNNs
+Scheduling convlayers, exploiting precision and sparsity, DNN acelerators (e.g., GPU TensorCores, TPU)
+Nov 19	
+Parallel DNN Training + Course Wrap Up
+Enjoy your Winter holiday break!
+Programming Assignments
+Sep 25	Assignment 1: Analyzing Parallel Program Performance on a Quad-Core CPU
+Oct 8	Assignment 2: Scheduling Task Graphs
+Oct 23	Assignment 3: A Simple Renderer in CUDA
+Nov 10	Assignment 4: Big Graph Processing in OpenMP
+Nov 19	Assignment 5: Optional Assignment
+
+
+--------
+
+Cache-Oblivious Algorithms
+by
+Harald Prokop
+
+
+Cache-Oblivious Algorithms
+● How do you design algorithms that are
+always cache-friendly regardless of cache
+size?
+● How do you build data structures that
+provably minimize cache misses?
+● This can make a huge difference given
+modern memory architectures!
+
+
+1 Introduction 9
+2 Matrix multiplication 13
+3 Matrix transposition and FFT 19
+4 Funnelsort 23
+5 Distribution sort 29
+6 Jacobi multipass filter 35
+6.1 Iterative algorithm . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 36
+6.2 Recursive algorithm . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 37
+6.3 Lower bound . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 41
+6.4 Experimental results . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 43
+7 Cache complexity of ordinary algorithms 45
+7.1 Matrix multiplication . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 47
+7.2 Matrix transposition . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 48
+7.3 Mergesort . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 49
+8 Other cache models 51
+8.1 Two-level models . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 51
+8.2 Multilevel ideal caches . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 52
+8.3 The SUMH model . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 53
+8.4 The HMM model . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 54
+9 Related work 57
+10 Conclusion 59
+10.1 Engineering cache-oblivious algorithms . . . . . . . . . . . . . . . . . . . . . 60
+10.2 Cache-oblivious data structures . . . . . . . . . . . . . . . . . . . . . . . . . . 61
+10.3 Complexity of cache obliviousness . . . . . . . . . . . . . . . . . . . . . . . . 62
+10.4 Compiler support for divide-and-conquer . . . . . . . . . . . . . . . . . . . . 63
+10.5 The future of divide-and-conquer . . . . . . . . . . . . . . . . . . . . . . . . . 64
+
+
+----------------
+
+Geometric Algorithms
+● How do you model physical objects?
+● How do you find objects near a test point
+in high-dimensional space?
+● How do you triangulate a model
+elegantly and efficiently?
+● What on earth is Pixar actually doing?
+● Take CS268!
+
+
+
+Spring Quarter '10 - '11
+
+Class News:
+
+The class midterm will be held in the same classroom on Wedensday, May 18. The exam will be closed book/notes. However, you are allowed a 1-page crib-sheet of your own notes to help you remember class material (both sides of the paper can be used).
+
+A CGAL help session was held on Wednesday, April 6, 4-5 pm, in Clark S361. The video and slides are here.
+
+We will be trying out Piazzza as the CS268 bulletin board. Please set up your account!
+
+Class Objective:
+
+The course is an advanced undergraduate or low-level graduate introduction to basic techniques used in the design and analysis of efficient geometric algorithms, including: convexity, triangulation, sweeping, spatial partitioning, and point location. Arrangements and Voronoi/Delaunay diagrams will be discussed in detail, with emphasis on recent developments using random sampling methods. The course will also cover intersection, visibility, and range searching problems. The focus will be on data structures of general usefulness in geometric computing and the conceptual primitives appropriate for manipulating them. The impact of numerical issues in geometric computation will be addressed. Applications to meshing, motion planning, visibility preprocessing, model-based recognition, molecular modeling, and geographical information systems will be used throughout to motivate the material.
+Students in the course can choose between a theoretical and an applied track. The difference will be in some of the homeworks. The assignments in the theory track will emphasize the mathematical aspects and the analysis techniques; those in the applied track will focus on data structures and implementation issues.
+
+A good undergraduate course in algorithms, such as CS161 here at Stanford, is useful preparation. Students in the applied track should have some implementation experience with C/C++.
+
+Lecture Notes
+
+Below are notes related to the lectures:
+
+The Basic Algorithms and Combinatorics in Computational Geometry notes.
+The Tagansky paper on analyzing substructures in arrangements A New Technique for Analyzing Substructures in Arrangements of Piecewise Linear Surfaces.
+The paper Kinetic Data Structures --- a State of the Art Report, by L. Guibas.
+The paper The Upper Bound Theorem for Polytopes: An Easy Proof of Its Asymptotic Version, by R. Seidel.
+The paper Data Structures for Mobile Data, by J.~Basch, L.~Guibas, and J.~Hershberger.
+Notes on Point Location in Two Dimensions.
+The orginal Optimal Point Localtion in Monotone Subdivisions Paper [SIAM J. Comput. 15, pp. 317-340].
+The orginal Optimal Search in Planar Subdivisions by D. Kirkpatrick Paper [SIAM J. Comput. 12, pp. 28-35].
+The DEC/SRC Tech. Report Ruler, Compass, and Computer : the Design and Analysis of Geometric Algorithms, by Leonidas Guibas and Jorge Stolfi
+The H. Edelsbrunner and E. P. Mucke. Three-Dimensional Alpha Shapes Paper. [ACM Trans. Graphics 13 (1994), 43--72].
+The H. Edelsbrunner. Alpha Shapes --- a Survey. In Tessellations in the Sciences.
+The K. Fischer. Introduction to Alpha Shapes Paper.
+Notes on Triangulating Simple Polygons.
+Notes on Seidel's Trapezoidal Partitioning Algorithm.
+Notes on Randomized Divide and Conquer.
+Notes on Range Searching.
+Part A
+Part B
+Part C
+The Matousek Paper on Geometric Range Searching.
+Notes on Numerical Issues in Computational Geometry.
+The Ham Sandwich Cut Computation paper of Megiddo.
+Notes on Shortest Path Problems.
+Notes on Hierarchical Structures for Convex Polygons and Polyhedra.
+
+
+-------
+
+
+String and Genomic Algorithms
+● How do you find all matches of a dictionary
+inside a long text?
+● How do you reconstruct an evolutionary history
+from a set of genomes?
+● How do you rebuild a DNA strand given
+millions of overlapping fragments?
+● How do we know when HIV entered the human
+population?
+● Take CS262!
+
+
+As the quarter progresses, the following schedule will be updated accordingly. Please check back often for the latest material.
+ 	Date	Title	Reading	Homeworks	Scribe
+1	1/5	A Zero-Knowledge Based Introduction to Biology	Makinen 1.1, 1.2, 1.3	 	Shubha Raghvendra
+2	1/7	Sequence Alignment	Durbin: 2.1, 2.2, 2.3, 2.4	 	Nico Chaves
+3	1/12	Linear-Space Alignment	Durbin: 2.5, 2.6; Makinen: 6.1, 6.2	Problem Set 1 out	Thomas Lau
+4	1/14	Burrows-Wheeler Transform (BWT)	 	 	Robbie Ostrow
+5	1/19	BLAST continued, Hidden Markov Models	Optional: BWA and BOWTIE papers.	 	Pavitra Rengarajan
+6	1/21	Hidden Markov Models continued	Durbin: 3.*	 	Sarah Sterman
+7	1/26	HMMs continued	Makinen 7.*	Problem Set 1 due. Problem Set 2 out	Qianying Lin
+8	1/28	Pair HMMs, CRFs, and DNA sequencing	Durbin 4.*	 	Sam Kim
+9	2/2	DNA sequencing and Assembly	 	 	Mark Berger
+10	2/4	Cancer Sequencing	 	 	Anvita Gupta
+11	2/9	Fragment Assembly	Makinen 13.*	Problem Set 2 due. Problem Set 3 out	Amelia Hardy
+12	2/11	Single Cell Sequencing	 	 	Minna Xiao
+13	2/16	Sequence Assembly	 	 	Samantha Zarate
+14	2/18	Human Population Genomics	 	 	Alex Wells
+15	2/23	Molecular Evolution and Phylogenetic Tree Reconstruction	 	Problem Set 3 due. Problem Set 4 out	Dana Wyman
+16	2/25	Multiple Sequence Alignment	 	 	John Luttig
+17	3/1	Human Population Genomics	 	 	Arushi Raghuvanshi
+18	3/3	Human Population Genomics continued	 	 	Max Drach
+19	3/8	Modeling RNA Secondary Structure	 	Problem Set 4 due	Gus Liu
+20	3/10	RNA Secondary Structure continued	 	 	Jiwei Li
+
+
+-------
+
+Numerical Algorithms
+● What's the best way to solve a linear
+system of equations?
+● How do you formulate and solve linear
+programs?
+● How do you approximate solutions to
+differential equations?
+● What on earth is Pixar doing?
+● Take CS205A!
+
+
+2.3 Textbook
+The primary textbook for CS 205A is Numerical Algorithms, by Justin Solomon (a former CS205a
+instructor and Stanford PhD student, and now an MIT professor); the text was written specifically
+for this course. The textbook is available from common book vendors, and a PDF is available
+online from the author’s MIT website. A supplementary optional textbook is Scientific Computing,
+by Heath. This textbook covers similar material and has alternative explanations that may appeal
+to some students.
+
+https://graphics.stanford.edu/courses/cs205a-13-fall/notes.html
+
+
+Course Schedule
+The official textbook for CS 205A is Scientific Computing, by Heath. A great reference on numerical linear algebra for mathematically inclined students is Matrix Computations, by Golub and Van Loan. A classic reference on the conjugate gradient algorithm, thankfully available for free online, is "An Introduction to the Conjugate Gradient Method Without the Agonizing Pain," by Shewchuk.
+
+A set of course notes specific to CS 205A is under construction by the instructor. While he is making every effort to complete the notes as the quarter proceeds, students in CS 205A are still responsible for having the official text on hand! Links to individual chapters as well as the entire set of notes are included below, with a rough status describing how complete they are:
+
+Part
+Topic
+PDF
+Status
+Entire set	CS 205A		Never complete!
+Chapter 0	Mathematics Review		First draft done
+Chapter 1	Numerics and Error Analysis		First draft done
+Chapter 2	Linear Systems and LU Decomposition		First draft done
+Chapter 3	Designing and Analyzing Linear Systems		First draft done
+Chapter 4	Column Spaces and QR		First draft done; iteration of Householder needs adjustment
+Chapter 5	Eigenvectors		First draft done; proof of QR iteration needs adjustment
+Chapter 6	Singular Value Decomposition		First draft done
+Chapter 7	Nonlinear Systems of Equations		First draft done
+Chapter 8	Unconstrained Optimization		First draft done (BFGS proof fixed!)
+Chapter 9	Constrained Optimization		First draft done
+Chapter 10	Iterative Linear Solvers		First draft done
+Chapter 11	Interpolation		First draft done
+Chapter 12	Numerical Integration and Differentiation		First draft done
+Chapter 13	Ordinary Differential Equations		First draft done
+Chapter 14	Partial Differential Equations		First draft done (with placeholders for non-205A material)
+
+
+---------
+
+
+Bitwise Algorithms
+● How can we speed up classical
+algorithms when working on integer
+data?
+● How can we search and sort in o(log n)
+and o(n log n) time?
+● How can we solve problems by iteratively
+refining approximate solutions?
+
+---------
+
+
+Quantum Algorithms
+● How do you program a quantum computer?
+● How do you design quantum algorithms to
+solve classical problems?
+● What are the theoretical limits of quantum
+computation?
+● What do cryptographers mean by “science
+fiction attacks?”
+● Take CS259Q!
+
+
+---------
+
+Algorithmic Game Theory
+● How far from optimal can a system get if
+individuals greedily maximize their own
+profits?
+● How do you design systems that
+encourage people to behave honestly and
+fairly?
+● Take CS364A/B!
+
+Course description: Broad survey of topics at the interface of theoretical computer science and economics. Introduction to auction and mechanism design, with an emphasis on computational efficiency and robustness. Introduction to the "price of anarchy", with applications to networks. Algorithms and complexity theory for learning and computing Nash and market equilibria. Case studies in Web search auctions, wireless spectrum auctions, matching markets, network routing, and security applications.
+
+Prerequisites: basic algorithms and complexity (154N and 161, or equivalent). No prior knowledge of economics or game theory is required.
+
+Course requirements: All students are required to complete weekly exercise sets, which fill in details from lecture. Students taking the course for a letter grade are also required to complete biweekly problem sets, which supplement the material covered in lecture. Students are encouraged to form groups (up to three students) to complete the problem sets. There will also be occasional extra credit problems and opportunities. No late assignments accepted.
+
+A LaTeX template that you can use to type up solutions. Here and here are good introductions to LaTeX.
+All lecture notes and exercise sets in one PDF.
+
+Lecture videos and notes (beta versions)
+
+Lecture 1 (Introduction):   Video    Notes
+Lecture 2 (Mechanism Design Basics):   Video    Notes
+Lecture 3 (Myerson's Lemma):   Video    Notes
+Lecture 4 (Algorithmic Mechanism Design):   Video    Notes
+Lecture 5 (Revenue-Maximizing Auctions):   Video    Notes
+Lecture 6 (Simple Near-Optimal Auctions):   Video    Notes
+Lecture 7 (VCG Mechanism):   Video    Notes
+Lecture 8 (Spectrum Auctions):   Video    Notes
+Lecture 9 (Beyond Quasi-Linearity):   Video    Notes
+Lecture 10 (Kidney Exchange, Stable Matching):   Video    Notes
+Lecture 11 (Selfish Routing and the POA):   Video    Notes
+Lecture 12 (Network Over-Provisioning):   Video    Notes
+Lecture 13 (Hierarchy of Equilibrium Concepts):   Video    Notes
+Lecture 14 (Smooth Games):   Video    Notes
+Lecture 15 (Best-Case and Strong Nash Equilibria):   Video    Notes
+Lecture 16 (Best-Response Dynamics):   Video    Notes
+Lecture 17 (No-Regret Dynamics):   Video    Notes
+Lecture 18 (Swap Regret; Minimax):   Video    Notes
+Lecture 19 (Pure NE and PLS-Completeness):   Video    Notes
+Lecture 20 (Mixed NE and PPAD-Completeness):   Video    Notes
+The CS364A Top 10 List
+Exercise and problem sets:
+
+Exercise Set #1 (Out Wed 9/25, due by class Wed 10/2.)
+Exercise Set #2 (Out Wed 10/2, due by class Wed 10/9.)
+Exercise Set #3 (Out Wed 10/9, due by class Wed 10/16.)
+Exercise Set #4 (Out Wed 10/16, due by class Wed 10/23.)
+Exercise Set #5 (Out Wed 10/23, due by class Wed 10/30.)
+Exercise Set #6 (Out Wed 10/30, due by class Wed 11/6.)
+Exercise Set #7 (Out Wed 11/6, due by class Wed 11/13.)
+Exercise Set #8 (Out Wed 11/13, due by class Wed 11/20.)
+Exercise Set #9 (Out Fri 11/22, due by noon Fri 12/6.)
+Problem Set #1 (Out Wed 9/25, due by noon Fri 10/11.)
+Problem Set #2 (Out Wed 10/9, due by noon Fri 10/25.)
+Problem Set #3 (Out Wed 10/23, due by noon Fri 11/8.)
+Problem Set #4 (Out Wed 11/6, due by noon Fri 11/22.)
+Take-Home Final (Out Wed 11/20, due by noon Fri 12/13.)
+Primary references:
+
+Nisan/Roughgarden/Tardos/Vazirani (eds), Algorithmic Game Theory, Cambridge University, 2007.
+Also available free on the Web, see here.
+To get a sense for the course in a nutshell:
+T. Roughgarden, Algorithmic Game Theory (CACM July 2010);
+T. Roughgarden, An Algorithmic Game Theory Primer (an earlier and longer version).
+For the first four weeks, most of what we cover is also covered in Hartline's book draft. (Feedback is solicited here.)
+Another excellent textbook that covers several of the course's topics is Shoham and Leyton-Brown, Multiagent Systems, Cambridge, 2008.
+Detailed schedule and references:
+Lecture 1 (Mon 9/23): Introduction. The 2012 Olympic badminton scandal. Selfish routing and Braess's Paradox. Can strategic players learn a Nash equilibrium?
+Readings:
+J. Hartline and R. Kleinberg, Badminton and the Science of Rule Making, Huffington Post, 2012.
+Video of the first controversial badminton match.
+Braess's Paradox: Chapter 1 of T. Roughgarden, Selfish Routing and the Price of Anarchy (MIT Press, 2005), available here via the "Sample Chapter" link.
+Physical demonstrations of Braess's Paradox, by alumni of CS364A: #1 #2 #3
+Basic games and equilibrium notions: AGT book, Sections 1.1.1--1.3.4.
+Lecture 2 (Wed 9/25): Mechanism design basics. How would you bid in a first-price auction? The Vickrey auction and dominant-strategy implementations. Case study: sponsored search auctions.
+Readings:
+The Vickrey auction: AGT book, Section 9.3.1, 9.3.2, and 9.3.5; and/or Section 1 or these old CS364B notes.
+Pages 1-8 of Hartline's book.
+Optional sponsored search readings: AGT book, Sections 28.1-28.3.1. See also this CS364B course for tons of subtopics and references on sponsored search auctions (circa late 2007).
+Lecture 3 (Mon 9/30): Characterization of single-parameter DSIC mechanisms (Myerson's Lemma). Readings:
+AGT book, Sections 9.4.1--9.4.2 and 9.5.4--9.5.6. Optionally, see also Section 4 in this FOCS '01 paper by Archer and Tardos.
+Sections 2.6 and 3.1 of Hartline's book.
+Lecture 4 (Wed 10/2): DSIC sponsored search auctions. Knapsack auctions and algorithmic mechanism design. Revelation Principle. Readings:
+See Lecture 2 for sponsored search readings.
+AGT book, Sections 9.4.3 (Revelation Principle) and 12.1 (introduction to algorithmic mechanism design).
+Sections 2.10 and 3.2 of Hartline's book.
+Knapsack review videos: Dynamic programming solutions part 1 part 2 part 3; greedy 0.5-approximation algorithm and analysis part 1 part 2 part 3; (1-epsilon)-approximation algorithm part 1 part 2
+Optional: How To Think About Algorithmic Mechanism Design, a 90-minute tutorial by your instructor at FOCS '10. Video
+The latest results on black-box reductions for single-parameter problems are due to Chawla/Immorlica/Lucier, STOC '12.
+Lecture 5 (Mon 10/7): The challenge of revenue maximization. Bayesian optimal auctions. Readings:
+AGT book, Sections 13.1-13.2.
+Sections 3.3.1-3.3.3 of Hartline's book.
+Lecture 6 (Wed 10/9): The Prophet Inequality. Simple near-optimal auctions. Prior-independent auctions and the Bulow-Klemperer theorem. Readings:
+Sections 4.2, 5.1, 5.2.1 of Hartline's book.
+Lecture 7 (Mon 10/14): Case study: reserve prices in Yahoo! keyword auctions. Multi-parameter mechanism design and the VCG mechanism. Introduction to combinatorial auctions. Readings:
+Ostrovsky/Schwarz, Reserve Prices in Internet Advertising Auctions: A Field Experiment, 2009.
+AGT book, Sections 9.3.3-9.3.4 and 11.1.
+See also these old CS364B notes on combinatorial auctions and the VCG mechanism.
+Cramton/Schwartz, Collusive Bidding in the FCC Spectrum Auctions, 1999.
+Lecture 8 (Wed 10/16): Case study: wireless spectrum auctions. Readings:
+Cramton/Shoham/Steinberg (eds.), Combinatorial Auctions, MIT Press, 2006.
+Chapter 4 (Cramton) covers simultaneous ascending auctions.
+Chapter 5 (Ausubel/Cramton/Milgrom) discusses how to add a final "proxy" round with package bidding.
+Milgrom, Chapter 1 of Putting Auction Theory to Work, Cambridge, 2004.
+Goeree/Holt, Hierarchical Package Bidding, about bidding only on predefined packages.
+Milgrom/Segal, Deferred-Acceptance Heuristic Auctions, 2013. Describes the proposed format for the reverse auction in the upcoming FCC double auction.
+Lecture 9 (Mon 10/21): Beyond quasi-linearity. The clinching auction for bidders with budgets. The top trading cycle algorithm for housing allocation.
+Dobzinski/Lavi/Nisan, Multi-unit Auctions with Budget Limits, FOCS '08.
+AGT book, Section 10.3.
+Lecture 10 (Wed 10/23): Case study: kidney exchange. Stable matching.
+Roth/Sönmez/Ünver, Kidney Exchange, QJE '04.
+Roth/Sönmez/Ünver, Pairwise Kidney Exchange, JET '05.
+Ashlagi/Fischer/Kash/Procaccia, Mix and Match: A Strategyproof Mechanism for Multi-Hospital Kidney Exchange, EC '10.
+AGT book, Section 10.4.
+Lecture 11 (Mon 10/28): Nonatomic selfish routing and the price of anarchy: examples, preliminaries, and tight bounds for all classes of cost functions. Readings:
+AGT book, Sections 17.1-17.2.1 and 18.1-18.3.1, 18.4.1.
+For much more on this topic, see the book on Selfish Routing and the Price of Anarchy, MIT Press, 2005, or the "reader's digest" version here.
+Lecture 12 (Wed 10/30): Case study: network over-provisioning. A bicriteria bound for nonatomic routing networks. POA bounds for atomic routing networks. Readings:
+AGT book, Sections 18.3.2, 18.4.2, and 18.5.2.
+Lecture 13 (Mon 11/4): Potential functions and the existence of pure Nash equilibria. A hierarchy of equilibrium concepts: mixed-strategy Nash, correlated, and coarse correalted equilibria. Readings:
+AGT book, Sections 1.3.4, 1.3.6, 19.3.1, 19.3.2.
+T. Roughgarden, Intrinsic Robustness of the Price of Anarchy, STOC '09, Sections 1.1 and 3.1.
+Lecture 14 (Wed 11/6): Vetta's location games. Smooth games. POA bounds for coarse correlated equilibria and approximate Nash equilibria.
+AGT book, Section 19.4.
+T. Roughgarden, Intrinsic Robustness of the Price of Anarchy, STOC '09, Sections 2.1, 2.2, 2.3, 3.1, and 4.1.
+Lecture 15 (Mon 11/11): Positive externalities and network cost-sharing games. The price of stability. Strong Nash equilibria and their inefficiency.
+AGT book, Sections 17.2.2 and 19.3.
+A. Epstein, M. Feldman, and Y. Mansour, Strong Equilibrium in Cost Sharing Connection Games, EC '07.
+Lecture 16 (Wed 11/13): Best-response dynamics in potential games. Fast convergence to approximate Nash equilibria in symmetric routing games. Fast convergence to near-optimal solutions in smooth potential games.
+AGT book, Section 19.3.
+Chien/Sinclair, Convergence to approximate Nash equilibria in congestion games, SODA '07.
+T. Roughgarden, Intrinsic Robustness of the Price of Anarchy, STOC '09, Section 4.3.
+Lecture 17 (Mon 11/18): Regret minimization. The multiplicative weights (or randomized weighted majority) algorithm. Connection to learning coarse correlated equilbria.
+AGT book, Sections 4.1-4.3.
+Lecture notes by Bobby Kleinberg.
+Lecture 18 (Wed 11/20): Black-box reduction from swap regret minimization to external regret minimization. Connection to learning correlated equilbria. The minimax theorem for two-player zero sum games.
+AGT book, Sections 4.4-4.5.
+Lecture 19 (Mon 12/2): PLS-completeness and negative convergence results for pure Nash equilibria in routing and congestion games. Primary reference:
+Section 3 of Roughgarden, Computing Equilibria: A Computational Complexity Perspective.
+Further good surveys:
+Voecking, Congestion Games: Optimization in Competition (Survey Paper), ACiD '06.
+Yannakakis, Chapter 2 in Local Search in Combinatorial Optimization (Wiley, 1997; and Princeton, 2003).
+Lec 20 (Wed 12/4): PPAD-completeness of computing mixed-strategy Nash equilibria of bimatrix games. Primary references:
+Section 4 of Roughgarden, Computing Equilibria: A Computational Complexity Perspective.
+AGT book, Sections 2.1-2.6.
+Johnson, Finding Needles in Haystacks, ACM Transacations on Algorithms, 2007.
+Yannakakis, Equilibria, Fixed Points, and Complexity Classes, survey in STACS '08.
+
+---------
+
+
+Streaming Algorithms
+● How do we compute properties of data
+presented one element at a time?
+● What is the minimum amount of memory
+necessary to answer questions about
+streaming data?
+● How does Google know what search
+queries are popular?
+
+
+Schedule
+Below is the highly tentative schedule for the course. I will modify it as the semester progresses. Topics and readings will not become "official" until the date of lecture. Hence, I do not recommend reading ahead by more than one lecture, if at all.
+
+No reading.
+Class Number	Date	Description	Readings
+Part 1. Insert-Only Streams
+1	8/29	Introduction to streaming algorithms; course overview; fingerprinting and the power of randomness	Lecture 0 of Amit's notes. Also read Lee Rhodes' exposition of the benefits of using sketching algorithms in industrial systems. For fingerprinting, see Section 1 of Justin's lecture notes
+2	9/5	Answering Point Queries and Finding Frequent Items in Insert-Only Streams	Lecture 1 of Amit's notes. See also Justin's handwritten notes
+3	9/10	End of Point Queries. Start of tools from probability theory: Markov's Inequality, Chebyshev's Inequality, Chernoff Bounds, Inclusion-Exclusion Principle, Variance Reduction via Averaging.	A handy reference on tools from probability theory is Grigory's slides. See also Justin's handwritten notes
+4	9/12	End of tools from probability theory.	A handy reference on tools from probability theory is Grigory's slides. See also Justin's handwritten notes.
+5	9/17	Sampling Algorithms for Insert-Only Streams: Approximate Medians, Reservoir sampling, Itemset Frequency Estimation.	Andrew's slides. See also Justin's handwritten notes.
+6	9/19	Sampling Algorithms for Insert-Only Streams continued.	Andrew's slides. See also Justin's handwritten notes.
+7	9/24	AMS Sampling For Estimating High Frequency Moments.	Lecture 5 of Amit's notes. See also Justin's handwritten notes.
+8	9/26	Estimating Distinct Elements in Insert-Only Streams.	Lectures 2 and 3 of Amit's notes. Lecture 2 covers a simple, suboptimal algorithm that we analyzed in class. Lecture 3 analyzes Adaptive Sampling, an algorithm that we described in class, but did not analyze. See also Justin's handwritten notes (Part 1) and Justin's handwritten notes (Part 2)
+Part 2. Turnstile Streams: Linear Sketches
+9	10/1	Answering Point Queries: Count-Min and Count Sketch.	Lecture 4 of Amit's notes See also Justin's handwritten notes.
+10	10/3	Finishing Count Sketch Analysis. Estimating the Second Frequency Moment via the Tug-of-War Sketch.	Lecture 6 of Amit's notes. For the Count Sketch, see also Justin's handwritten notes.
+11	10/10	Linear Sketches, Johnson-Lindenstrauss, Random Projections for Dimensionality Reduction, Estimating Small Frequency Moments via Stable Distributions	Lecture 7 of Amit's notes See also Justin's handwritten notes
+12	10/15	End of Dimensionality Reduction. Bloom Filters.	For Bloom Filters, see the excellent Wikipedia article or Michael Mitzenmacher's lecture notes. Justin's handwritten notes may also be useful.
+13	10/17	NO IN-PERSON LECTURE. Detour: Dictionary Data Structures: Chaining, Linear Probing, Cuckoo Hashing, The Power of Two Choices	Eric Demaine's video lecture
+14	10/22	Sparse Recovery via Invertible Bloom Lookup Tables.	For Sparse Recovery algorithms, see these slides.
+15	10/24	End of IBLTs and Sparse Recovery. Peeling Algorithms. Applications of Sparse Recovery Algorithms: Set Reconciliation, Biff Codes.	See these slides and Justin's handwritten notes.
+16	10/29	L_0 sampling. Streaming Graph Algorithms: start of Graph Connectivity.	For L_0 Sampling, see Andrew's slides. For an intro to graph streams and connectivity in the insert-only model, see Andrew's Lecture 2.1 slides. See also Justin's handwritten notes.
+17	10/31	Graph Connectivity in the Turnstile Model via L_0 Sampling. Spanners in insert-only streams.	For Graph Connectivity in the turnstile model, see Andrew's Lecture 2.2 slides. For spanners in the insert-only model, see Andrew's Lecture 2.1 slides. See also Justin's handwritten notes.
+Assorted Topics
+18	11/5	Problem Set Review.	No reading.
+19	11/7	Lower bounds via communication complexity, Part 1	Lecture 15 in Amit's notes
+20	11/12	Lower bounds via communication complexity, Part 2	Lecture 16 in Amit's notes
+21	11/14	CR-Precis. Mergeable Summaries.	For CR-Precis, see Slide 11 of Andrew's Slides. For mergeable summaries, see the original paper by Agarwal et al.
+22	11/19	Stream Verification Part 1	These slides and these slides together cover much of the content.
+23	11/21	NO IN-PERSON LECTURE. Stream Verification Part 2.	Watch this video.
+24	11/26	Estimating frequency moments via stable distributions.	Jelani Nelson's notes
+25	11/28	Problem Set Review?
+26	12/3	Geometric streams, coresets, approximating Minimum Enclosing Ball	Lecture 11 in Amit's notes
+27	12/5	Other notions of sublinear algorithms: Property testing. Testing of Uniformity.	Paul Beame's lecture notes
+28	12/10	Clustering	Lecture 12 in Amit's notes and Andrew's Slides
+
+
+--------
+
+
+
+Heuristic Search
+● What general techniques are useful for
+optimization problems?
+● What frameworks exist for modeling
+search problems with no known efficient
+solutions?
+● Why can computers beat humans at
+chess but not at Go?
+● Take CS221!
+
+
+CS221: Artificial Intelligence: Principles and Techniques
+Stanford / Spring 2020-2021
+[Calendar]   [Modules]   [Coursework]   [Schedule]
+
+Prerequisites: This course is fast-paced and covers a lot of ground, so it is important that you have a solid foundation on both the theoretical and empirical fronts. You should have taken the following classes (or their equivalents):
+Programming (CS 106A, CS 106B, CS 107)
+Discrete math (CS 103)
+Probability (CS 109)
+Linear algebra (Math 51)
+
+
+Reading: There is no required textbook for this class, and you should be able to learn everything from the lecture notes and homeworks. However, if you would like to pursue more advanced topics or get another perspective on the same material, here are some books:
+Russell and Norvig. Artificial Intelligence: A Modern Approach. A comprehensive reference for all the AI topics that we will cover.
+Koller and Friedman. Probabilistic Graphical Models. Covers factor graphs and Bayesian networks (this is the textbook for CS228).
+Sutton and Barto. Reinforcement Learning: An Introduction. Covers Markov decision processes and reinforcement learning. Available free online.
+Hastie, Tibshirani, and Friedman. The elements of statistical learning. Covers machine learning. Available free online.
+Tsang. Foundations of constraint satisfaction. Covers constraint satisfaction problems. Available free online.
+Bear in mind that some of these books can be quite dense and use different notation terminology, so it might take some effort to connect up with the material from class.
+
+
+--------
+
+
+Pathfinding Algorithms
+● What shortest-paths algorithms work
+well for real transportation networks?
+● How well can we approximate distances
+between points in constrained space?
+● What exactly is Google Maps doing?
+
+
+---------
+
+
+Complexity Theory
+● What are the limits of efficient
+computation?
+● How do classical, randomized, and
+quantum algorithms interrelate?
+● What lies beyond P and NP?
+● Take CS254!
+
+
+
+
+CS 254: Computational Complexity
+
+General Information
+Instructor: Li-Yang Tan (liyang@cs.stanford.edu)
+CAs: Tom Knowles (tknowles@stanford.edu)
+         Can Liu (canliu@stanford.edu)
+Time: Mondays and Wednesdays, 4:00-5:20pm
+
+Tom's OH: Saturdays 12-1pm
+Can's OH: Tuesdays 7-9pm
+Homework parties: Mondays 6-8pm
+Textbooks
+Computational Complexity: A Modern Approach, by Sanjeev Arora and Boaz Barak.
+Mathematics and Computation, by Avi Wigderson.
+List of Topics
+Space Complexity
+ST-connectivity and its role in space complexity
+Non-determinism in space complexity: Savitch's theorem
+NL = coNL: Immerman-Szelepcsényi theorem
+Polynomial Hierarchy
+P, NP, coNP, and friends
+NP ∩ coNP ≈ having a good characterization
+Efficient computation in a world where P = NP
+Randomized Complexity
+Randomness as a resource. Does P = BPP?
+Randomness versus non-determinism
+Unique-SAT: Valiant-Vazirani theorem
+Non-Uniform Computation
+Circuit complexity
+Randomness versus non-uniformity: Adelman's theorem
+Small circuits for NP? Karp-Lipton theorem
+Interactive Proofs
+Arthur and Merlin, and generalizations of NP
+Approximate counting: Goldwasser-Sipser theorem
+IP = PSPACE
+If time permits:
+Beyond worst-case complexity
+Hardness within P
+Circuit lower bounds
+Hardness versus randomness
+Barriers to P versus NP
+...
+Lecture schedule
+(Will be updated as the quarter progresses. Supplementary material listed in gray.)
+Jan 11: Course overview; the grand challenges of complexity theory
+Chapter 20.2 of Wigderson's book: What is computation?
+Gödel's 1956 letter to von Neumann
+Jan 13: CS154 recap
+Chapter 3.4 of Wigderson's book: The P versus NP question, its meaning and importance
+Chapter 20.4 of Wigderson's book: The computational complexity lens on the sciences
+Jan 20: Space complexity; Savitch’s theorem (AB §4.1-4.3)
+Jan 25: Nondeterministic space and NL-completeness of STCONN (AB §4.4)
+The complexity of graph connectivity, Avi Wigderson
+Undirected connectivity in log-space, Omer Reingold
+Jan 27: Immerman-Szelepcsényi theorem (AB §4.4)
+1995 Gödel prize citation
+Feb 1: NP, coNP, and NP ∩ coNP (AB §2.6-2.7)
+Chapter 3.5 of Wigderson's book: The class coNP, the NP versus coNP question, and efficient characterization
+Chapter 6 of Wigderson's book: Proof complexity
+Propositional proof complexity: past, present, and future, Paul Beame and Toniann Pitassi
+The limits of proof, video of a talk by Paul Beame
+Proof complexity 2020, video of a talk by Paul Beame
+Feb 3: The polynomial hierarchy (AB §5)
+Completeness in the polynomial-time hierarchy, Marcus Schaefer and Chris Umans
+Feb 8: PSAT and oracle Turing machines (AB §5)
+Feb 10: The power of randomness in computation (AB §7)
+Chapter 7 of Wigderson's book: Randomness in computation
+Finding hay in haystacks: the power and limits of randomness, video of a talk by Avi Wigderson
+Pseudorandomness, monograph by Salil Vadhan
+Feb 17: Randomized complexity. P versus BPP; NP versus BPP (AB §7)
+Pure randomness extracted from two poor sources, Don Monroe
+How random is your randomness, and why does it matter, Eshan Chattopadhyay and David Zuckerman
+Research Vignette: Ramsey graphs and the error of explicit 2-source extractors, Amnon Ta-Shma
+Feb 22: Non-uniform computation and circuit complexity (AB §6)
+Chapter 5 of Wigderson's book: Lower bounds, boolean circuits, and attacks on P vs. NP
+P =? NP, Scott Aaronson
+Some estimated likelihoods for computational complexity, Ryan Williams
+Feb 24: Relating P/poly to BPP and NP: Adelman's theorem and the Karp-Lipton theorem (AB §6)
+March 1: Interactive proofs (AB §8)
+Chapter 10 of Wigderson's book: Randomness in proofs
+Proofs, Knowledge, and Computation, video of a talk by Silvio Micali
+A history of the PCP theorem, Ryan O'Donnell
+E-mail and the unexpected power of interaction, László Babai
+1993 Gödel prize citation, for Babai-Moran and Goldwasser-Micali-Rackoff
+March 3: Interactive proof for #3SAT (AB §8)
+Evaluation
+•  4 problem sets (70%, weighted by total score per set)
+•  Course project (30%)
+    ☐ Interim progress report (5%)
+    ☐ Final written report (15%)
+    ☐ Your peer evaluation report (10%)
+•  CR: ≥ 70% on 2 psets or ≥ 70% on Course projectProblem set policies:
+•  4 late days, at most 2 per pset
+•  Late days can only be used for psets, not the project
+•  Regrade requests must be submitted within 1 week
+Coursework schedule
+(Tentative; subject to change.)
+
+
+---------
+Data Structures
+● How can we exploit properties of data to
+store and access them more rapidly?
+● What metrics on data can be easily and
+readily computed?
+● How do we design and analyze
+complicated structures?
+● Take CS166!
+
+
+Schedule and Readings
+This syllabus is still under construction and is subject to change as we fine-tune the course. Stay tuned for more information and updates!
+
+Tuesday	Thursday
+Tries and Suffix Trees
+May 25
+To kick off our discussion of string data structures, we'll be exploring tries, Patricia tries, and, most importantly, suffix trees. These data structures provide fast solutions to a number of algorithmic problems and are much more versatile than they might initially seem. What makes them so useful? What properties of strings do they capture? And what intuitions can we build from them?
+
+Slides:
+
+Lecture Slides
+Suffix and LCP Arrays
+May 27
+What makes suffix trees so useful as a data structure? Surprisingly, much of their utility and flexibility can be attributed purely to two facts: they keep the suffixes sorted, and they expose the branching words in the string. By representing this information in a different way, we can get much of the benefit of suffix trees without the huge space cost.
+
+Slides:
+
+Lecture Slides
+Condensed Slides
+Readings:
+
+Manber, Udi and Myers, Gene Suffix Arrays: A New Method for On-Line String Searches
+Kasai, Toru et al. Linear-Time Longest-Common-Prefix Computation in Suffix Arrays and Its Applications
+Better than Balanced BSTs
+May 18
+We've been operating under the assumption that a balanced BST that has worst-case O(log n) lookups is, in some sense, an "optimal" binary search tree. In one sense (worst-case efficiency) these trees are optimal. However, there are other perspectives we can take on what "optimal" means, and they counsel toward other choices of tree structures - weight-balanced trees, finger search trees, and Iacono's working set structure.
+
+Slides:
+
+Lecture Slides
+Condensed Slides
+Readings:
+
+Kurt Mehlhorn. Nearly Optimal Binary Saerch Trees.
+John Iacono. Alternatives to Splay Trees with O(log n) Worst-Case Access Times.
+Splay Trees
+May 20
+We've seen that it's possible to design BST variants whose performance exceeds the Ω(log n) barrier per operation on non-uniform access distributions. Astonishingly, there's a single type of BST, the splay tree, that provably meets all the guarantees we saw last time - and it just might possibly be the best possible BST, up to constant factors.
+
+Slides:
+
+Lecture Slides
+Condensed Slides
+Readings:
+
+Sleator, Daniel and Tarjan, Robert. Self-Adjusting Binary Search Trees.
+Approximate Membership Queries, Part I
+May 11
+Approximate membership query structures are ways of representing approximations of sets. They're used extensively in practice and are one of the most commonly used randomized data structures. This lecture explores the Bloom filter, the first (and still most popular) AMQ structure, and uses lower bounding techniques to find additional room for improvement.
+
+Slides:
+
+Lecture Slides
+Condensed Slides
+Readings:
+
+Bloom, Burton. Space/Time Tradeoffs in Hash Coding with Allowable Errors.
+Approximate Membership Queries, Part II
+May 13
+Bloom filters are fast and have great space usage, but can they be improved upon? The answer, in both a practical and theoretical sense, is "yes," and some of the data structures that do so were invented in the past decade. This lecture shows how to adapt cuckoo hash tables into an approximate membership query structure called the cuckoo filter, as well as how to use the same insights driving Bloom filters to build the XOR filter.
+
+Slides:
+
+Lecture Slides
+Condensed Slides
+Readings:
+
+Fan et al. Cuckoo Filter: Practically Better than Bloom.
+Graf, Thomas and Lemire, Daniel. XOR Filters: Faster and Smallre than Bloom and Cuckoo Filters.
+Stefan Walzer. Peeling Close to the Orientability Threshold - Spatial Coupling in Hashing-Based Data Structures.
+Orthogonal Range Searching
+May 4
+Imagine you've got a huge collection of points stored in 2D space. Maybe they're points on a map, or maybe they're points in an abstract feature space. You want to find all points in an axis-aligned rectangle, such as the viewport on a map window. How quickly can you do so? By using some clever techniques, we can make this type of search just as fast as in the 1D case.
+
+Slides:
+
+Lecture Slides
+Condensed Slides
+Handouts:
+
+Handout 11P: Problem Set 4 | (LaTeX Template)
+Handout 11I: Individual Assessment 4 | (LaTeX Template)
+Planar Point Location
+May 6
+The planar point location problem is the following: given a collection of borders on a map and a point p, which region of the map is p contained in? This question can be answered quickly and efficiently using persistent data structures, a family of data structures where each operation keeps the old version around while producing a new version.
+
+Slides:
+
+Lecture Slides
+Condensed Slides
+Readings:
+
+Sarnak, Neil and Tarjan, Robert E. Planar Point Location Using Persistent Search Trees.
+Hashing and Sketching, Part I
+April 27
+How can Google keep track of frequent search queries without storing all the queries it gets in memory? How can you estimate frequently- occurring tweets without storing every tweet in RAM? As long as you're willing to trade off accuracy for space, you get get excellent approximations.
+
+Slides:
+
+Lecture Slides
+Condensed Slides
+Readings:
+
+Cormode, Graham and Muthukrishnan, C. An Improved Data Stream Summary: The Count-Min Sketch and its Applications.
+Hashing and Sketching, Part II
+April 29
+We've now seen how to build an estimator: make a simple data structure that gives a good chance of success, then run it in parallel. This idea can be extended to build frequency estimators with other properties, as well as to build estimators for how many distinct items we've seen.
+
+Slides:
+
+Lecture Slides
+Condensed Slides
+Readings:
+
+Charikar et al. Finding Frequent Items in Data Streams.
+Flajolet et al. HyperLogLog: The Analysis of a Near-Optimal Cardinality Estmiation Algorithm.
+Fibonacci Heaps
+April 20
+Fibonacci heaps are a type of priority queue that efficiently supports decrease-key, an operation used as a subroutine in many graph algorithms (Dijkstra's algorithm, Prim's algorithm, the Stoer-Wagner min cut algorithm, etc.) They're formed by a clever transformation on a lazy binomial heap. Although Fibonacci heaps have a reputation for being ferociously complicated, they're a lot less scary than they might seem!
+
+Slides:
+
+Lecture Slides
+Condensed Slides
+Readings:
+
+CLRS: Chapter 19
+Fredman, Michael and Tarjan, Robert. Fibonacci Heaps and Their Uses in Improved Network Optimization Algorithms
+Cuckoo Hashing
+April 22
+Most hash tables give expected O(1) lookups. Can we make hash tables with no collisions at all, and if so, can we do it efficiently? Amazingly, the answer is yes. There are many schemes for achieving this, one of which, cuckoo hashing, is surprisingly simple to implement. The analysis, on the other hand, goes deep into properties of random graph theory.
+
+Slides:
+
+Lecture Slides
+Condensed Slides
+Readings:
+
+Pagh, Rasmus and Rodler, Flemming. Cuckoo Hashing
+Handouts:
+
+Handout 10P: Problem Set 3 | (LaTeX Template)
+Handout 10I: Individual Assessment 3 | (LaTeX Template)
+Amortized Analysis
+April 13
+In many cases we only care about the total time required to process a set of data. In those cases, we can design data structures that make some operations more expensive in order to lower the total cost of all aggregate operations. How do you analyze these structures?
+
+Slides:
+
+Lecture Slides
+Condensed Slides
+Readings:
+
+CLRS: Chapter 17
+Handouts:
+
+Handout 07P: Problem Set 2 | (LaTeX Template)
+Handout 07I: Individual Assessment 2 | (LaTeX Template)
+Pugh, William. Skip Lists: A Probabilistic Alternative to Balanced Trees
+Handout 08: Research Project
+Handout 09: Suggested Project Topics
+Binomial Heaps
+April 15
+Binomial heaps are a simple and flexible priority queue structure that supports efficient melding of priority queues. The intuition behind binomial heaps is particularly elegant, and they'll serve as a building block toward the more complex Fibonacci heap data structure that we'll talk about on Thursday.
+
+Slides:
+
+Lecture Slides
+Condensed Slides
+Readings:
+
+Vuillemin, Jean. A Data Structure for Manipulating Priority Queues
+Balanced Trees, Part I
+April 6
+Balanced search trees are among the most versatile and flexible data structures. They're used extensively in theory and in practice. What sorts of balanced trees exist? How would you design them? And what can you do with them?
+
+Slides:
+Lecture Slides
+Condensed Slides
+Handouts:
+
+Problem Set 1 | LaTeX Template
+Individual Assessment 1 | LaTeX Template
+Readings:
+
+Bayer, Rudolf and McCreight, Edward. Organization and Maintenance of Large Ordered Indices
+Guibas, Leo and Sedgewick, Robert. A Dichromatic Framework for Balanced Trees
+Balanced Trees, Part II
+April 8
+Our last lecture concluded with a view of red/black trees as isometries of 2-3-4 trees. How far does this connection go? How can we use it to derive the rules for red/black trees? And now that we've got red/black trees, what else can we do with them?
+
+Slides:
+
+Lecture Slides
+Condensed Slides
+Readings:
+
+CLRS, Chapter 14.
+Range Minimum Queries, Part One
+March 30
+The range minimum query problem is the following: given an array, preprocess it so that you can efficiently determine the smallest value in a variety of subranges. RMQ has tons of applications throughout computer science and is an excellent proving ground for a number of advanced algorithmic techniques.
+
+Slides:
+
+Lecture Slides
+Condensed Slides
+Readings:
+
+Handout 00: Course Information
+Handout 01: CS166 Calendar
+Handout 02: Math Terms and Identities
+Handout 03: Assignment Policies
+Handout 04: CS166 and the Honor Code
+Handout 05: Individual Assessment 0
+Range Minimum Queries, Part Two
+April 1
+Our last lecture took us very, very close to a ⟨O(n), O(1)⟩-time solution to RMQ. Using a new data structure called a Cartesian tree in conjunction with a technique called the Method of Four Russians, we can adapt our approach to end up with a linear-preprocessing-time, constant-query-time solution to RMQ. In doing so, we'll see a number of clever techniques that will appear time and time again in data structure design.
+
+Slides:
+
+Lecture Slides
+Condensed Slides
+Readings:
+
+Fischer, Johannes and Heun, Volker. Theoretical and Practical Improvements on the RMQ-Problem, with Applications to LCA and LCE
+
+
+------------
+Getting into Research
+● Stanford undergrad?
+● Interested in algorithms research?
+● Take CS167 next spring!
+● Course focuses on transitioning from
+coursework-level algorithms to
+research-level algorithms.
+
+
+
+CS167: Readings in Algorithms
+Instructor: Tim Roughgarden (Office hours: after class, or by appointment)
+
+Teaching Assistant: Rishi Gupta (Office hours: Mondays 2:00-2:55 in 300-303)
+
+Time/location: 3:00-4:20 PM on Mondays and Wednesdays in 300-303.
+
+Course Description: Recent research in the design and analysis of algorithms. Readings cover both classical and emerging topics, such as: computational models for massive data sets; data privacy; dimensionality reduction; exact and approximate algorithms for NP-hard problems; graph algorithms; hashing; online learning; search trees; streaming and sketching. Students are expected to respond to research papers, deliver an oral presentation, and complete a reading or programming project. Limited enrollment; preference given to undergraduates.
+
+Prerequisites: CS161 or equivalent.
+
+Course requirements: A list of research papers, with brief synopses by the instructor, will be handed out at the beginning of the course. Students are required to pick a paper (or suggest their own) within the first two weeks of the class. Students will give oral presentations on their papers during the last 7 weeks of the course. Every student will also be required to give a practice presentation the week before to the course staff, and this will constitute 50% of the overall presentation grade. Students will be given written feedback to incorporate into their final presentation.
+Second, every student will submit some kind of report related to the paper(s) he or she presented. The default option would be a written report (perhaps 8-10 pages) that fleshes out what was covered in the oral presentation. Optionally, a student could do original work, such as implementing an algorithm or data structure proposed in the assigned paper.
+
+Links and resources:
+List of papers for student presentations.
+How to read a paper:
+Focus questions to help identify the main contributions of a paper, a
+Survival kit for reading the technical sections, and a
+Three-pass approach to tie it all together.
+How to give a talk:
+These two articles have a number of good suggestions.
+This video is pretty good as well.
+A short article on how to listen to talks.
+Grading rubrics
+Oral presentation
+Discussion questions
+Written report
+Student write-ups from 2014. This one is a good example of what we are looking for this year.
+Schedule and references
+Part I: Course Introduction
+Mon 3/28: Introduction. Model-independent algorithms for social networks.
+Lecture notes
+References:
+Gupta/Roughgarden/Seshadhri, Decompositions of Triangle-Dense Graphs, SICOMP '16.
+Wed 3/30: Matroids and the secretary problem. Tips on paper reading, part I.
+Mon 4/4: Maximum cut, random hyperplanes, and locality sensitive hashing.
+Lecture notes (rough) and video on maximum cut and randomized rounding.
+Lecture notes (sketch) on de-duplication and locality sensitive hashing.
+References:
+Charikar, Similarity Estimation Techniques from Rounding Algorithms, STOC '02; focus on Section 1.
+Goemans/Williamson, Improved approximation algorithms for maximum cut and satisfiability problems using semidefinite programming, STOC '94, JACM '95.
+Henzinger, Finding near-duplicate web pages: a large-scale evaluation of algorithms, SIGIR '06.
+Wed 4/6: Group discussion on matroid secretary problems.
+Assignment
+References:
+Babaioff/Immorlica/Kleinberg, Matroids, Secretary Problems, and Online Mechanisms, SODA '07.
+Mon 4/11: Algorithmic LovÃ¡sz local lemma.
+Lecture notes
+References:
+Moser/Tardos, A Constructive Proof of the General Lovasz Local Lemma, JACM '10.
+Morin/Mulzer/Reddad, Encoding Arguments, preprint '16
+Wed 4/13: Group discussion on a modeling paper.
+Assignment
+References:
+Kleinberg/Oren, Time-Inconsistent Planning: A Computational Problem in Behavioral Economics, EC '14.
+Video from Kleinberg's talk
+Mon 4/18: Fast Fourier transform, part 1.
+Lecture notes (sketch)
+References:
+Book chapter (Section 2.6)
+Wed 4/20: Fast Fourier transform, part 2.
+Lecture notes (sketch)
+References:
+Kalai, Efficient pattern-matching with don't cares, SODA '02.
+Part II: Student Presentations
+Mon 4/25: P: Michela, D: Anna
+Goel/Kapralov/Khanna, Perfect Matchings in O(n log n) Time in Regular Bipartite Graphs, STOC '10.
+Wed 4/27: P: Micheal, D: Jake
+Haeupler, Simple, Fast and Deterministic Gossip and Rumor Spreading, JACM '15.
+Mon 5/2: P: Christina, D: Vihan
+Arora/Barak/Brunnermeier/Ge, Computational Complexity and Information Asymmetry in Financial Products, ICS '10.
+Wed 5/4: P: Joseph, D: Ansh
+Leme/Pal/Vassilvitskii, A Field Guide to Personalized Reserve Prices, WWW '16.
+Mon 5/9: P: Vihan, D: Michela
+Ailon/Charikar/Newman, Aggregating Inconsistent Information: Ranking and Clustering, JACM '08.
+Wed 5/11: P: Anna, D: Joseph
+Mirrokni/Zadimoghaddam, Randomized Composable Core-sets for Distributed Submodular Maximization, STOC '15.
+Mon 5/16: P: Jake, D: Christina
+Kleinberg/Raghu, Team Performance with Test Scores, EC '15.
+Wed 5/18: P: Ansh, D: Michael
+Dwork/McSherry/Nissim/Smith, Calibrating Noise to Sensitivity in Private Data Analysis, TCC '06.
+Part III: Fun in the Sun
+Mon 5/23: Expander graphs.
+Lecture notes (sketch)
+Wed 5/25: Tim Roughgarden AMA.
+Mon 5/30: Memorial Day.
+Wed 6/1: Linear programming, smooth analysis, and fast Johnsonâ€“Lindenstrauss.
