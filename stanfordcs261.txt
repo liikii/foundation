@@ -1,0 +1,86 @@
+CS261: Optimization and Algorithmic Paradigms
+[general info]  [lecture notes] [coursework]
+general information
+
+Instructor: Luca Trevisan, Gates 474, Tel. 650 723-8879, email trevisan at stanford dot edu
+
+Teaching Assistant: Qiqi Yan, Gates 460, email contact at qiqiyan dot com
+
+Classes are Tuesday-Thursday, 2:15-2:30pm, location Green Earth Sciences 131
+
+Office hours:
+
+Qiqi: Mondays 3-5pm and Tuesdays 4-6pm, Gates 460. Qiqi's office hours of Jan 24-25 are moved to Wed Jan 26 2-4pm
+Luca: Wednesdays 11:30-12:30, Gates 474. Luca's office hours of Wed Jan 26 are moved to Thurs Jan 27, 10-11am
+About the course
+Assignments: weekly homeworks, a midterm and a final exam.
+
+References
+The main reference will be a set of lecture notes. Notes will be posted after each lecture.
+Almost all the material of the course is covered in the following notes by Serge Plotkin
+
+Serge Plotkin
+CS261 Lecture Notes
+January 2010
+In addition, the following textbook will be a very helpful reference:
+Vijay Vazirani
+Approximation Algorithms
+Springer, 2004 (Hardcover) and 2010 (Paperback).
+Lectures
+01/04 Lecture 1. Summary of the course. Approximation algorithms for Vertex Cover and Metric Steiner Tree.
+Notes: [PDF] [HTML]
+01/06 Lecture 2. Approximation of General Steiner Tree.
+Notes: [PDF] [HTML]
+01/11 Lecture 3. Versions of the Traveling Salesman Problem. Eulerians loops.
+Notes: [PDF] [HTML]
+01/13 Lecture 4. 1.5-approximate algorithm for metric TSP. The Set Cover problem.
+Notes: [PDF] [HTML]
+01/18 Lecture 5. Introduction to Linear Programming.
+Notes: [PDF] [HTML]
+01/20 Lecture 6. Linear programming duality.
+Notes: [PDF] [HTML]
+01/25 Lecture 7. Linear programming relaxation of vertex cover.
+Notes: [PDF] [HTML]
+01/27 Lecture 8. Linear programming relaxation of set cover.
+Notes: [PDF] [HTML]
+02/01 Lecture 9. The Maximum Flow - Minimum Cut Theorem.
+Notes: [PDF] [HTML]
+02/03 Lecture 10. Maximum Flow algorithms: choosing the fattest augmenting path
+Notes: [PDF] [HTML]
+02/08 Lecture 11. Edmonds-Karp and Push-Relabel algorithms
+Notes: [PDF] [HTML]
+02/15 Lecture 12. Analysis of the push-relabel algorithm.
+Notes: [PDF] [HTML]
+02/17 Lecture 13. Algorithms for the global min-cut problem
+Notes: [PDF] [HTML]
+02/22 Lecture 14. Algorithms for maximum matching and vertex cover in bipartite graphs
+Notes: [PDF] [HTML]
+02/24 Lecture 15. The linear programming formulation of maximum cut and its dual
+Notes: [PDF] [HTML]
+03/01 Lecture 16. Multicommodity flows and the sparsest cut problem.
+Notes: [PDF] [HTML]
+03/03 Lecture 17. Introduction to online algorithms
+Notes: [PDF] [HTML]
+03/08 Lecture 18. Using expert advice
+Notes: [PDF] [HTML]
+03/10 Lecture 19. Review
+The following is a tentative schedule:
+Summary of the course. How to design approximation algorithms: the Vertex Cover and Set Cover examples (2 lectures).
+Approximating the Steiner Tree and the Metric TSP problems
+Linear Programming, Duality (2 lectures)
+Rounding linear programs: Vertex Cover and Set Cover (2 lectures)
+Network Flows: algorithms and combinatorics (3 lectures)
+Multi-commodity flow and sparsest cut (2 lectures)
+Maximum Matching in Bipartite Graphs (2 lectures)
+More on Linear Programming Duality (2 lectures)
+Online algorithms: Ski problem, secretary problem, paging, bin packing, using expert advice (4 lectures)
+Homeworks
+Homework 1: out Jan 11, due Jan 20
+Homework 2 (revised Jan 20, 2011): out Jan 18, due Jan 27
+Homework 3: out Jan 25, due Feb 3
+Homework 4: out Feb 15, due Feb 24
+Homework 5: out Feb 22, due Mar 3
+Homework 6: out Mar 1, due Mar 10
+Exams
+The midterm will be in class, on February 10
+Practice problems for the midterm
