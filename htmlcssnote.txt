@@ -1,0 +1,142 @@
+一开始的html就是为了显示文档。 
+
+head tile body, subtitle
+
+
+
+structural markup
+semantic markup
+
+six levels of heading
+
+
+paragraph <p>
+bold <b>
+italic <i>
+
+
+
+
+superscript <sup>
+subscript <sub>
+
+
+white space collapsing. 
+break br
+horizontal hr
+
+
+there are some text elements that are not intended to affect the 
+structure of your web pages, but they do add extra information to the 
+pages — they are known as semantic markup.
+
+In the rest of the chapter you 
+will meet some more elements 
+that will help you when you are 
+adding text to web pages. For 
+example, you are going to meet 
+the <em> element that allows 
+you to indicate where emphasis 
+should be placed on selected 
+words and the <blockquote>
+element which indicates that a 
+block of text is a quotation.
+Browsers often display the 
+contents of these elements in 
+a different way. For example, 
+the content of the <em>
+element is shown in italics, 
+and a <blockquote> is usually 
+indented. But you should not 
+use them to change the way that 
+your text looks; their purpose is 
+to describe the content of your 
+web pages more accurately.
+The reason for using these 
+elements is that other programs, 
+such as screen readers or search 
+engines, can use this extra 
+information. For example, the 
+voice of a screen reader may add 
+emphasis to the words inside 
+the <em> element, or a search 
+engine might register that your 
+page features a quote if you use 
+the <blockquote> element
+
+
+
+strong, em emphasis
+blockquote
+
+
+the <q> element is used for 
+shorter quotes that sit within 
+a paragraph. Browsers are 
+supposed to put quotes around 
+the <q> element, however 
+Internet Explorer does not — 
+therefore many people avoid 
+using the <q> element.
+Both elements may use the cite
+attribute to indicate where the 
+quote is from. Its value should 
+be a URL that will have more 
+information about the source of 
+the quotation
+
+
+<abbr> abbreviation acronym
+
+dite
+dfn defination
+
+
+<address> often display it in italics. 
+ins, insert
+del delete
+s like delete
+
+
+
+ HTML elements are used to describe the structure of 
+the page (e.g. headings, subheadings, paragraphs).
+X They also provide semantic information (e.g. where 
+emphasis should be placed, the definition of any 
+acronyms used, when given text is a quotation).
+
+
+ol ordered list
+li list item.
+
+
+ul unordered list
+li 
+
+
+
+dl definition list . 
+dt definition term .
+dd definition data. 
+
+
+nested lists. 
+
+
+
+Links are the defining feature of the web 
+because they allow you to move from 
+one web page to another — enabling the 
+very idea of browsing or surfing.
+You will commonly come across the following types of links:
+● Links from one website to another
+● Links from one page to another on the same website
+● Links from one part of a web page to another part of the 
+same page
+● Links that open in a new browser window
+● Links that start up your email program and address a new 
+email to someone
+
+
+
+
