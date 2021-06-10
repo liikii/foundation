@@ -140,3 +140,74 @@ email to someone
 
 
 
+
+relative link type
+same folder
+child folder
+grandchild folder
+parent folder
+grandparent folder.
+
+
+
+
+email links
+
+open link in new windows target 
+
+
+link to a special part of the same page. 
+
+
+#id #id
+
+
+link to special part of another page 
+
+
+a href="http:/www.htmlandcssbookcom/#bottom">
+
+
+
+
+<img src="images/quokka.jpg" alt="A family of 
+ quokka" width="600" height="450" />
+
+
+block elements 
+
+
+Block-level Elements
+A block-level element always starts on a new line.
+
+A block-level element always takes up the full width available (stretches out to the left and right as far as it can).
+
+A block level element has a top and a bottom margin, whereas an inline element does not.
+
+The <div> element is a block-level element.
+
+
+Inline Elements
+An inline element does not start on a new line.
+
+An inline element only takes up as much width as necessary.
+
+This is a <span> element inside a paragraph.
+
+Example
+<span>Hello World</span>
+Here are the inline elements in HTML:
+
+<a><abbr><acronym><b><bdo><big><br><button><cite><code><dfn><em><i><img><input><kbd><label><map><object><output><q><samp><script><select><small><span><strong><sub><sup><textarea><time><tt><var>
+
+table tr td th
+row data head
+
+
+spanning column 
+colspan
+
+
+spanning row
+
+
